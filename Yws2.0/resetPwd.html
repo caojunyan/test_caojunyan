@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=100"> <!-- IE8 mode -->
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>找回密码</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <script>
+        window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;
+    </script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/resetPwd.css"/>
+    <style>
+        a:hover{
+            text-decoration: none;
+        }
+        a{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div style="background: white">
+    <div class="header container">
+        <div class="left">
+            <div>
+                <a href="#"  target="_self">
+                    <img src="images/register-logo.png" alt=""/>
+                </a>
+                <p>中国“新零售”领导品牌</p>
+            </div>
+            <span class="welcome">找回密码</span>
+        </div>
+     <!--   <div class="right">
+            <span>已有账号,</span>
+            <a href="" target="_self">请登录</a>
+        </div>-->
+    </div>
+</div>
+<div class="main container">
+    <div class="container content">
+       <div class="reset-top">
+           <ul>
+               <li><a>填写账户名</a></li>
+               <li><a>验证身份</a></li>
+               <li><a>设置新密码</a></li>
+               <li><a>完成</a></li>
+           </ul>
+           <hr/>
+       </div>
+        <div class="reset-body">
+            <div class="page" id="page1">
+                <form action="" class="">
+                    <div class="phone-div">
+                        <label for="">
+                            用户名
+                        </label>
+                        <input type="text" class="phone"  autofocus  placeholder="手机号/邮箱" id="txt"/>
+                    </div>
+                    <div class="pwd-div">
+                        <label for="">
+                           验证码
+                        </label>
+                        <span id="vericode">
+                        </span>
+                    </div>
+                    <a class="sub-btn" href="#page2">下一步</a>
+                </form>
+            </div>
+            <div class="page" id="page2">
+                <form action="" class="">
+                    <div class="phone-div">
+                        <label for="">
+                            已验账户：
+                        </label>
+                        <input type="text" value="152XXX321" />
+                    </div>
+                    <div class="div1">
+                        <label for="">验证码</label>
+                        <input type="text" placeholder="请输入验证码" class="input1"/>
+                        <input type="text" class="btn-get" id="btn" value="免取验证码"  />
+                    </div>
+                    <a class="sub-btn" href="#page3">下一步</a>
+                </form>
+            </div>
+            <div class="page" id="page3">
+                <form action="" class="">
+                    <div class="phone-div">
+                        <label for="">
+                            设置密码
+                        </label>
+                        <input type="text" class="phone"  autofocus  placeholder="请输入新密码" />
+                    </div>
+                    <div class="phone-div">
+                        <label for="">
+                            确认密码
+                        </label>
+                        <input type="text" class="phone"  autofocus  placeholder="请输入新密码" />
+                    </div>
+                    <a class="sub-btn" href="#page4">提交修改</a>
+                </form>
+            </div>
+            <div class="page " id="page4">
+                <img src="images/regiration-succ.png" alt=""/>
+                <p>恭喜您，密码重置成功</p>
+                <span class="btn-box" >立即登录</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="background: white">
+    <div class="footer container">
+        <p>Copyright © 2017  湖北云温商互联网商务有限公司  备案号：鄂ICP备15007060号</p>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    (function($) {
+        $.fn.placeholder = function(options) {
+            var opts = $.extend({}, $.fn.placeholder.defaults, options);
+            var isIE = document.all ? true : false;
+            return this.each(function() {
+                var _this = this,
+                        placeholderValue = _this.getAttribute("placeholder"); //缓存默认的placeholder值
+                if (isIE) {
+                    _this.setAttribute("value", placeholderValue);
+                    _this.onfocus = function() {
+                        $.trim(_this.value) == placeholderValue ? _this.value = "" : '';
+                    };
+                    _this.onblur = function() {
+                        $.trim(_this.value) == "" ? _this.value = placeholderValue : '';
+                    };
+                }
+            });
+        };
+    })(jQuery);
+
+</script>
+<script>$("input").placeholder();</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/resetPwd.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>入库审核</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/good_ruku.css"/>
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <script>
+        window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;
+    </script>
+    <![endif]-->
+</head>
+<body>
+<div class="header">
+    <div class="top ">
+        <ul class="">
+            <li><a href="">登录</a></li>
+            <li><a href="">免费注册</a></li>
+            <li><a href="">购物车</a></li>
+            <li><a href="">联系客服</a></li>
+            <li><a href="">我的订单</a></li>
+            <li><a href="">收藏夹</a></li>
+            <li><a href="">手机客户端</a></li>
+            <li><a href="">帮助中心</a></li>
+        </ul>
+    </div>
+    <div class="top-banner container">
+        <div class="left">
+            <div>
+                <a href="#"  target="_self">
+                    <img src="images/register-logo.png" alt=""/>
+                </a>
+                <p>中国“新零售”领导品牌</p>
+            </div>
+        </div>
+        <div class="left1">
+            <span>账户中心</span>
+            <b>返回云温商首页</b>
+        </div>
+        <div class="left2">
+            <a >个人中心</a>
+            <a class="now">商家申请</a>
+            <a>消息中心</a>
+        </div>
+    </div>
+
+</div>
+<hr/>
+
+
+<div class="help container">
+    <div class="help_left">
+        <ul>
+            <li class="li_title" >
+                <a href="" name="" >商家订单</a>
+            </li>
+            <li>
+                <a href="order_shangjia.html" >商家订单列表</a>
+            </li>
+            <li>
+                <a href="sale_qushi.html" >销售趋势统计</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >商品管理</a>
+            </li>
+            <li>
+                <a href="good_list.html" >商品列表</a>
+            </li>
+            <li>
+                <a href="good_ruku.html" style="color:#FF3893">商品入库审核</a>
+            </li>
+            <li>
+                <a href="good_zixun.html">商品咨询回复</a>
+            </li>
+            <li>
+                <a href="pic_upload.html">批量上传图片</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >评价管理</a>
+            </li>
+            <li>
+                <a href="good_comm.html">商品评价</a>
+            </li>
+            <li>
+                <a href="shop_comm.html">店铺评价</a>
+            </li>
+
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >交易管理</a>
+            </li>
+            <li>
+                <a href="my_income.html">我的收入</a>
+            </li>
+            <li>
+                <a href="tixian_shangjia.html">提现记录</a>
+            </li>
+            <li>
+                <a href="shouzhi.html">收支明细</a>
+            </li>
+
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >商家信息</a>
+            </li>
+            <li>
+                <a href="shop_info.html">店铺信息</a>
+            </li>
+            <li>
+                <a href="mendian.html">门店管理</a>
+            </li>
+            <li>
+                <a href="touch_us.html">联系我们</a>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="help_right">
+        <div class="right_top">
+            <a href="">商品管理></a>
+            <a href="">商品入库审核审核</a>
+        </div>
+        <div class="right_main">
+            <div class="tab">
+                <div class="tab_header">
+                    <a >新建商品</a>
+                <!--    <b >删除</b>-->
+                    <label for="" id="label1">大类：</label>
+                    <select name="" >
+                        <option value="">全部</option>
+                        <option value="">空调</option>
+                        <option value="">空气处理</option>
+                    </select>
+                    <label for="">小类：</label>
+                    <select name="" id="">
+                        <option value="">全部</option>
+                        <option value="">空调</option>
+                        <option value="">空气处理</option>
+                    </select>
+                    <label for="">品牌：</label>
+                    <select name="" id="">
+                        <option value="">全部</option>
+                        <option value="">空调</option>
+                        <option value="">空气处理</option>
+                    </select>
+                    <input type="text" placeholder="请输入商品名称搜索"/>
+                    <a class="search">查询</a>
+
+                </div>
+                <div class="tab-body container">
+                        <div class="order_main">
+                            <div class="title1">
+                                <ul>
+
+                                    <li class="li li2"><a href="">大类</a></li>
+                                    <li class="li li3"><a href="">小类</a></li>
+                                    <li class="li li4"><a href="">品牌</a></li>
+                                    <li class="li li5"><a href="">名称</a></li>
+                                    <li class="li li6"><a href="">单价（元）</a></li>
+                                    <li class="li li7"><a href="">创建时间</a></li>
+                                    <li class="li li8"><a href="">状态</a></li>
+                                    <li class="li li9"><a href="">操作</a></li>
+                                </ul>
+                            </div>
+                            <div class="operate">
+                                <ul>
+
+                                    <li class="li li2"><a href="">副食特产</a></li>
+                                    <li class="li li3"><a href="">休闲小吃</a></li>
+                                    <li class="li li4"><a href="">云温商</a></li>
+                                    <li class="li li5"><a href="">名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称</a></li>
+                                    <li class="li li6"><a href="">18.00</a></li>
+                                    <li class="li li7"><a href="">2016-11-16  10:35:20</a></li>
+                                    <li class="li li8"><a href="">未通过</a></li>
+                                    <li class="li li9">
+                                        <a href="">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="">查看原因</a>
+
+                                    </li>
+                                </ul>
+                                <ul>
+
+                                    <li class="li li2"><a href="">副食特产</a></li>
+                                    <li class="li li3"><a href="">休闲小吃</a></li>
+                                    <li class="li li4"><a href="">云温商</a></li>
+                                    <li class="li li5"><a href="">名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称</a></li>
+                                    <li class="li li6"><a href="">18.00</a></li>
+                                    <li class="li li7"><a href="">2016-11-16  10:35:20</a></li>
+                                    <li class="li li8"><a href="">审核中</a></li>
+                                    <li class="li li9">
+                                        <a href="">预览</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="page">
+                                <a href="" class="all-pro">共 638 件商品</a>
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#aria-label="Previous">
+                                            <span aria-hidden="true">&lt; 上一页</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li class="more-page">
+                                            <a href="" aria-label="">
+                                                ...
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" aria-label="Next">
+                                                <span aria-hidden="true">下一页 &gt;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="page-info">
+                                    <span class="all-page">共121页</span>
+            <span>到第&nbsp;&nbsp;
+                <input type="text"/> &nbsp;&nbsp;页
+            </span>
+                                    <span class="skip">确定</span>
+                                </div>
+                            </div>
+                           <!-- <div class="model bs-example-modal-lg fade "  >
+                                <div class="">
+                                    <div class="new_addr modal-content">
+                                        <p class="addr_title">
+                                            <span>商品发货</span>
+                                            <a class="close" data-dismiss="modal" aria-label="Close">关闭</a>
+                                        </p>
+                                        <form class="form-horizontal container">
+                                            <p class="good_header">
+                                                <span class="span1">商品信息</span>
+                                                <span class="span2">单价</span>
+                                                <span class="span3">数量</span>
+                                                <span class="span4">小计</span>
+                                            </p>
+                                            <ul>
+                                                <li class="pic">
+                                                    <i> <img src="images/cart-pic.png" alt=""/></i>
+                                                    <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                                </li>
+                                                <li class="price">
+                                                    ￥405.00
+                                                </li>
+                                                <li class="time"><span>x1</span></li>
+                                                <li class="status">
+                                                    ￥65
+                                                </li>
+
+                                            </ul>
+                                            <div class="add_info add1">
+                                                <label for="">收货地址：</label>
+                                                <input type="text" value="湖北省 武汉市 江岸区 二七街 汉口东部购物公园C1栋4楼"/>
+                                            </div>
+                                            <div class="add_info add2">
+                                                <label for="">发货方式：</label>
+                                                <input type="radio" />快递物流
+                                            </div>
+                                            <div class="add_info add3">
+                                                <label for="">物流公司：</label>
+                                                <select name="" id="">
+                                                    <option value="">物流公司</option>
+                                                    <option value="">中通快递</option>
+                                                    <option value="">圆通快题</option>
+                                                    <option value="">天天快递</option>
+                                                    <option value="">顺丰快递</option>
+                                                    <option value="">邮政</option>
+                                                    <option value="">德邦</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="add_info add4">
+                                                <label for="">快单编号</label>
+                                                <input type="text" placeholder="请填写快递单号"/>
+                                            </div>
+                                            <div class="address_btn add_info">
+                                            
+                                                <div class="">
+                                                    <span>确认提交</span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="footer">
+    <div class="container">
+
+        <div class="div1 container">
+            <ul>
+                <li class="title">购物指南</li>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">提交订单</a></li>
+            </ul>
+            <ul>
+                <li class="title">会员中心</li>
+                <li><a href="">会员介绍</a></li>
+                <li><a href="">积分说明</a></li>
+                <li><a href="">发展中心</a></li>
+            </ul>
+            <ul>
+                <li class="title">配送服务</li>
+                <li><a href="">送货方式</a></li>
+                <li><a href="">服务意向</a></li>
+                <li><a href="">收费标准</a></li>
+            </ul>
+            <ul>
+                <li class="title">服务中心</li>
+                <li><a href="">取消订单</a></li>
+                <li><a href="">联系客服</a></li>
+                <li><a href="">汇款信息</a></li>
+            </ul>
+            <ul>
+                <li class="title">关于云温商</li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">服务地区</a> </li>
+            </ul>
+            <dl>
+                <dt>
+                    <img src="images/二维码.png" alt=""/>
+                </dt>
+                <dd>官方微信</dd>
+            </dl>
+        </div>
+        <div class="footer1">
+            <span class=""> Copyright © 2017  湖北云温商互联网商务有限公司  备案号：鄂ICP备15007060号</span>
+            <img src="images/1.png" alt=""/>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src=""></script>
+<script>
+
+
+</script>
+</body>
+</html>

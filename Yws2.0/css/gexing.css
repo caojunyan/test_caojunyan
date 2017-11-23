@@ -1,0 +1,141 @@
+@import "bootstrap.css";
+@import "base.css";
+.hot-product {
+  width: 1190px;
+  min-height: 406px;
+}
+.hot-product .title-p {
+  margin-top: 30px;
+  padding-bottom: 15px;
+}
+.hot-product .title-p b {
+  display: inline-block;
+  padding-left: 10px;
+  border-left: 4px solid #FB3A98;
+  width: 90px;
+  color: #FB3A98;
+  font-size: 18px;
+}
+.hot-product hr {
+  border: 1px solid #F6F6F6;
+}
+.hot-product .main {
+  min-height: 1329px;
+  width: 100%;
+}
+.hot-product .main .left {
+  float: left;
+  width: 45%;
+  height: 100%;
+}
+.hot-product .main .left .pro1 {
+  position: relative;
+  height: 260px;
+  width: 100%;
+  margin-top: 40px;
+}
+.hot-product .main .left .pro1 img {
+  position: absolute;
+}
+.hot-product .main .left .pro1 .img1 {
+  width: 100%;
+  z-index: 0;
+  height: 260px;
+}
+.hot-product .main .left .pro1 .img2 {
+  z-index: 1;
+}
+.hot-product .main .left .pro1 b {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  color: white;
+  line-height: 30px;
+  display: inline-block;
+  width: 170px;
+}
+.hot-product .main .left .pro1 p {
+  position: absolute;
+  z-index: 10;
+  left: 91px;
+  top: 117px;
+  color: white;
+}
+.hot-product .main .right {
+  float: left;
+  width: 55%;
+  height: 100%;
+  /*  padding-left: 3%;*/
+}
+.hot-product .main .right .pro2 {
+  width: 100%;
+  height: 260px;
+  margin-top: 40px;
+}
+.hot-product .main .right .pro2 .title {
+  font-size: 14px;
+  height: 40px;
+  padding-left: 8%;
+  line-height: 40px;
+}
+.hot-product .main .right .pro2 .title span {
+  color: #FB3A98;
+}
+.hot-product .main .right .pro2 .title img {
+  width: 20px;
+  height: 20px;
+}
+.hot-product .main .right .pro2 .title b {
+  float: right;
+  width: 147px;
+  height: 40px;
+  line-height: 40px;
+  background: #FB3A98;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+}
+.hot-product .main .right .pro2 dl {
+  margin-left: 8%;
+  margin-top: 20px;
+}
+.hot-product .main .right .pro2 dl dt {
+  position: relative;
+}
+.hot-product .main .right .pro2 dl dt img {
+  width: 161px;
+  height: 161px;
+}
+.hot-product .main .right .pro2 dl dt p {
+  position: absolute;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 14px;
+  width: 161px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.hot-product .main .right .pro2 dl dt p span {
+  float: left;
+}
+.hot-product .main .right .pro2 dl dt p b {
+  float: right;
+}
+.hot-product .main .right .pro2 dl dd {
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-height: 22px;
+  width: 161px;
+  margin-top: 8px;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.hot-product .main .right .pro2 dl,
+.hot-product .main .right .pro2 dt,
+.hot-product .main .right .pro2 dd {
+  display: inline-block;
+}

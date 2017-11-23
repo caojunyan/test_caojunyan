@@ -1,0 +1,700 @@
+@import "bootstrap.css";
+@import "base.css";
+.container_div {
+  border-bottom: 1px solid #F4F3F3;
+}
+.container_div .container-p {
+  height: 50px;
+  line-height: 50px;
+}
+.container_div .container-p a {
+  font-size: 16px;
+}
+.recive-info {
+  min-height: 570px;
+  margin-top: 45px;
+  padding-bottom: 50px;
+}
+.recive-info .p-top {
+  height: 45px;
+  background: #F4F3F3;
+  line-height: 45px;
+  border-left: 7px solid #ff3893;
+}
+.recive-info .p-top span {
+  color: #FF3893;
+  font-size: 18px;
+  padding-left: 25px;
+}
+.recive-info form {
+  margin-top: 45px;
+}
+.recive-info form .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #ccc;
+}
+.recive-info form .form-control {
+  width: 393px;
+  height: 40px;
+  outline: none;
+}
+.recive-info form label {
+  font-size: 16px;
+  height: 40px;
+  line-height: 30px;
+  font-weight: normal;
+  padding-right: 0px;
+}
+.recive-info form .form-group {
+  margin-top: 20px;
+}
+.recive-info form .form_check {
+  margin-top: 20px;
+}
+.recive-info form .form_check i {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: #F4F3F3;
+  cursor: pointer;
+}
+.recive-info form .form_check span {
+  font-size: 14px;
+  position: relative;
+  top: -6px;
+  left: -15px;
+}
+.recive-info form .form_check img {
+  position: relative;
+  top: -9px;
+  left: -25px;
+  visibility: hidden;
+  cursor: pointer;
+}
+.recive-info form .address .pro {
+  width: 113px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 5px;
+  margin-left: 16px;
+  border: 1px solid #CCCCCC;
+  outline: none;
+}
+.recive-info form .address .city {
+  width: 121px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 5px;
+  border: 1px solid #CCCCCC;
+  outline: none;
+}
+.recive-info form .address .qu {
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 5px;
+  border: 1px solid #CCCCCC;
+  outline: none;
+}
+.recive-info form .address_btn span {
+  width: 200px;
+  height: 47px;
+  display: inline-block;
+  background: #FF3893;
+  color: white;
+  text-align: center;
+  line-height: 47px;
+}
+.recive-info .already_address .div1 {
+  margin-left: 50px;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #CCCCCC;
+  border-bottom: 2px solid #FF3893;
+  border-top: 2px solid #FF3893;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  float: left;
+}
+.recive-info .already_address .div1 p {
+  height: 40px;
+  line-height: 40px;
+}
+.recive-info .already_address .div1 .p1 a {
+  float: right;
+  font-weight: normal;
+}
+.recive-info .already_address .div1 img {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 46px;
+  height: 46px;
+}
+.recive-info .already_address .div2 {
+  margin-left: 50px;
+  width: 300px;
+  display: inline-block;
+  height: 200px;
+  border: 1px solid #CCCCCC;
+  border-bottom: 2px solid #FF3893;
+  border-top: 2px solid #FF3893;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  float: left;
+  text-align: center;
+}
+.recive-info .already_address .div2 b {
+  font-size: 70px;
+  color: #E8E8E8;
+}
+.recive-info .already_address .div2 p {
+  color: #E8E8E8;
+}
+.recive-info .new_addr {
+  width: 450px;
+  height: 410px;
+  position: absolute;
+  /* top:0px;*/
+  /* left:236px;*/
+  background: white;
+  border: 1px solid #AEAEAE;
+  z-index: 10000;
+}
+.recive-info .new_addr .addr_title {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #AEAEAE;
+}
+.recive-info .new_addr .addr_title span {
+  float: left;
+}
+.recive-info .new_addr .addr_title a {
+  float: right;
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  background: #FF3893;
+  color: white;
+  line-height: 30px;
+  height: 30px;
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 1;
+}
+.recive-info .new_addr form {
+  width: 100%;
+  margin-top: 0px;
+}
+.recive-info .new_addr form div {
+  margin-top: 20px;
+}
+.recive-info .new_addr form label {
+  font-size: 14px;
+  height: 40px;
+  width: 109px;
+  line-height: 30px;
+  font-weight: normal;
+  padding-right: 0px;
+}
+.recive-info .new_addr form input {
+  border: 1px solid #AEAEAE;
+  height: 40px;
+  width: 300px;
+  line-height: 40px;
+  padding-left: 10px;
+  outline: none;
+}
+.recive-info .new_addr form .detail_addr {
+  margin-top: 20px;
+  margin-left: 110px;
+}
+.recive-info .new_addr form textarea {
+  width: 300px;
+  height: 100px;
+  padding-left: 10px;
+  outline: none;
+}
+.recive-info .new_addr form .address_btn span {
+  width: 300px;
+  height: 47px;
+  display: inline-block;
+  background: #FF3893;
+  color: white;
+  text-align: center;
+  line-height: 47px;
+  margin-left: 110px;
+}
+.recive-info .new_addr form .pro {
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  padding-left: 5px;
+}
+.recive-info .new_addr form .city {
+  width: 73px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 5px;
+  outline: none;
+}
+.recive-info .new_addr form .qu {
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 5px;
+  outline: none;
+}
+.pro-info .p-top {
+  height: 45px;
+  background: #F4F3F3;
+  line-height: 45px;
+  border-left: 7px solid #ff3893;
+}
+.pro-info .p-top span {
+  color: #FF3893;
+  font-size: 18px;
+  padding-left: 25px;
+}
+.pro-info #cart {
+  padding-left: 90px;
+}
+.pro-info #cart .one-shop .head {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  text-align: left;
+}
+.pro-info #cart .one-shop .head ul li {
+  float: left;
+  width: 130px;
+  text-align: left;
+}
+.pro-info #cart .one-shop .head ul .name {
+  width: 200px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.pro-info #cart .one-shop .head ul .info {
+  width: 430px;
+}
+.pro-info #cart .one-shop .shop-main {
+  height: 167px;
+}
+.pro-info #cart .one-shop .shop-main ul li {
+  float: left;
+  width: 206px;
+  padding-top: 30px;
+}
+.pro-info #cart .one-shop .shop-main ul .main-pic {
+  width: 200px;
+  padding-top: 0px;
+}
+.pro-info #cart .one-shop .shop-main ul .main-pic span {
+  display: inline-block;
+  width: 300px;
+  height: 150px;
+}
+.pro-info #cart .one-shop .shop-main ul .main-pic span img {
+  width: 127px;
+  height: 127px;
+  border: 1px solid #D1D1D1;
+}
+.pro-info #cart .one-shop .shop-main ul .pro-info {
+  font-size: 14px;
+  width: 430px;
+  padding-right: 50px;
+}
+.pro-info #cart .one-shop .shop-main ul .pro-info .info-detail {
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  height: 40px;
+  word-break: break-all;
+  display: -webkit-box;
+  display: -ms-box;
+  -webkit-line-clamp: 2;
+  -webkit-text-overflow: ellipsis;
+  -webkit-white-space: nowrap;
+  -moz-line-clamp: 2;
+  -moz-text-overflow: ellipsis;
+  -moz-white-space: nowrap;
+  -ms-line-clamp: 2;
+  -ms-text-overflow: ellipsis;
+  -ms-white-space: nowrap;
+  -webkit-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -moz-box-orient: vertical;
+  overflow: hidden;
+}
+.pro-info #cart .one-shop .shop-main ul .price {
+  width: 130px;
+  font-size: 18px;
+  color: #FF3893;
+  font-weight: normal;
+}
+.pro-info #cart .one-shop .shop-main ul .xiaoji {
+  font-size: 18px;
+  width: 130px;
+}
+.pro-info #cart .one-shop .shop-main ul .guige {
+  width: 130px;
+  text-align: left;
+}
+.pro-info #cart .heji {
+  margin-left: 13px;
+}
+.pro-info #cart .heji ul input[type="checkbox"] {
+  visibility: hidden;
+}
+.pro-info #cart .heji ul label {
+  display: inline-block;
+  border: 1px solid #D1D1D1;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.pro-info #cart .heji ul label.checked {
+  cursor: pointer;
+  background: url(../images/cart-right.png) no-repeat;
+  background-size: cover ;
+  border: none;
+}
+.pro-info #cart .heji ul li {
+  float: left;
+}
+.pro-info #cart .heji ul .heji1 {
+  width: 584px;
+  height: 83px;
+  margin-top: 20px;
+}
+.pro-info #cart .heji ul .heji1 .select {
+  margin-left: 10px;
+}
+.pro-info #cart .heji ul .heji1 a.del {
+  color: #FF3893;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.pro-info #cart .heji ul .heji1 a.clear {
+  color: #FF3893;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 20px;
+}
+.pro-info #cart .heji ul .money-all {
+  width: 353px;
+  height: 100%;
+}
+.pro-info #cart .heji ul .money-all .count-pro {
+  font-size: 14px;
+}
+.pro-info #cart .heji ul .money-all .count-pro .count-pro > b {
+  color: #FF3893;
+}
+.pro-info #cart .heji ul .money-all .all > span {
+  color: #FF3893;
+  font-weight: bold;
+}
+.pro-info #cart .heji ul .money-all .all > b {
+  color: #FF3893;
+  font-size: 20px;
+}
+.pro-info #cart .heji ul .btn-all {
+  font-size: 22px;
+  color: white;
+  background: #FF3893;
+  width: 190px;
+  height: 50px;
+  font-weight: normal;
+  line-height: 50px;
+  text-align: center;
+  margin-top: -16px;
+  cursor: pointer;
+}
+.pro-info #cart .calc {
+  height: 100px;
+  width: 1080px;
+  line-height: 100px;
+  text-align: right;
+  font-size: 16px;
+  border-top: 1px solid #F4F3F3;
+  padding-right: 20px;
+}
+.pro-info #cart .calc b {
+  color: #FF3893;
+}
+.way-pay {
+  margin-bottom: 40px;
+}
+.way-pay .p-top {
+  height: 45px;
+  background: #F4F3F3;
+  line-height: 45px;
+  border-left: 7px solid #ff3893;
+}
+.way-pay .p-top span {
+  color: #FF3893;
+  font-size: 18px;
+  padding-left: 25px;
+}
+.way-pay .must-pay {
+  margin-top: 45px;
+  padding-left: 90px;
+  font-size: 16px;
+}
+.way-pay .must-pay span {
+  color: #FF3893;
+}
+.way-pay .online-pay {
+  margin-left: 90px;
+  margin-top: 30px;
+  width: 940px;
+  height: 80px;
+  background: #F4F3F3;
+  padding: 17px;
+  border: 1px solid #F4F3F3;
+}
+.way-pay .online-pay .ww {
+  float: left;
+}
+.way-pay .online-pay .way1 {
+  display: inline-block;
+  width: 125px;
+}
+.way-pay .online-pay .pay-info {
+  width: 540px;
+  float: left;
+  line-height: 28px;
+}
+.way-pay .fTf {
+  margin-left: 90px;
+  margin-top: 30px;
+  width: 940px;
+  height: 80px;
+  background: #F4F3F3;
+  padding: 30px 17px;
+}
+.way-pay .fTf .ww {
+  float: left;
+}
+.way-pay .fTf .way1 {
+  display: inline-block;
+  width: 125px;
+}
+.way-pay .fTf .pay-info {
+  width: 540px;
+  float: left;
+  line-height: 28px;
+}
+.way-pay .order-pay {
+  height: 342px;
+  margin-top: 50px;
+  border: 1px solid #F4F3F3;
+}
+.way-pay .order-pay ul {
+  margin-left: 90px;
+  padding-top: 50px;
+  margin-right: 90px;
+  height: 342px;
+  position: relative;
+}
+.way-pay .order-pay ul li {
+  height: 40px;
+}
+.way-pay .order-pay ul .li1 {
+  line-height: 40px;
+}
+.way-pay .order-pay ul .li1 .span1 {
+  float: left;
+  display: inline-block;
+  line-height: 40px;
+  cursor: pointer;
+}
+.way-pay .order-pay ul .li1 .span1 i {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: #F4F3F3;
+  cursor: pointer;
+  position: relative;
+  top: 7px;
+}
+.way-pay .order-pay ul .li1 .span1 img {
+  position: relative;
+  top: -3px;
+  left: -25px;
+  visibility: hidden;
+}
+.way-pay .order-pay ul .li1 .span2 {
+  float: right;
+  text-align: right;
+  display: inline-block;
+  width: 250px;
+  font-size: 14px;
+  line-height: 40px;
+}
+.way-pay .order-pay ul .li1 .span3 {
+  float: right;
+  text-align: right;
+  display: inline-block;
+  width: 120px;
+  font-size: 14px;
+  color: #FF3893;
+  line-height: 40px;
+}
+.way-pay .order-pay ul .li2 .span2 {
+  float: right;
+  text-align: right;
+  display: inline-block;
+  width: 250px;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+}
+.way-pay .order-pay ul .li2 .span3 {
+  float: right;
+  text-align: right;
+  display: inline-block;
+  width: 120px;
+  font-size: 14px;
+  color: #FF3893;
+  height: 40px;
+  line-height: 40px;
+}
+.way-pay .order-pay ul .li3 .span2 {
+  float: right;
+  text-align: right;
+  display: inline-block;
+  width: 250px;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+}
+.way-pay .order-pay ul .li3 .span3 {
+  float: right;
+  text-align: right;
+  display: inline-block;
+  width: 120px;
+  font-size: 14px;
+  color: #FF3893;
+  height: 40px;
+  line-height: 40px;
+}
+.way-pay .order-pay ul .li4 {
+  line-height: 40px;
+  height: 40px;
+}
+.way-pay .order-pay ul .li4 .span0 {
+  float: right;
+  color: #A9A9A9;
+  height: 40px;
+  line-height: 40px;
+}
+.way-pay .order-pay ul .li4 .span1 {
+  float: right;
+  height: 40px;
+  line-height: 40px;
+}
+.way-pay .order-pay ul .li4 .span2 {
+  float: right;
+  text-align: right;
+  display: inline-block;
+  width: 120px;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+}
+.way-pay .order-pay ul .li4 .span2 i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #F4F3F3;
+  cursor: pointer;
+  position: relative;
+  top: 7px;
+}
+.way-pay .order-pay ul .li4 .span2 img {
+  position: relative;
+  top: 0px;
+  height: 20px;
+  width: 20px;
+  left: -23px;
+  visibility: hidden;
+}
+.way-pay .order-pay ul .li4 .span3 {
+  float: right;
+  text-align: right;
+  display: inline-block;
+  width: 120px;
+  font-size: 14px;
+  color: #FF3893;
+  height: 40px;
+  line-height: 40px;
+}
+.way-pay .order-pay ul .li4 .span3 input {
+  text-align: center;
+  border: 1px solid #F4F3F3;
+  width: 90px;
+  height: 35px;
+  outline: none;
+  color: #000;
+}
+.way-pay .order-pay ul .li5 {
+  height: 45px;
+  line-height: 45px;
+}
+.way-pay .order-pay ul .li5 .span2 {
+  float: right;
+  text-align: right;
+  display: inline-block;
+  width: 120px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.way-pay .order-pay ul .li5 .span3 {
+  float: right;
+  text-align: right;
+  display: inline-block;
+  width: 120px;
+  font-size: 20px;
+  color: #FF3893;
+}
+.way-pay .order-pay ul .li6 {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  background: #F4F3F3;
+  width: 1170px;
+  margin-left: -90px;
+  padding-left: 180px;
+}
+.way-pay .order-pay ul .li6 span {
+  font-size: 14px;
+  line-height: 50px;
+}
+.way-pay .order-pay ul .li6 .sub_order {
+  background: #FF3893;
+  color: white;
+  display: inline-block;
+  width: 230px;
+  float: right;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -1,0 +1,555 @@
+@import "bootstrap.css";
+@import "base.css";
+.top0 {
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.top0 .top p {
+  width: 20%;
+  float: left;
+  color: #8D8D8D;
+}
+.top0 .top p b {
+  color: #FF3893;
+}
+.top0 .top p a {
+  color: #8D8D8D;
+}
+.top0 .top p a:hover {
+  color: #FF3893;
+}
+.top0 .top .ul1 {
+  float: right;
+  width: 80%;
+}
+.top0 .top .ul1 ul {
+  width: 100%;
+  text-align: right;
+}
+.top0 .top .ul1 ul li {
+  float: right;
+  width: 10%;
+  text-align: center;
+  border-right: 1px solid #DFDFDF;
+}
+.top0 .top .ul1 ul li a {
+  color: #8D8D8D;
+}
+.top0 .top .ul1 ul li:hover {
+  cursor: pointer;
+}
+.top0 .top .ul1 ul li:hover a:hover {
+  color: #FF3893;
+  text-decoration: none;
+}
+.top0 .top .ul1 ul li:hover a {
+  color: #FF3893;
+  text-decoration: none;
+}
+.top-banner {
+  width: 100%;
+  height: 158px;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+.top-banner .left {
+  float: left;
+  display: flex;
+}
+.top-banner .left div {
+  display: inline-block;
+}
+.top-banner .left div a {
+  display: inline-block;
+  width: 100%;
+  height: 90%;
+}
+.top-banner .left div a img {
+  width: 198px;
+  padding-right: 22px;
+}
+.top-banner .left div p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FF3893;
+  text-align: center;
+}
+.top-banner .left .welcome {
+  /*  height: 50px;
+        line-height: 50px;*/
+  margin-bottom: 25px;
+  padding-left: 22px;
+  font-size: 20px;
+  border-left: 2px solid #D3D3D3;
+  color: #525050;
+  font-weight: bold;
+  vertical-align: top;
+  position: relative;
+  top: 9px;
+  /* position: relative\9;
+       top:-40px\9;*/
+  /*  _position: relative;
+        _top:0px;*/
+}
+.top-banner .left1 {
+  float: left;
+  position: relative;
+  top: -19px;
+}
+.top-banner .left1 div {
+  padding-top: 20px;
+  height: 100%;
+  display: inline-block;
+}
+.top-banner .left1 div .city-hover1 {
+  cursor: pointer;
+}
+.top-banner .left1 div img {
+  width: 198px;
+  padding-right: 22px;
+}
+.top-banner .left1 div a > span,
+.top-banner .left1 div a > i {
+  font-size: 20px;
+  color: #808080;
+  cursor: pointer;
+}
+.top-banner .left1 div .city {
+  position: absolute;
+  width: 200px;
+  height: 205px;
+  background: white;
+  border: 1px solid #D7D7D7;
+  padding: 10px 0 10px 0;
+  display: none;
+  top: 64px;
+  left: 0px;
+  z-index: 100;
+}
+.top-banner .left1 div .city p {
+  text-align: left;
+  width: 100%;
+  padding: 0 10px 20px 10px;
+  height: 28px;
+  border-bottom: 1px solid #D7D7D7;
+}
+.top-banner .left1 div .city p a {
+  color: #FF3893;
+}
+.top-banner .left1 div .city span {
+  width: 100%;
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 10px;
+  border-left: 5px solid #FF3893;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+.top-banner .left1 div .city ul {
+  padding: 10px 20px;
+  width: 100%;
+  height: 96px;
+  border-bottom: 1px solid #D7D7D7;
+}
+.top-banner .left1 div .city ul li {
+  float: left;
+  width: 33.3%;
+  height: 25px;
+}
+.top-banner .left1 div .city a.more {
+  text-align: center;
+  width: 100%;
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  padding-top: 10px;
+}
+.top-banner .left1 div .city-hover1:hover .city {
+  display: block;
+}
+.top-banner .left1 div p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #808080;
+  text-align: center;
+}
+.top-banner .left1:hover .city {
+  display: block;
+}
+.top-banner .left2 {
+  float: left;
+  height: 117px;
+  padding-top: 11px;
+}
+.top-banner .left2 div {
+  height: 100%;
+  display: inline-block;
+  margin-left: 33px;
+}
+.top-banner .left2 div .search {
+  width: 500px;
+  height: 42px;
+  position: relative;
+}
+.top-banner .left2 div .search input {
+  font-size: 15px;
+  padding-left: 18px;
+  width: 406px;
+  height: 100%;
+  border: 2px solid #FF3893;
+  outline: none;
+}
+.top-banner .left2 div .search a {
+  display: inline-block;
+  width: 90px;
+  background: #FF3893;
+  color: white;
+  height: 100%;
+  line-height: 42px;
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0px;
+}
+.top-banner .left2 div ul {
+  min-width: 333px;
+  margin-left: 45px;
+  margin-top: 10px;
+  height: 20px;
+}
+.top-banner .left2 div ul li {
+  float: left;
+  min-width: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+  border-left: 1px solid #989898;
+}
+.top-banner .left2 div ul li a:link {
+  text-decoration: none;
+  color: #000;
+}
+.top-banner .left2 div ul li a:hover {
+  text-decoration: none;
+  color: #FF3893;
+}
+.top-banner .left2 div ul li a:active {
+  text-decoration: none;
+  color: #FF3893;
+}
+.top-banner .left2 div ul li a:visited {
+  text-decoration: none;
+  color: #FF3893;
+}
+.top-banner .right {
+  float: right;
+  height: 47px;
+  width: 217px;
+  border: 2px solid #F4F3F3;
+  border-radius: 5px;
+  padding-left: 12px;
+  position: relative;
+  background: white;
+  top: 23px;
+  cursor: pointer;
+}
+.top-banner .right .cart:hover {
+  position: absolute;
+  z-index: 200;
+  border-bottom: 2px solid white;
+}
+.top-banner .right .cart-box {
+  width: 300px;
+  height: 60px;
+  border: 2px solid #F4F3F3;
+  position: absolute;
+  top: 40px;
+  left: -84px;
+  background: white;
+  display: none;
+  z-index: 1;
+}
+.top-banner .right .cart-box img {
+  width: 20%;
+}
+.top-banner .right .cart-box b {
+  padding-top: 10px;
+  font-weight: normal;
+  width: 200px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.top-banner .right i {
+  font-size: 25px;
+  line-height: 43px;
+  color: #FF3893;
+}
+.top-banner .right a {
+  font-size: 16px;
+  line-height: 43px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  top: -4px;
+}
+.top-banner .right span {
+  display: inline-block;
+  background: #FF3893;
+  color: white;
+  font-size: 16px;
+  width: 25px;
+  border-radius: 50%;
+  height: 25px;
+  text-align: center;
+  position: relative;
+  line-height: 25px;
+  top: -5px;
+}
+.top-banner .right:hover {
+  border-bottom: 2px solid white;
+}
+.top-banner .right:hover .cart-box {
+  display: block;
+}
+.banner1 {
+  width: 100%;
+  height: 50px ;
+  background: #FF3893;
+}
+.banner1 ul {
+  width: 1190px;
+  height: 50px;
+  margin: 0 auto;
+}
+.banner1 ul .li-banner {
+  width: 125px;
+  float: left;
+  text-align: center;
+}
+.banner1 ul .active1 {
+  background: #EC0971;
+}
+.banner1 ul a:link {
+  color: white;
+  font-size: 16px;
+  line-height: 50px;
+  display: inline-block;
+  height: 50px;
+  font-weight: bold;
+}
+.banner1 ul a:hover {
+  text-decoration: none;
+}
+.banner1 ul a:active {
+  text-decoration: none;
+}
+.banner1 ul a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+.liebiao {
+  position: relative;
+}
+.liebiao .adv_list {
+  background: transparent;
+  position: absolute;
+  text-align: left;
+  float: left;
+  margin: 0 auto;
+  display: block;
+}
+.liebiao .adv_list .list1 {
+  width: 220px;
+  height: 100%;
+  background: #F2F2F2;
+  float: left;
+  position: relative;
+  display: none;
+}
+.liebiao .adv_list .list1 .list1_li {
+  height: 56px;
+  padding-left: 30px;
+  font-size: 14px;
+  padding-right: 15px;
+  padding-top: 21px;
+  cursor: pointer;
+}
+.liebiao .adv_list .list1 .list1_li img {
+  float: right;
+  width: 8px;
+  height: 14px;
+}
+.liebiao .adv_list .list1 .list1_li .list2 {
+  width: 190px;
+  height: 100%;
+  background: #FBFBFB;
+  float: left;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  display: none;
+}
+.liebiao .adv_list .list1 .list1_li .list2 li {
+  height: 56px;
+  padding-left: 30px;
+  font-size: 14px;
+  padding-right: 15px;
+  padding-top: 21px;
+  cursor: pointer;
+  position: relative;
+}
+.liebiao .adv_list .list1 .list1_li .list2 li img {
+  float: right;
+  width: 8px;
+  height: 14px;
+}
+.liebiao .adv_list .list1 .list1_li .list2 li .list3_box {
+  display: none;
+  width: 280px;
+  background: #FBFBFB;
+  float: left;
+  position: absolute;
+  left: 100%;
+  top: 0px;
+}
+.liebiao .adv_list .list1 .list1_li .list2 li .list3_box .list3 {
+  height: 100%;
+  background: #fff;
+  width: 100px;
+  text-align: center;
+  float: left;
+  padding-top: 36px;
+}
+.liebiao .adv_list .list1 .list1_li .list2 li .list3_box .list3 li {
+  height: 56px;
+  font-size: 14px;
+  padding-top: 21px;
+  cursor: pointer;
+  padding-left: 28px;
+}
+.liebiao .adv_list .list1 .list1_li .list2 li .list3_box .list3 li img {
+  float: right;
+  width: 8px;
+  height: 14px;
+}
+.liebiao .adv_list .list1 .list1_li .list2 li .list3_box b {
+  display: inline-block;
+  width: 180px;
+  height: 30px;
+  color: #FF3893;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: left;
+  padding-left: 20px;
+}
+.liebiao .adv_list .list1 .list1_li .list2 li .list3_box .list4 {
+  height: 100%;
+  background: #fff;
+  width: 180px;
+  text-align: center;
+  float: left;
+}
+.liebiao .adv_list .list1 .list1_li .list2 li .list3_box .list4 li {
+  height: 70px;
+  font-size: 14px;
+  cursor: pointer;
+  padding-left: 0px;
+}
+.liebiao .adv_list .list1 .list1_li .list2 li .list3_box .list4 li a {
+  display: inline-block;
+  width: 143px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  border: 1px solid #CACACA;
+}
+.liebiao .adv_list .list1 .list1_li .list2 li .list3_box .list4 li .pic0 {
+  width: 80px;
+  height: 34px;
+  float: none;
+}
+.liebiao .adv_list .list1 .list1_li .list2 .hover1 {
+  color: #fff;
+  background: #EC0971;
+}
+.liebiao .adv_list .list1 .list1_li1:hover .list2 {
+  display: block;
+}
+.all_pro1:hover .adv_list {
+  display: block;
+}
+.clearfix {
+  clear: both;
+}
+.footer {
+  width: 100%;
+  height: 406px;
+  background: #F4F3F3;
+  border-top: 1px solid #DDDDDD;
+}
+.footer .ul1 {
+  width: 1190px;
+  height: 111px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #ECEBEB;
+}
+.footer .ul1 li {
+  float: left;
+  width: 238px;
+}
+.footer .ul1 li img {
+  float: left;
+}
+.footer .ul1 li div {
+  padding-left: 17px;
+  float: left;
+  padding-top: 3px;
+}
+.footer .ul1 li div p {
+  font-weight: bold;
+  font-size: 14px;
+}
+.footer .div1 {
+  width: 1190px ;
+  height: 184px;
+  padding-top: 20px;
+}
+.footer .div1 ul {
+  float: left;
+  width: 144px ;
+  margin: 0 auto;
+}
+.footer .div1 ul li {
+  line-height: 30px;
+}
+.footer .div1 ul .title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 27px;
+}
+.footer .div1 dl {
+  width: 314px;
+  margin-top: 10px;
+  float: left;
+  text-align: center;
+}
+.footer .div1 dl dd {
+  margin-top: 5px;
+}
+.footer .footer1 {
+  width: 100%;
+  border-top: 1px solid #ECEBEB;
+  padding-bottom: 33px;
+  padding-top: 33px;
+}
+.footer .footer1 span {
+  margin-left: 50px;
+  font-size: 16px;
+}
+.footer .footer1 img {
+  margin-left: 99px;
+}

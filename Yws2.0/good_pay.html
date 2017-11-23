@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>购物车结算</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/good_pay.css"/>
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <script>
+        window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;
+    </script>
+    <![endif]-->
+</head>
+<body>
+<div class="container_div">
+    <p class="container container-p">
+        <a href="cart.html">购物车&nbsp;></a>
+        <a href="">商品结算</a>
+    </p>
+</div>
+<!--收货信息-->
+<div class="recive-info">
+    <p class="container p-top">
+        <span>收货信息</span>
+    </p>
+    <form class="form-horizontal container">
+        <div class="form-group">
+            <label for="recieve_name" class="col-sm-2 control-label">收货人：</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="recieve_name" placeholder="请输入收货人姓名" name="">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="recieve_name" class="col-sm-2 control-label">联系电话：</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="recieve_tel" placeholder="请填写手机号码" name="">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="recieve_name" class="col-sm-2 control-label">收货时间：</label>
+            <div class="col-sm-10">
+               <!-- <input type="text" class="form-control" id="recieve_name" placeholder="请输入收货人姓名" name="">-->
+                <select name="" id="" class="form-control">
+                    <option value=" ">周一到周日均可收货</option>
+                    <option value=" ">周六日、节假日收货</option>
+                    <option value=" ">周一至周五收货</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group address">
+            <label for="" class="col-sm-2 control-label">所在地区：</label>
+            <div class="local">
+                <select class="pro">
+                    <option>选择省</option>
+                </select>
+
+                <select disabled="disabled" class="city">
+                    <option>选择市</option>
+                </select>
+
+                <select disabled="disabled" class="qu">
+                    <option>选择区</option>
+                </select>
+
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="recieve_name" class="col-sm-2 control-label">详细地址：</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="recieve_detail" placeholder="请填写路名，门牌号，请勿再次填写省市区" name="">
+            </div>
+        </div>
+        <div class="form-group form_check">
+            <label for="recieve_name" class="col-sm-2 control-label"></label>
+           <div class="col-sm-10">
+               <i></i>
+               <img src="images/cart-right.png" alt=""/>
+               <span>设为默认</span>
+           </div>
+        </div>
+        <div class="form-group address_btn">
+            <label for="recieve_name" class="col-sm-2 control-label"></label>
+            <div class="col-sm-10">
+                <span>保存地址</span>
+            </div>
+        </div>
+    </form>
+    <div class="already_address container">
+        <div class="div1">
+            <p class="p1">
+                <span>王启辉</span>
+                <a>默认地址</a>
+            </p>
+            <p class="p2">
+                周一至周日均可收货
+            </p>
+            <p class="p3">
+                158*****270
+            </p>
+            <p class="p4">
+                江岸区 汉口东部购物公园
+            </p>
+            <img src="images/address_right.png" alt=""/>
+        </div>
+        <a  class="new div2" data-toggle="modal" data-target=".bs-example-modal-lg">
+            <b>+</b>
+            <p>添加地址</p>
+        </a>
+
+    </div>
+    <div class="model bs-example-modal-lg fade "  >
+        <div class="">
+            <div class="new_addr modal-content">
+                <p class="addr_title">
+                    <span>收货地址</span>
+                    <a class="close" data-dismiss="modal" aria-label="Close">关闭</a>
+                </p>
+                <form class="form-horizontal container">
+                    <div class="">
+                        <label for="recieve_name" class="col-sm-2 control-label">收货人姓名：</label>
+                        <input type="text" class="" id="recieve_name" placeholder="请输入收货人姓名" name="">
+                    </div>
+                    <div class="">
+                        <label for="recieve_phone" class="col-sm-2 control-label">手机号：</label>
+                        <input type="text" class="" id="recieve_phone" placeholder="请输入收货人手机号" name="">
+                    </div>
+                    <div class="local1">
+
+                        <label  class="col-sm-2 control-label">收货地址：</label>
+                        <select class="pro">
+                            <option>选择省</option>
+                        </select>
+
+                        <select disabled="disabled" class="city">
+                            <option>选择市</option>
+                        </select>
+
+                        <select disabled="disabled" class="qu">
+                            <option>选择区</option>
+                        </select>
+                        <input type="text" placeholder="请输入详细地址" class="detail_addr"/>
+                    </div>
+                    <div class="address_btn">
+
+                        <div class="">
+                            <span>确认提交</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--商品信息-->
+<div class="pro-info">
+    <p class="container p-top">
+        <span>商品信息</span>
+    </p>
+    <div id="cart" class="container">
+        <div class="one-shop">
+            <!--店铺信息-->
+            <div class="head">
+                <ul>
+                    <li class="name">云温商 发货商品</li>
+                    <li class="info">预计在 08月15日（周二） 前送达</li>
+                    <li>单价</li>
+                    <li>数量</li>
+                    <li>尺寸</li>
+                </ul>
+            </div>
+         <div class="shop-main">
+                <ul>
+                    <li class="main-pic">
+                         <span>
+                            <img src="images/cart-pic.png" alt=""/>
+                         </span>
+                    </li>
+                    <li class="pro-info">
+                        <p class="info-detail">迪士尼进口休闲海苔专场迪
+                            士尼进口休闲海苔专场迪士尼进口休闲海苔专场迪士
+                            尼进口休闲海苔专场迪士尼进口休闲海苔专场迪士
+                            尼进口休闲海苔专场 - 韩国  迪士尼 葡萄籽油海苔(5g*3)*3  </p>
+                    </li>
+                    <li class="price">¥<b>36.00</b></li>
+                    <li class="xiaoji">2</li>
+                    <li class="guige">尺码：(5g*3)*3</li>
+                </ul>
+            </div>
+        </div>
+        <div class="one-shop">
+            <!--店铺信息-->
+            <div class="head">
+                <ul>
+                    <li class="name">云温商 发货商品</li>
+                    <li class="info">预计在 08月15日（周二） 前送达</li>
+                    <li>单价</li>
+                    <li>数量</li>
+                    <li>尺寸</li>
+                </ul>
+            </div>
+            <div class="shop-main">
+                <ul>
+                    <li class="main-pic">
+                         <span>
+                            <img src="images/cart-pic.png" alt=""/>
+                         </span>
+                    </li>
+                    <li class="pro-info">
+                        <p class="info-detail">迪士尼进口休闲海苔专场迪
+                            士尼进口休闲海苔专场迪士尼进口休闲海苔专场迪士
+                            尼进口休闲海苔专场迪士尼进口休闲海苔专场迪士
+                            尼进口休闲海苔专场 - 韩国  迪士尼 葡萄籽油海苔(5g*3)*3  </p>
+                    </li>
+                    <li class="price">¥<b>36.00</b></li>
+                    <li class="xiaoji">2</li>
+                    <li class="guige">尺码：(5g*3)*3</li>
+                </ul>
+            </div>
+        </div>
+        <div class="calc">
+            <span>
+                运费：
+                <b>+10</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                本组商品金额：
+                <b>¥111</b></span>
+        </div>
+    </div>
+
+</div>
+<!--支付方式-->
+<div class="way-pay container">
+    <p class="container p-top">
+        <span>支付方式</span>
+    </p>
+    <p class="must-pay">  你还需支付 <span>121</span> 元，请选择：</p>
+    <div class="online-pay ">
+        <span class="ww">
+            <input type="radio" name="way" checked="checked"/> &nbsp;&nbsp;
+            <span class="way1">在线支付</span>
+
+        </span>
+        <span class="pay-info">支持绝大多数银行卡、微信支付、支付宝支付等，可在提交订单后选择。
+如中国建设银行、中国工商银行、中国农业银行、中国银行、微信支付等。</span>
+    </div>
+    <div class="fTf">
+             <span class="ww">
+            <input type="radio" name="way" /> &nbsp;&nbsp;
+            <span class="way1">货到付款</span>
+
+        </span>
+        <span class="pay-info">母婴用品、食品、官方直发用品不支持货到付款</span>
+    </div>
+    <div class="order-pay container">
+        <ul>
+            <li class="li1">
+                <span class="span1">
+                        <i></i>
+                        <img src="images/cart-right.png" alt=""/>
+                    开具发票
+                </span>
+
+                <span class="span3">￥111</span>
+                <span class="span2">商品金额：</span>
+            </li>
+            <li class="li2">
+                <span class="span3">￥111</span>
+                <span class="span2">运费：</span>
+            </li>
+            <li class="li3">
+                <span class="span3">￥111</span>
+                <span class="span2">优惠券折扣：</span>
+            </li>
+            <li class="li4">
+                <span class="span3"><input type="text" placeholder="请填写金额"/></span>
+                <span class="span2"> <i></i><img src="images/cart-right.png" alt=""/> 使用余额：</span>
+                <span class="span1">
+
+                </span>
+                <span class="span0">账户余额：<b>￥11</b></span>
+            </li>
+            <li class="li5">
+                <span class="span3">￥111</span>
+                <span class="span2">待支付：</span>
+            </li>
+            <li class="li6">
+                <span>送货至：</span>
+                <span>湖北省武汉市江岸区东部购物公园C1座4楼        收货人：王启辉         158****1270  </span>收货
+                <span class="sub_order">提交订单</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/LocationData.js"></script>
+<script src="js/good_pay.js"></script>
+<script>
+    var provinceJson=locationData['province']
+    console.log((provinceJson));
+    function creatOption(josn,obj,clearHtml){
+        obj.html(clearHtml);//清空对象的值
+        var frag=document.createDocumentFragment();//创建碎片
+        for(var i in josn)//i是属性；provinceJson[i]是值
+        {
+
+            $(frag).append("<option value='"+i+"'>"+josn[i]+"</option>");
+        }
+        obj.append($(frag));
+    }
+    creatOption(provinceJson,$('.local select').eq(0),"<option>选择省</option>");
+
+    $('.local select').eq(0).change(function(){//当值改变且失去焦点的时候触发函数
+        var val=$(this).val();//当前下拉菜单的值
+
+        var cityJson=locationData['city'][val];//对应省的城市（对应直辖市的区）
+        console.log(cityJson)
+        var provinceName=$(this).children('option[value='+val+']').text();
+        if(provinceName=='北京' || provinceName=='天津' || provinceName=='重庆' || provinceName=='上海' || provinceName=='台湾' || provinceName=='香港' || provinceName=='澳门')//直辖市
+        {
+            $('.local select').eq(1).hide();//隐藏市
+            $('.local select').eq(2).removeAttr('disabled');//区不变灰
+            $('.local select').eq(1).html("<option>选择市</option>");//将市清空
+            creatOption(cityJson,$('.local select').eq(2),"<option>选择区</option>");
+        }
+        else//省
+        {
+            $('.local select').eq(1).show();//显示市
+            $('.local select').eq(1).removeAttr('disabled');//市不变灰
+            $('.local select').eq(2).attr('disabled','disabled');//区变灰
+            $('.local select').eq(2).html("<option>选择区</option>");//将区清空
+            creatOption(cityJson,$('.local select').eq(1),"<option>选择市</option>");
+        }
+    });
+
+    $('.local select').eq(1).change(function(){
+        var val=$(this).val();//当前下拉菜单的值
+        var districtJson=locationData['district'][val];//对应城市的区
+        $('.local select').eq(2).removeAttr('disabled');//区不变灰
+        creatOption(districtJson,$('.local select').eq(2),"<option>选择区</option>");
+    });
+
+
+
+    var provinceJson=locationData['province']
+    console.log((provinceJson));
+    function creatOption(josn,obj,clearHtml){
+        obj.html(clearHtml);//清空对象的值
+        var frag=document.createDocumentFragment();//创建碎片
+        for(var i in josn)//i是属性；provinceJson[i]是值
+        {
+
+            $(frag).append("<option value='"+i+"'>"+josn[i]+"</option>");
+        }
+        obj.append($(frag));
+    }
+    creatOption(provinceJson,$('.local1 select').eq(0),"<option>选择省</option>");
+
+    $('.local1 select').eq(0).change(function(){//当值改变且失去焦点的时候触发函数
+        var val=$(this).val();//当前下拉菜单的值
+
+        var cityJson=locationData['city'][val];//对应省的城市（对应直辖市的区）
+        console.log(cityJson)
+        var provinceName=$(this).children('option[value='+val+']').text();
+        if(provinceName=='北京' || provinceName=='天津' || provinceName=='重庆' || provinceName=='上海' || provinceName=='台湾' || provinceName=='香港' || provinceName=='澳门')//直辖市
+        {
+            $('.local1 select').eq(1).hide();//隐藏市
+            $('.local1 select').eq(2).removeAttr('disabled');//区不变灰
+            $('.local1 select').eq(1).html("<option>选择市</option>");//将市清空
+            creatOption(cityJson,$('.local1 select').eq(2),"<option>选择区</option>");
+        }
+        else//省
+        {
+            $('.local1 select').eq(1).show();//显示市
+            $('.local1 select').eq(1).removeAttr('disabled');//市不变灰
+            $('.local1 select').eq(2).attr('disabled','disabled');//区变灰
+            $('.local1 select').eq(2).html("<option>选择区</option>");//将区清空
+            creatOption(cityJson,$('.local1 select').eq(1),"<option>选择市</option>");
+        }
+    });
+
+    $('.local1 select').eq(1).change(function(){
+        var val=$(this).val();//当前下拉菜单的值
+        var districtJson=locationData['district'][val];//对应城市的区
+        $('.local1 select').eq(2).removeAttr('disabled');//区不变灰
+        creatOption(districtJson,$('.local1 select').eq(2),"<option>选择区</option>");
+    });
+
+
+</script>
+</body>
+</html>

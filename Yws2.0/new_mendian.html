@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>新建门店</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/new_mendian.css"/>
+    <link rel="stylesheet" href="css/jquery.cxcalendar.css">
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="layer-v3.1.0/layer/layer.js" ></script>
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <script>
+        window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;
+    </script>
+    <![endif]-->
+
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="top ">
+        <ul class="">
+            <li><a href="">登录</a></li>
+            <li><a href="">免费注册</a></li>
+            <li><a href="">购物车</a></li>
+            <li><a href="">联系客服</a></li>
+            <li><a href="">我的订单</a></li>
+            <li><a href="">收藏夹</a></li>
+            <li><a href="">手机客户端</a></li>
+            <li><a href="">帮助中心</a></li>
+        </ul>
+    </div>
+    <div class="top-banner container">
+        <div class="left">
+            <div>
+                <a href="#"  target="_self">
+                    <img src="images/register-logo.png" alt=""/>
+                </a>
+                <p>中国“新零售”领导品牌</p>
+            </div>
+        </div>
+        <div class="left1">
+            <span>账户中心</span>
+            <b>返回云温商首页</b>
+        </div>
+        <div class="left2">
+            <a >个人中心</a>
+            <a class="now">商家申请</a>
+            <a>消息中心</a>
+        </div>
+    </div>
+
+</div>
+<hr/>
+
+
+<div class="help container">
+    <div class="help_left">
+        <ul>
+            <li class="li_title" >
+                <a href="" name="" >商家订单</a>
+            </li>
+            <li>
+                <a href="order_shangjia.html" >商家订单列表</a>
+            </li>
+            <li>
+                <a href="sale_qushi.html" >销售趋势统计</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >商品管理</a>
+            </li>
+            <li>
+                <a href="good_list.html" >商品列表</a>
+            </li>
+            <li>
+                <a href="good_ruku.html" >商品入库审核</a>
+            </li>
+            <li>
+                <a href="good_zixun.html">商品咨询回复</a>
+            </li>
+            <li>
+                <a href="pic_upload.html">批量上传图片</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >评价管理</a>
+            </li>
+            <li>
+                <a href="good_comm.html">商品评价</a>
+            </li>
+            <li>
+                <a href="shop_comm.html">店铺评价</a>
+            </li>
+
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >交易管理</a>
+            </li>
+            <li>
+                <a href="my_income.html">我的收入</a>
+            </li>
+            <li>
+                <a href="tixian_shangjia.html" >提现记录</a>
+            </li>
+            <li>
+                <a href="shouzhi.html">收支明细</a>
+            </li>
+
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >商家信息</a>
+            </li>
+            <li>
+                <a href="shop_info.html" >店铺信息</a>
+            </li>
+            <li>
+                <a href="mendian.html" style="color:#FF3893">门店管理</a>
+            </li>
+            <li>
+                <a href="touch_us.html">联系我们</a>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="help_right">
+        <div class="right_top">
+            <a href="">门店管理></a>
+            <a href="">新建门店</a>
+        </div>
+        <div class="right_main">
+            <!--标签页-->
+            <div class="tab">
+                <div class="tab-header">
+                   <div class="orerate_time">
+                       <span class="oper_span">新建门店</span>
+                       &nbsp; &nbsp; &nbsp;
+                       <a href="">返回</a>
+                   </div>
+                </div>
+                <div class="tab-body container">
+                    <form action="">
+                        <div class="div1">
+                            <label for="">门店名称：</label>
+                            <input type="" placeholder="请输入门店名称（最长支持20个字符）"/>
+                        </div>
+                        <div class="div1">
+                            <label for="">联系电话：</label>
+                            <input type="" placeholder="请输入联系号码"/>
+                        </div>
+                        <div class="div2">
+                            <label for="">所属区域：</label>
+                            <div class="local">
+                                <select class="pro">
+                                    <option>选择省</option>
+                                </select>
+
+                                <select disabled="disabled" class="city">
+                                    <option>选择市</option>
+                                </select>
+
+                                <select disabled="disabled" class="qu">
+                                    <option>选择区</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="div1">
+                            <label for="">详细地址：</label>
+                            <input type="" placeholder="请填写详细地址，便于买家联系"/>
+                        </div>
+                        <div class="div3">
+                            <label for="">地理定位：</label>
+                            <div id="map" style="width:540px;height:300px;"></div>
+                        </div>
+                        <div class="div4">
+                            <label for="">门店照片：</label>
+                            <a href="" class="img">
+                                <img src="" alt="" class="info" />
+                            </a>
+                            <a href=""><input type="file" id="imagefile"
+                                              name="img[]" class="file" />
+                                <span>上传</span>
+                            </a>
+                        </div>
+                        <div class="div1">
+                            <label for="">运营时间：</label>
+                            <input type="" placeholder="请填写服务时间（如10:00-22:00）"/>
+                        </div>
+                        <div class="div5">
+                            <label for=""></label>
+                            <span>保存</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="footer">
+    <div class="container">
+
+        <div class="div1 container">
+            <ul>
+                <li class="title">购物指南</li>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">提交订单</a></li>
+            </ul>
+            <ul>
+                <li class="title">会员中心</li>
+                <li><a href="">会员介绍</a></li>
+                <li><a href="">积分说明</a></li>
+                <li><a href="">发展中心</a></li>
+            </ul>
+            <ul>
+                <li class="title">配送服务</li>
+                <li><a href="">送货方式</a></li>
+                <li><a href="">服务意向</a></li>
+                <li><a href="">收费标准</a></li>
+            </ul>
+            <ul>
+                <li class="title">服务中心</li>
+                <li><a href="">取消订单</a></li>
+                <li><a href="">联系客服</a></li>
+                <li><a href="">汇款信息</a></li>
+            </ul>
+            <ul>
+                <li class="title">关于云温商</li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">服务地区</a> </li>
+            </ul>
+            <dl>
+                <dt>
+                    <img src="images/二维码.png" alt=""/>
+                </dt>
+                <dd>官方微信</dd>
+            </dl>
+        </div>
+        <div class="footer1">
+            <span class=""> Copyright © 2017  湖北云温商互联网商务有限公司  备案号：鄂ICP备15007060号</span>
+            <img src="images/1.png" alt=""/>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/LocationData.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.3"></script>
+<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+<script>
+
+    var map;
+    var gpsPoint;
+    var baiduPoint;
+    var gpsAddress;
+    var baiduAddress;
+
+    function getLocation() {
+        //根据IP获取城市
+        var myCity = new BMap.LocalCity();
+        myCity.get(getCityByIP);
+
+        //获取GPS坐标
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showMap, handleError, { enableHighAccuracy: true, maximumAge: 1000 });
+        } else {
+            alert("您的浏览器不支持使用HTML 5来获取地理位置服务");
+        }
+    }
+
+    function showMap(value) {
+        var longitude = value.coords.longitude;
+        var latitude = value.coords.latitude;
+        map = new BMap.Map("map");
+        //alert("坐标经度为：" + latitude + "， 纬度为：" + longitude );
+        gpsPoint = new BMap.Point(longitude, latitude);    // 创建点坐标
+        map.centerAndZoom(gpsPoint, 15);
+
+        //根据坐标逆解析地址
+        var geoc = new BMap.Geocoder();
+        geoc.getLocation(gpsPoint, getCityByCoordinate);
+
+        BMap.Convertor.translate(gpsPoint, 0, translateCallback);
+    }
+
+    translateCallback = function (point) {
+        baiduPoint = point;
+        var geoc = new BMap.Geocoder();
+        geoc.getLocation(baiduPoint, getCityByBaiduCoordinate);
+    }
+
+    function getCityByCoordinate(rs) {
+        gpsAddress = rs.addressComponents;
+        var address = "GPS标注：" + gpsAddress.province + "," + gpsAddress.city + "," + gpsAddress.district + "," + gpsAddress.street + "," + gpsAddress.streetNumber;
+        var marker = new BMap.Marker(gpsPoint);  // 创建标注
+        map.addOverlay(marker);              // 将标注添加到地图中
+        var labelgps = new BMap.Label(address, { offset: new BMap.Size(20, -10) });
+        marker.setLabel(labelgps); //添加GPS标注
+    }
+
+    function getCityByBaiduCoordinate(rs) {
+        baiduAddress = rs.addressComponents;
+        var address = "百度标注：" + baiduAddress.province + "," + baiduAddress.city + "," + baiduAddress.district + "," + baiduAddress.street + "," + baiduAddress.streetNumber;
+        var marker = new BMap.Marker(baiduPoint);  // 创建标注
+        map.addOverlay(marker);              // 将标注添加到地图中
+        var labelbaidu = new BMap.Label(address, { offset: new BMap.Size(20, -10) });
+        marker.setLabel(labelbaidu); //添加百度标注
+    }
+
+    //根据IP获取城市
+    function getCityByIP(rs) {
+        var cityName = rs.name;
+        alert("根据IP定位您所在的城市为:" + cityName);
+    }
+
+    function handleError(value) {
+        switch (value.code) {
+            case 1:
+                alert("位置服务被拒绝");
+                break;
+            case 2:
+                alert("暂时获取不到位置信息");
+                break;
+            case 3:
+                alert("获取信息超时");
+                break;
+            case 4:
+                alert("未知错误");
+                break;
+        }
+    }
+
+    function init() {
+        getLocation();
+    }
+
+    window.onload = init;
+
+</script>
+<script>
+    var provinceJson=locationData['province']
+    console.log((provinceJson));
+    function creatOption(josn,obj,clearHtml){
+        obj.html(clearHtml);//清空对象的值
+        var frag=document.createDocumentFragment();//创建碎片
+        for(var i in josn)//i是属性；provinceJson[i]是值
+        {
+
+            $(frag).append("<option value='"+i+"'>"+josn[i]+"</option>");
+        }
+        obj.append($(frag));
+    }
+    creatOption(provinceJson,$('.local select').eq(0),"<option>选择省</option>");
+
+    $('.local select').eq(0).change(function(){//当值改变且失去焦点的时候触发函数
+        var val=$(this).val();//当前下拉菜单的值
+
+        var cityJson=locationData['city'][val];//对应省的城市（对应直辖市的区）
+        console.log(cityJson)
+        var provinceName=$(this).children('option[value='+val+']').text();
+        if(provinceName=='北京' || provinceName=='天津' || provinceName=='重庆' || provinceName=='上海' || provinceName=='台湾' || provinceName=='香港' || provinceName=='澳门')//直辖市
+        {
+            $('.local select').eq(1).hide();//隐藏市
+            $('.local select').eq(2).removeAttr('disabled');//区不变灰
+            $('.local select').eq(1).html("<option>选择市</option>");//将市清空
+            creatOption(cityJson,$('.local select').eq(2),"<option>选择区</option>");
+        }
+        else//省
+        {
+            $('.local select').eq(1).show();//显示市
+            $('.local select').eq(1).removeAttr('disabled');//市不变灰
+            $('.local select').eq(2).attr('disabled','disabled');//区变灰
+            $('.local select').eq(2).html("<option>选择区</option>");//将区清空
+            creatOption(cityJson,$('.local select').eq(1),"<option>选择市</option>");
+        }
+    });
+
+    $('.local select').eq(1).change(function(){
+        var val=$(this).val();//当前下拉菜单的值
+        var districtJson=locationData['district'][val];//对应城市的区
+        $('.local select').eq(2).removeAttr('disabled');//区不变灰
+        creatOption(districtJson,$('.local select').eq(2),"<option>选择区</option>");
+    });
+
+
+    $('#imagefile').change(function(){
+        readAsDataURL(this);
+    });
+    var reader=new FileReader();
+    function readAsDataURL(obj)
+    {
+        var file=document.getElementById("imagefile").files[0];
+        var reader=new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload=function(e)
+        {
+            $('.info').css({
+                'background':'url('+reader.result+') no-repeat ',
+                "display": "inline-block",
+                "width": "140",
+                "height": "140",
+                "background-size":"100% 100%"
+            });
+        }
+        var html = "<a> <input type='file' name='img[]' class='file' id='imagefile'/> </a>";
+    }
+</script>
+</body>
+</html>

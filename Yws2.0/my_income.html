@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>我的收入</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/my_income.css"/>
+    <link rel="stylesheet" href="css/jquery.cxcalendar.css">
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <script>
+        window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;
+    </script>
+    <![endif]-->
+</head>
+<body>
+<div class="header">
+    <div class="top ">
+        <ul class="">
+            <li><a href="">登录</a></li>
+            <li><a href="">免费注册</a></li>
+            <li><a href="">购物车</a></li>
+            <li><a href="">联系客服</a></li>
+            <li><a href="">我的订单</a></li>
+            <li><a href="">收藏夹</a></li>
+            <li><a href="">手机客户端</a></li>
+            <li><a href="">帮助中心</a></li>
+        </ul>
+    </div>
+    <div class="top-banner container">
+        <div class="left">
+            <div>
+                <a href="#"  target="_self">
+                    <img src="images/register-logo.png" alt=""/>
+                </a>
+                <p>中国“新零售”领导品牌</p>
+            </div>
+        </div>
+        <div class="left1">
+            <span>账户中心</span>
+            <b>返回云温商首页</b>
+        </div>
+        <div class="left2">
+            <a >个人中心</a>
+            <a class="now">商家申请</a>
+            <a>消息中心</a>
+        </div>
+    </div>
+
+</div>
+<hr/>
+
+
+<div class="help container">
+    <div class="help_left">
+        <ul>
+            <li class="li_title" >
+                <a href="" name="" >商家订单</a>
+            </li>
+            <li>
+                <a href="order_shangjia.html" >商家订单列表</a>
+            </li>
+            <li>
+                <a href="sale_qushi.html" >销售趋势统计</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >商品管理</a>
+            </li>
+            <li>
+                <a href="good_list.html" >商品列表</a>
+            </li>
+            <li>
+                <a href="good_ruku.html">商品入库审核</a>
+            </li>
+            <li>
+                <a href="good_zixun.html">商品咨询回复</a>
+            </li>
+            <li>
+                <a href="pic_upload.html">批量上传图片</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >评价管理</a>
+            </li>
+            <li>
+                <a href="good_comm.html" >商品评价</a>
+            </li>
+            <li>
+                <a href="shop_comm.html">店铺评价</a>
+            </li>
+
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >交易管理</a>
+            </li>
+            <li>
+                <a href="my_income.html" style="color:#FF3893">我的收入</a>
+            </li>
+            <li>
+                <a href="tixian_shangjia.html">提现记录</a>
+            </li>
+            <li>
+                <a href="shouzhi.html">收支明细</a>
+            </li>
+
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >商家信息</a>
+            </li>
+            <li>
+                <a href="shop_info.html">店铺信息</a>
+            </li>
+            <li>
+                <a href="mendian.html">门店管理</a>
+            </li>
+            <li>
+                <a href="touch_us.html">联系我们</a>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="help_right">
+        <div class="right_top">
+            <a href="">交易管理></a>
+            <a href="">我的收入</a>
+        </div>
+        <div class="right_main">
+            <!--标签页-->
+            <div class="tab">
+                <div class="tab-header">
+                   <div class="orerate_time">
+                       <span class="oper_span">我的收入</span>
+                   </div>
+                   <div class="info_income">
+                       <div class="info_left">
+                           <div class="img">
+                               <img src="images/cart-pic.png" alt=""/>
+                           </div>
+                           <div class="card_info">
+                               <p>用户名称：<span>王启辉</span></p>
+                               <p>收款账户：<span>招商银行宝丰路支行</span></p>
+                               <p>银行卡号：<span>1122 3344 5566 7788 910</span></p>
+                           </div>
+                       </div>
+                  <div class="info_right">
+                           <div class="info1">
+                               <p class="p1">￥327.95</p>
+                               <p class="p2">账户余额</p>
+                               <b class="tixian">提现</b>
+                               <b class="tixian">收支明细</b>
+                               <div class="tixian_info">
+                                   <a data-toggle="modal" data-target=".bs-example-modal-lg" class="nono_card" onClick="delayURL('addcart.html',3000)">未绑定银行卡</a>
+                                   <a href="income.html">已绑定银行卡</a>
+                               </div>
+                           </div>
+                           <div class="info2">
+                               <p class="p1">￥327.95</p>
+                               <p class="p2">累计提现总额</p>
+                               <p class="p3">提现记录</p>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="chart">
+                    <div class="chart_header">
+                      <!--  <b class="sanjiao"></b>
+                        <span>提现（元）</span>
+                        <b class="rect"></b>
+                        <span>返佣（元）</span>-->
+
+                        <div class="cal">
+                                <input id="date_e" name="mydate" type="text" readonly placeholder="请选择时间">
+                                &nbsp; &nbsp;<span>一</span> &nbsp; &nbsp;
+                                <input id="date_e1" name="mydate" type="text" readonly placeholder="请选择时间">
+                            <a href="">查询</a>
+                            </div>
+
+                        </div>
+                    <div  class="chart_body">
+                        <div id="container" style="height: 100%"></div>
+                    </div>
+                    <div class="chart_footer">
+                        <div class="div1">
+                            <b>￥1000.00 </b>
+                            <p>本月累计提现</p>
+                        </div>
+                        <div class="div2">
+                            <b>￥1000.00 </b>
+                            <p>本周累计提现</p>
+                        </div>
+                        <div class="div3">
+                            <b>￥1000.00 </b>
+                            <p>今日提现</p>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="model bs-example-modal-lg fade "  >
+    <div class="">
+        <div class="new_addr modal-content">
+            <a href="" class="close">关闭</a>
+            <p class="addr_title">
+                提现前，请先绑定提现银行卡
+            </p>
+            <p class="alert_info">将在<b>3</b>秒后自动跳转到添加提现银行卡页面</p>
+            <p class="p_a">
+                <a href="addcart.html">确定</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="footer">
+    <div class="container">
+
+        <div class="div1 container">
+            <ul>
+                <li class="title">购物指南</li>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">提交订单</a></li>
+            </ul>
+            <ul>
+                <li class="title">会员中心</li>
+                <li><a href="">会员介绍</a></li>
+                <li><a href="">积分说明</a></li>
+                <li><a href="">发展中心</a></li>
+            </ul>
+            <ul>
+                <li class="title">配送服务</li>
+                <li><a href="">送货方式</a></li>
+                <li><a href="">服务意向</a></li>
+                <li><a href="">收费标准</a></li>
+            </ul>
+            <ul>
+                <li class="title">服务中心</li>
+                <li><a href="">取消订单</a></li>
+                <li><a href="">联系客服</a></li>
+                <li><a href="">汇款信息</a></li>
+            </ul>
+            <ul>
+                <li class="title">关于云温商</li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">服务地区</a> </li>
+            </ul>
+            <dl>
+                <dt>
+                    <img src="images/二维码.png" alt=""/>
+                </dt>
+                <dd>官方微信</dd>
+            </dl>
+        </div>
+        <div class="footer1">
+            <span class=""> Copyright © 2017  湖北云温商互联网商务有限公司  备案号：鄂ICP备15007060号</span>
+            <img src="images/1.png" alt=""/>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.cxcalendar.js"></script>
+<script src="js/jquery.cxcalendar.languages.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+<script type="text/javascript">
+    var dom = document.getElementById("container");
+    var myChart = echarts.init(dom);
+    var app = {};
+    option = null;
+    option = {
+        title: {
+          /*  text: '折线图堆叠'*/
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+           data:['提现（元）','返佣（元）']
+        },
+        grid: {
+          /*  left: '3%',
+            right: '4%',
+            bottom: '3%',*/
+           containLabel: true
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: ['8-21','8-22','8-23','8-24','8-25','8-26','8-27']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                name:'提现（元）',
+                type:'line',
+                /* stack: '总量',*/
+                symbol:'triangle',
+                symbolSize:'10',
+                borderColor:'#BC7FF5',
+                data:[120, 132, 101, 134, 90, 230, 210]
+            },
+            {
+                name:'返佣（元）',
+              type:'line',
+                symbol:'rect',
+                symbolRotate:45,
+                symbolSize:'10',
+                /* stack: '总量',*/
+                data:[220, 182, 191, 234, 290, 330, 310]
+            }
+        ]
+    };
+
+    if (option && typeof option === "object") {
+        myChart.setOption(option, true);
+    }
+</script>
+<script>
+
+
+
+
+//    日历
+    $('#date_e').cxCalendar({
+
+    });
+    $('#date_e1').cxCalendar({
+
+    });
+
+
+
+
+    var i=0;
+    $('.tixian').click(function () {
+        i++;
+        console.log(4)
+        if(i%2!=0){
+            $('.tixian_info').css('display','block');
+        }else{
+            $('.tixian_info').css('display','none');
+        }
+    });
+    window.onload= function () {
+        var new_width=$('.new_addr').width();
+        var new_height=$('.new_addr').height();
+        console.log(new_width);
+        var right_width=$('.help_right').width();
+        console.log(right_width);
+        var win_height= $(document).height();
+        var top;
+        $(window).bind("scroll",function(){
+            top=$(this).scrollTop();//当前窗口的滚动距离
+        });
+        console.log((right_width-new_width)/2)
+        $('.new_addr').css({
+            'top':300,
+            'position':'fixed',
+            'left':right_width
+        })
+    }
+
+    function delayURL(url,time){
+        var b=$('.alert_info b');
+        console.log(b);
+        setTimeout("top.location.href = '" + url + "'",time);
+    }
+</script>
+</body>
+</html>

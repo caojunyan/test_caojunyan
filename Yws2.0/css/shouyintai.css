@@ -1,0 +1,134 @@
+@import "bootstrap.css";
+@import "base.css";
+.container_div {
+  border-bottom: 1px solid #F4F3F3;
+}
+.container_div .container-p {
+  height: 33px;
+  line-height: 33px;
+}
+.container_div .container-p a {
+  font-size: 16px;
+}
+.bank {
+  margin-top: 30px;
+}
+.bank .bank_head {
+  height: 95px;
+  background: #F4F3F3;
+  padding: 26px 40px;
+}
+.bank .bank_head .info {
+  float: left;
+}
+.bank .bank_head .info .if_cancel {
+  color: #B1B1B1;
+  margin-top: 8px;
+}
+.bank .bank_head .money {
+  float: left;
+  margin-left: 150px;
+}
+.bank .bank_head .money b {
+  color: #FF3893;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.bank .bank_head img {
+  float: right;
+  margin-right: 10px;
+}
+.bank .bank_head .tel-info {
+  float: right;
+}
+.bank .bank_head .tel-info .number {
+  color: #FF3893;
+  margin-top: 8px;
+}
+.zhifu {
+  padding-bottom: 100px;
+  border: 1px solid #DEDEDE;
+}
+.zhifu .bank_chose {
+  margin-top: 24px;
+  margin-left: 70px;
+}
+.zhifu .chose {
+  margin-top: 30px;
+}
+.zhifu .chose .chose-way {
+  display: inline-block;
+  width: 120px;
+}
+.zhifu .chose .way {
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.zhifu .chose img {
+  width: 128px;
+  height: 39px;
+}
+.zhifu .pay {
+  cursor: pointer;
+  width: 220px;
+  height: 50px;
+  display: inline-block;
+  background: #FF3893;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  margin-left: 200px;
+  margin-top: 40px;
+}
+.bank_ma {
+  border: 1px solid #DEDEDE;
+  display: none;
+}
+.bank_ma .p_way0 {
+  height: 88px;
+  width: 100%;
+  border-bottom: 3px solid #FF3893;
+  line-height: 85px;
+  text-align: center;
+}
+.bank_ma .p_way0 img {
+  width: 128px;
+  height: 39px;
+}
+.bank_ma .p_img {
+  text-align: center;
+  margin-top: 40px;
+}
+.bank_ma .p_img .img1 {
+  width: 255px;
+  height: 255px;
+  margin-bottom: 30px;
+}
+.bank_ma .p_img .img2 {
+  width: 200px;
+  height: 58px;
+  display: inline-block;
+  margin-bottom: 50px;
+  border: 1px solid #FF3893;
+  line-height: 58px;
+}
+.bank_ma .p_img .img2 img {
+  width: 80%;
+  height: 40px;
+  text-align: center;
+}
+.bank_ma b {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #FF3893;
+  padding-bottom: 95px;
+}

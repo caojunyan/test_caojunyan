@@ -1,0 +1,342 @@
+@import "bootstrap.css";
+@import "base.css";
+.tab {
+  height: 228px;
+}
+.tab .tab-header {
+  height: 76px;
+  border-bottom: 2px solid #F6F6F6;
+}
+.tab .tab-header ul {
+  height: 76px;
+}
+.tab .tab-header ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding-top: 30px;
+  height: 76px;
+}
+.tab .tab-header ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666666;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.tab .tab-header ul li .hover1 {
+  border-bottom: 5px solid #FF3893;
+  text-decoration: none;
+}
+.tab .tab-body {
+  height: 228px;
+}
+.tab .tab-body .main {
+  height: 100%;
+  display: none;
+  padding-top: 33px;
+  margin-left: -40px;
+  text-align: center;
+  width: 100%;
+}
+.tab .tab-body .main img {
+  display: inline-block;
+  width: 30%;
+  margin-left: 3%;
+}
+.tab .tab-body .show {
+  display: block;
+  margin-left: -25px;
+}
+.hot-product {
+  width: 1190px;
+  min-height: 406px;
+}
+.hot-product .title-p {
+  border-bottom: 1px solid #BBBBBB;
+  height: 31px;
+}
+.hot-product .title-p b {
+  display: inline-block;
+  padding-left: 10px;
+  border-left: 4px solid #FF3893;
+  width: 85px;
+  color: #FF3893;
+  font-size: 16px;
+}
+.hot-product .title-p .time1 {
+  float: right;
+  min-width: 274px;
+  display: inline-block;
+}
+.hot-product .title-p .time1 span > u {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  text-underline: none;
+  text-decoration: none;
+}
+.hot-product .div2 {
+  padding-bottom: 32px;
+  width: 100%;
+}
+.hot-product .div2 dl {
+  width: 33.3%;
+  float: left;
+  margin-top: 32px;
+}
+.hot-product .div2 dl dt {
+  float: left;
+  border: 1px solid #ECECEC;
+}
+.hot-product .div2 dl dt > img {
+  width: 130px;
+  height: 130px;
+}
+.hot-product .div2 dl dd {
+  width: 210px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.hot-product .div2 dl dd .name {
+  width: 210px;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-height: 28px;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.hot-product .div2 dl dd .price {
+  height: 48px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #E42F47;
+}
+.hot-product .div2 dl dd .price b {
+  color: #E42F47;
+  font-size: 16px;
+}
+.hot-product .div2 dl dd .price span {
+  color: #E42F47;
+  display: inline-block;
+  float: right;
+  width: 60px;
+}
+.sel {
+  width: 1190px;
+  min-height: 648px;
+}
+.sel .title {
+  text-align: center;
+}
+.sel .title i,
+.sel .title span {
+  font-size: 23px;
+  color: #FF3893;
+}
+.sel .title span {
+  background: url("../images/bg.png") no-repeat;
+  background-size: 315px 48px ;
+  height: 48px;
+  width: 325px;
+  font-weight: bold;
+  display: inline-block;
+}
+.sel .leibie {
+  width: 100%;
+  height: 177px;
+  padding-top: 20px;
+  background: url("../images/more-bg.png") no-repeat;
+}
+.sel .leibie li {
+  float: left;
+  margin-left: 20px;
+  text-align: center;
+}
+.sel .leibie li img {
+  width: 110px;
+  height: 110px;
+  border: 1px solid #EBEBEB;
+}
+.sel .leibie li p {
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 15px;
+}
+.sel .leibie .more-class {
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 22px;
+  /* padding-top: 28px;
+      padding-left: 20px;*/
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  width: 110px;
+  height: 110px;
+}
+.sel .leibie .more-class span {
+  color: #fff;
+}
+.sel .leibie-banner {
+  padding-top: 20px;
+  min-height: 410px;
+  margin-left: -2%;
+}
+.sel .leibie-banner .left1 {
+  position: relative;
+  width: 48%;
+  float: left;
+  margin-left: 2%;
+}
+.sel .leibie-banner .left1 .aaa {
+  display: inline-block;
+  width: 100%;
+  height: 184px;
+}
+.sel .leibie-banner .left1 .info-pic {
+  position: absolute;
+  z-index: -55;
+  width: 100%;
+}
+.sel .leibie-banner .left1 .info p {
+  color: white;
+}
+.sel .leibie-banner .left1 .info .info-p1 {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.sel .leibie-banner .left1 .info .info-p2 {
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.sel .leibie-banner .left1 .info .way-travel {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  margin-left: 20px;
+  text-align: center;
+  width: 175px;
+  margin-top: 30px;
+  padding: 5px 5px;
+}
+.sel .leibie-banner .left1 .small-pic {
+  width: 100%;
+  height: 198px;
+  border: 1px solid #EBEBEB;
+  border-top: none;
+  padding-top: 35px;
+  margin-top: -5px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.sel .leibie-banner .left1 .small-pic li {
+  float: left;
+  margin-left: 27px;
+}
+.sel .leibie-banner .left1 .small-pic li img {
+  border: 1px solid #EBEBEB;
+  width: 112px;
+  height: 112px;
+}
+.sel .leibie-banner .left1 .small-pic li p {
+  padding-top: 13px;
+  text-align: center;
+  width: 105px;
+  color: white;
+}
+.hot-style {
+  min-height: 980px;
+  width: 1190px;
+  padding: 0px;
+  padding-bottom: 200px;
+}
+.hot-style .title {
+  text-align: center;
+}
+.hot-style .title i,
+.hot-style .title span {
+  font-size: 23px;
+  color: #FF3893;
+}
+.hot-style .title span {
+  background: url("../images/bg.png") no-repeat;
+  background-size: 315px 48px ;
+  height: 48px;
+  width: 325px;
+  font-weight: bold;
+  display: inline-block;
+}
+.hot-style .hot-main {
+  margin-top: 10px;
+}
+.hot-style .hot-main .hot-left {
+  width: 550px;
+  height: 304px;
+  float: left;
+  margin-left: 30px;
+  position: relative;
+}
+.hot-style .hot-main .hot-left img {
+  width: 550px;
+}
+.hot-style .hot-main .hot-left .hot-info {
+  width: 100%;
+  height: 45px;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 66px;
+  color: white;
+  padding-left: 30px;
+  font-weight: bold;
+  line-height: 45px;
+  font-size: 20px;
+}
+.hot-style .hot-main .hot-left .hot-info b {
+  color: red;
+}
+.hot-style .hot-main .hot-left .hot-info1 {
+  line-height: 46px;
+  height: 46px;
+  padding-top: 10px;
+}
+.hot-style .hot-main .hot-left .hot-info1 .hot-price1 {
+  display: inline-block;
+  width: 80px;
+  background: #FF3893;
+  color: white;
+  font-size: 18px;
+  margin-top: 8px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  float: left;
+}
+.hot-style .hot-main .hot-left .hot-info1 span {
+  width: 67%;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  float: left;
+  padding-left: 10px;
+}
+.hot-style .hot-main .hot-left .hot-info1 b {
+  float: right;
+  width: 13%;
+  color: #FF3893;
+  font-size: 14px;
+}

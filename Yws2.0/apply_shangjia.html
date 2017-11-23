@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>申请提现</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/apply_shangjia.css"/>
+
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <script>
+        window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;
+    </script>
+    <![endif]-->
+
+</head>
+<body>
+<div class="header">
+    <div class="top ">
+        <ul class="">
+            <li><a href="">登录</a></li>
+            <li><a href="">免费注册</a></li>
+            <li><a href="">购物车</a></li>
+            <li><a href="">联系客服</a></li>
+            <li><a href="">我的订单</a></li>
+            <li><a href="">收藏夹</a></li>
+            <li><a href="">手机客户端</a></li>
+            <li><a href="">帮助中心</a></li>
+        </ul>
+    </div>
+    <div class="top-banner container">
+        <div class="left">
+            <div>
+                <a href="#"  target="_self">
+                    <img src="images/register-logo.png" alt=""/>
+                </a>
+                <p>中国“新零售”领导品牌</p>
+            </div>
+        </div>
+        <div class="left1">
+            <span>账户中心</span>
+            <b>返回云温商首页</b>
+        </div>
+        <div class="left2">
+            <a class="now">个人中心</a>
+            <a>商家申请</a>
+            <a>消息中心</a>
+        </div>
+    </div>
+
+</div>
+<hr/>
+
+
+<div class="help container">
+    <div class="help_left">
+        <ul>
+            <li class="li_title" >
+                <a href="" name="" >商家订单</a>
+            </li>
+            <li>
+                <a href="order_shangjia.html" >商家订单列表</a>
+            </li>
+            <li>
+                <a href="sale_qushi.html" >销售趋势统计</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >商品管理</a>
+            </li>
+            <li>
+                <a href="good_list.html" >商品列表</a>
+            </li>
+            <li>
+                <a href="good_ruku.html">商品入库审核</a>
+            </li>
+            <li>
+                <a href="good_zixun.html">商品咨询回复</a>
+            </li>
+            <li>
+                <a href="pic_upload.html">批量上传图片</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >评价管理</a>
+            </li>
+            <li>
+                <a href="good_comm.html" >商品评价</a>
+            </li>
+            <li>
+                <a href="shop_comm.html" >店铺评价</a>
+            </li>
+
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >交易管理</a>
+            </li>
+            <li>
+                <a href="my_income.html" style="color:#FF3893">我的收入</a>
+            </li>
+            <li>
+                <a href="tixian_shangjia.html">提现记录</a>
+            </li>
+            <li>
+                <a href="shouzhi.html">收支明细</a>
+            </li>
+
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >商家信息</a>
+            </li>
+            <li>
+                <a href="shop_info.html">店铺信息</a>
+            </li>
+            <li>
+                <a href="mendian.html">门店管理</a>
+            </li>
+            <li>
+                <a href="touch_us.html">联系我们</a>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="help_right">
+        <div class="right_top">
+            <a href="">我的收入></a>
+            <a href="">申请提现</a>
+        </div>
+        <div class="main">
+            <div class="cart_div">
+                <form action="">
+                    <div class="name" >
+                        <label for="">可提现金额：</label>
+                        <span>￥1020</span>
+                        <a href="">提现记录</a>
+                        <p>可提现金额为交易成功且为提现的金额（必须≥100元且为整数）</p>
+                    </div>
+                    <div class="bank_addr" >
+                        <label for="">提现人姓名：：</label>
+                        <input type="text" placeholder="请输入提现人姓名："/>
+                    </div>
+                    <div class="bank_num" >
+                        <label for="">提现人手机：</label>
+                        <input type="text" placeholder="请输入提现人手机"/>
+                    </div>
+                    <div class="bank_msg" >
+                        <label for="">短信验证码：</label>
+                        <input type="text" placeholder="请输入短信验证码" value="" class="input1"/>
+                        <input type="" id="btn" value="获取验证码" onclick="settime(this)" />
+                    </div>
+                    <div class="bank_tel" >
+                        <label for="">提现金额：</label>
+                        <input type="text" placeholder="请输入提现金额（必须≥100且为整数）" value=""/>
+                    </div>
+
+                    <div class="confirm" >
+                        <a href="">确认提交</a>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+
+        <div class="div1 container">
+            <ul>
+                <li class="title">购物指南</li>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">提交订单</a></li>
+            </ul>
+            <ul>
+                <li class="title">会员中心</li>
+                <li><a href="">会员介绍</a></li>
+                <li><a href="">积分说明</a></li>
+                <li><a href="">发展中心</a></li>
+            </ul>
+            <ul>
+                <li class="title">配送服务</li>
+                <li><a href="">送货方式</a></li>
+                <li><a href="">服务意向</a></li>
+                <li><a href="">收费标准</a></li>
+            </ul>
+            <ul>
+                <li class="title">服务中心</li>
+                <li><a href="">取消订单</a></li>
+                <li><a href="">联系客服</a></li>
+                <li><a href="">汇款信息</a></li>
+            </ul>
+            <ul>
+                <li class="title">关于云温商</li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">服务地区</a> </li>
+            </ul>
+            <dl>
+                <dt>
+                    <img src="images/二维码.png" alt=""/>
+                </dt>
+                <dd>官方微信</dd>
+            </dl>
+        </div>
+        <div class="footer1">
+            <span class=""> Copyright © 2017  湖北云温商互联网商务有限公司  备案号：鄂ICP备15007060号</span>
+            <img src="images/1.png" alt=""/>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="cropper/cropper.min.js"></script>
+<script src="sitelogo/sitelogo.js"></script>
+<script src="js/jquery.vericode1.js"></script>
+<script src="js/LocationData.js"></script>
+<script language="JavaScript">
+    var i=0;
+    $('.tixian').click(function () {
+        i++;
+        console.log(4)
+       if(i%2!=0){
+           $('.tixian_info').css('display','block');
+       }else{
+           $('.tixian_info').css('display','none');
+       }
+    });
+    window.onload= function () {
+        var new_width=$('.new_addr').width();
+        var new_height=$('.new_addr').height();
+        console.log(new_width);
+        var right_width=$('.main').width();
+        console.log(right_width);
+        var win_height= $(document).height();
+        var top;
+        $(window).bind("scroll",function(){
+            top=$(this).scrollTop();//当前窗口的滚动距离
+        });
+        console.log((right_width-new_width)/2)
+        $('.new_addr').css({
+            'top':300,
+            'position':'fixed',
+            'left':right_width
+        })
+    }
+
+    function delayURL(url,time){
+        var b=$('.alert_info b');
+        console.log(b);
+        setTimeout("top.location.href = '" + url + "'",time);
+    }
+
+
+
+    var provinceJson=locationData['province']
+    console.log((provinceJson));
+    function creatOption(josn,obj,clearHtml){
+        obj.html(clearHtml);//清空对象的值
+        var frag=document.createDocumentFragment();//创建碎片
+        for(var i in josn)//i是属性；provinceJson[i]是值
+        {
+
+            $(frag).append("<option value='"+i+"'>"+josn[i]+"</option>");
+        }
+        obj.append($(frag));
+    }
+    creatOption(provinceJson,$('.local select').eq(0),"<option>选择省</option>");
+
+    $('.local select').eq(0).change(function(){//当值改变且失去焦点的时候触发函数
+        var val=$(this).val();//当前下拉菜单的值
+
+        var cityJson=locationData['city'][val];//对应省的城市（对应直辖市的区）
+        console.log(cityJson)
+        var provinceName=$(this).children('option[value='+val+']').text();
+        if(provinceName=='北京' || provinceName=='天津' || provinceName=='重庆' || provinceName=='上海' || provinceName=='台湾' || provinceName=='香港' || provinceName=='澳门')//直辖市
+        {
+            $('.local select').eq(1).hide();//隐藏市
+            $('.local select').eq(2).removeAttr('disabled');//区不变灰
+            $('.local select').eq(1).html("<option>选择市</option>");//将市清空
+            creatOption(cityJson,$('.local select').eq(2),"<option>选择区</option>");
+        }
+        else//省
+        {
+            $('.local select').eq(1).show();//显示市
+            $('.local select').eq(1).removeAttr('disabled');//市不变灰
+            $('.local select').eq(2).attr('disabled','disabled');//区变灰
+            $('.local select').eq(2).html("<option>选择区</option>");//将区清空
+            creatOption(cityJson,$('.local select').eq(1),"<option>选择市</option>");
+        }
+    });
+
+    $('.local select').eq(1).change(function(){
+        var val=$(this).val();//当前下拉菜单的值
+        var districtJson=locationData['district'][val];//对应城市的区
+        $('.local select').eq(2).removeAttr('disabled');//区不变灰
+        creatOption(districtJson,$('.local select').eq(2),"<option>选择区</option>");
+    });
+
+
+
+    var countdown=60;
+    function settime(obj) {
+        console.log(obj);
+        if (countdown == 0) {
+            obj.removeAttribute("disabled");
+            obj.value="免费获取验证码";
+            countdown = 60;
+            return;
+        } else {
+            obj.setAttribute("disabled", true);
+            obj.value="重新发送(" + countdown + ")";
+            countdown--;
+        }
+        setTimeout(function() {
+                    settime(obj) }
+                ,1000)
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>商家订单列表</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/order_shangjia.css"/>
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <script>
+        window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;
+    </script>
+    <![endif]-->
+</head>
+<body>
+<div class="header">
+    <div class="top ">
+        <ul class="">
+            <li><a href="">登录</a></li>
+            <li><a href="">免费注册</a></li>
+            <li><a href="">购物车</a></li>
+            <li><a href="">联系客服</a></li>
+            <li><a href="">我的订单</a></li>
+            <li><a href="">收藏夹</a></li>
+            <li><a href="">手机客户端</a></li>
+            <li><a href="">帮助中心</a></li>
+        </ul>
+    </div>
+    <div class="top-banner container">
+        <div class="left">
+            <div>
+                <a href="#"  target="_self">
+                    <img src="images/register-logo.png" alt=""/>
+                </a>
+                <p>中国“新零售”领导品牌</p>
+            </div>
+        </div>
+        <div class="left1">
+            <span>账户中心</span>
+            <b>返回云温商首页</b>
+        </div>
+        <div class="left2">
+            <a >个人中心</a>
+            <a class="now">商家申请</a>
+            <a>消息中心</a>
+        </div>
+    </div>
+
+</div>
+<hr/>
+
+
+<div class="help container">
+    <div class="help_left">
+        <ul>
+            <li class="li_title" >
+                <a href="" name="" >商家订单</a>
+            </li>
+            <li>
+                <a href="order_detail.html" style="color:#FF3893">商家订单列表</a>
+            </li>
+            <li>
+                <a href="sale_qushi.html">销售趋势统计</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >商品管理</a>
+            </li>
+            <li>
+                <a href="good_list.html">商品列表</a>
+            </li>
+            <li>
+                <a href="good_ruku.html">商品入库审核</a>
+            </li>
+            <li>
+                <a href="good_zixun.html">商品咨询回复</a>
+            </li>
+            <li>
+                <a href="pic_upload.html">批量上传图片</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >评价管理</a>
+            </li>
+            <li>
+                <a href="good_comm.html">商品评价</a>
+            </li>
+            <li>
+                <a href="shop_comm.html">店铺评价</a>
+            </li>
+
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >交易管理</a>
+            </li>
+            <li>
+                <a href="my_income.html">我的收入</a>
+            </li>
+            <li>
+                <a href="tixian_shangjia.html">提现记录</a>
+            </li>
+            <li>
+                <a href="shouzhi.html">收支明细</a>
+            </li>
+
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >商家信息</a>
+            </li>
+            <li>
+                <a href="shop_info.html">店铺信息</a>
+            </li>
+            <li>
+                <a href="mendian.html">门店管理</a>
+            </li>
+            <li>
+                <a href="touch_us.html">联系我们</a>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="help_right">
+        <div class="right_top">
+            <a href="">商家订单></a>
+            <a href="">商家订单列表</a>
+        </div>
+        <div class="right_main">
+            <!--标签页-->
+            <div class="tab">
+                <div class="tab-header">
+                    <ul class="">
+                        <li ><a name="#page1" class="hover1">全部订单</a></li>
+                        <li><a name="#page2">待付款 </a></li>
+                        <li><a name="#page3">待收货  </a></li>
+                        <li><a name="#page4">待评价 </a></li>
+                        <li><a name="#page5">已完成  </a></li>
+                        <li><a name="#page6">已取消  </a></li>
+                    </ul>
+                    <div class="search">
+                        <input type="text" placeholder="请输入订单编号"/><a>查询</a>
+                    </div>
+                </div>
+                <div class="tab-body container">
+                    <div class="main show" id="page1">
+                        <div class="dd">
+                            <select name="" id="sel1">
+                                <option value="">近一个月订单</option>
+                                <option value="">近两个月订单</option>
+                                <option value="">近三个月订单</option>
+                                <option value="">近半个年订单</option>
+                                <option value="">近一年的订单</option>
+
+                            </select>
+                            <span class="order_info">订单信息</span>
+                            <span class="order_price">金额</span>
+                            <span class="order_time">下单时间</span>
+                            <select name="" id="sel2">
+                                <option value="">全部状态</option>
+                                <option value="">代付款</option>
+                                <option value="">待收货</option>
+                                <option value="">待评价</option>
+                                <option value="">已完成</option>
+                                <option value="">已取消</option>
+                            </select>
+                            <span class="order_operate">操作</span>
+                        </div>
+                        <div class="order_main">
+                            <div class="one_good">
+                                <p class="p1">
+                                    <span>订单号：YWS170822104512003</span> &nbsp; &nbsp; &nbsp;
+                                    <b>店铺：云温商官方</b>
+                                </p>
+                                <ul>
+                                    <li class="pic">
+                                       <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                        <b>x1</b>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>2016-11-29  16:36:45</span></li>
+                                    <li class="status">
+                                        <p>代付款</p>
+                                        <a href="order_detail.html">订单详情</a>
+                                    </li>
+                                    <li class="buy">
+                                        <p><a href="good_pay.html">去支付</a></p>
+                                        <a href="">取消</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="one_good">
+                                <p class="p1">
+                                    <span>订单号：YWS170822104512003</span> &nbsp; &nbsp; &nbsp;
+                                    <b>店铺：云温商官方</b>
+                                </p>
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                        <b>x1</b>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>2016-11-29  16:36:45</span></li>
+                                    <li class="status">
+                                        <p>代付款</p>
+                                        <a href="order_detail.html">订单详情</a>
+                                    </li>
+                                    <li class="buy">
+                                        <p><a href="good_pay.html">去支付</a></p>
+                                        <a href="">取消</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="one_good">
+                                <p class="p1">
+                                    <span>订单号：YWS170822104512003</span> &nbsp; &nbsp; &nbsp;
+                                    <b>店铺：云温商官方</b>
+                                </p>
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                        <b>x1</b>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>2016-11-29  16:36:45</span></li>
+                                    <li class="status">
+                                        <p>代付款</p>
+                                        <a href="order_detail.html">订单详情</a>
+                                    </li>
+                                    <li class="buy">
+                                        <p><a href="good_pay.html">去支付</a></p>
+                                        <a href="">取消</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="one_good">
+                                <p class="p1">
+                                    <span>订单号：YWS170822104512003</span> &nbsp; &nbsp; &nbsp;
+                                    <b>店铺：云温商官方</b>
+                                </p>
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                        <b>x1</b>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>2016-11-29  16:36:45</span></li>
+                                    <li class="status">
+                                        <p>代付款</p>
+                                        <a href="order_detail.html">订单详情</a>
+                                    </li>
+                                    <li class="buy">
+                                        <p><a href="good_pay.html">去支付</a></p>
+                                        <a href="">取消</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="one_good">
+                                <p class="p1">
+                                    <span>订单号：YWS170822104512003</span> &nbsp; &nbsp; &nbsp;
+                                    <b>店铺：云温商官方</b>
+                                </p>
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                        <b>x1</b>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>2016-11-29  16:36:45</span></li>
+                                    <li class="status">
+                                        <p>代付款</p>
+                                        <a href="order_detail.html">订单详情</a>
+                                    </li>
+                                    <li class="buy">
+                                        <p><a href="good_pay.html">去支付</a></p>
+                                        <a href="">取消</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="one_good">
+                                <p class="p1">
+                                    <span>订单号：YWS170822104512003</span> &nbsp; &nbsp; &nbsp;
+                                    <b>店铺：云温商官方</b>
+                                </p>
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                        <b>x1</b>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>2016-11-29  16:36:45</span></li>
+                                    <li class="status">
+                                        <p>代付款</p>
+                                        <a href="order_detail.html">订单详情</a>
+                                    </li>
+                                    <li class="buy">
+                                        <p><a href="good_pay.html">去支付</a></p>
+                                        <a href="">取消</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="page">
+                                <a href="" class="all-pro">共 638 件商品</a>
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#aria-label="Previous">
+                                            <span aria-hidden="true">&lt; 上一页</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li class="more-page">
+                                            <a href="" aria-label="">
+                                                ...
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" aria-label="Next">
+                                                <span aria-hidden="true">下一页 &gt;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="page-info">
+                                    <span class="all-page">共121页</span>
+            <span>到第&nbsp;&nbsp;
+                <input type="text"/> &nbsp;&nbsp;页
+            </span>
+                                    <span class="skip">确定</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main" id="page2">
+
+                        <div class="dd">
+                            <select name="" id="sel1">
+                                <option value="">近一个月订单</option>
+                                <option value="">近两个月订单</option>
+                                <option value="">近三个月订单</option>
+                                <option value="">近半个年订单</option>
+                                <option value="">近一年的订单</option>
+
+                            </select>
+                            <span class="order_info">订单信息</span>
+                            <span class="order_price">金额</span>
+                            <span class="order_time">下单时间</span>
+                            <select name="" id="sel2">
+                                <option value="">全部状态</option>
+                                <option value="">代付款</option>
+                                <option value="">待收货</option>
+                                <option value="">待评价</option>
+                                <option value="">已完成</option>
+                                <option value="">已取消</option>
+                            </select>
+                            <span class="order_operate">操作</span>
+                        </div>
+                        <div class="order_main">
+                            <div class="one_good">
+                                <p class="p1">
+                                    <span>订单号：YWS170822104512003</span> &nbsp; &nbsp; &nbsp;
+                                    <b>店铺：云温商官方</b>
+                                </p>
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                        <b>x1</b>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>2016-11-29  16:36:45</span></li>
+                                    <li class="status">
+                                        <p>代付款</p>
+                                        <a href="order_detail.html">订单详情</a>
+                                    </li>
+                                    <li class="buy">
+                                        <p><a href="good_pay.html">去支付</a></p>
+                                        <a href="">取消</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="one_good">
+                                <p class="p1">
+                                    <span>订单号：YWS170822104512003</span> &nbsp; &nbsp; &nbsp;
+                                    <b>店铺：云温商官方</b>
+                                </p>
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                        <b>x1</b>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>2016-11-29  16:36:45</span></li>
+                                    <li class="status">
+                                        <p>代付款</p>
+                                        <a href="order_detail.html">订单详情</a>
+                                    </li>
+                                    <li class="buy">
+                                        <p><a href="good_pay.html">去支付</a></p>
+                                        <a href="">取消</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="one_good">
+                                <p class="p1">
+                                    <span>订单号：YWS170822104512003</span> &nbsp; &nbsp; &nbsp;
+                                    <b>店铺：云温商官方</b>
+                                </p>
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                        <b>x1</b>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>2016-11-29  16:36:45</span></li>
+                                    <li class="status">
+                                        <p>代付款</p>
+                                        <a href="order_detail.html">订单详情</a>
+                                    </li>
+                                    <li class="buy">
+                                        <p><a href="good_pay.html">去支付</a></p>
+                                        <a href="">取消</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="one_good">
+                                <p class="p1">
+                                    <span>订单号：YWS170822104512003</span> &nbsp; &nbsp; &nbsp;
+                                    <b>店铺：云温商官方</b>
+                                </p>
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                        <b>x1</b>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>2016-11-29  16:36:45</span></li>
+                                    <li class="status">
+                                        <p>代付款</p>
+                                        <a href="order_detail.html">订单详情</a>
+                                    </li>
+                                    <li class="buy">
+                                        <p><a href="good_pay.html">去支付</a></p>
+                                        <a href="">取消</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="page">
+                                <a href="" class="all-pro">共 638 件商品</a>
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#aria-label="Previous">
+                                            <span aria-hidden="true">&lt; 上一页</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li class="more-page">
+                                            <a href="" aria-label="">
+                                                ...
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" aria-label="Next">
+                                                <span aria-hidden="true">下一页 &gt;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="page-info">
+                                    <span class="all-page">共121页</span>
+            <span>到第&nbsp;&nbsp;
+                <input type="text"/> &nbsp;&nbsp;页
+            </span>
+                                    <span class="skip">确定</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main" id="page3">
+                        <div class="dd">
+                            <select name="" id="sel1">
+                                <option value="">近一个月订单</option>
+                                <option value="">近两个月订单</option>
+                                <option value="">近三个月订单</option>
+                                <option value="">近半个年订单</option>
+                                <option value="">近一年的订单</option>
+
+                            </select>
+                            <span class="order_info">订单信息</span>
+                            <span class="order_price">金额</span>
+                            <span class="order_time">下单时间</span>
+                            <select name="" id="sel2">
+                                <option value="">全部状态</option>
+                                <option value="">代付款</option>
+                                <option value="">待收货</option>
+                                <option value="">待评价</option>
+                                <option value="">已完成</option>
+                                <option value="">已取消</option>
+                            </select>
+                            <span class="order_operate">操作</span>
+                        </div>
+                        <div class="order_main">
+                            <div class="one_good">
+                                <p class="p1">
+                                    <span>订单号：YWS170822104512003</span> &nbsp; &nbsp; &nbsp;
+                                    <b>店铺：云温商官方</b>
+                                </p>
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                        <b>x1</b>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>2016-11-29  16:36:45</span></li>
+                                    <li class="status">
+                                        <p>代付款</p>
+                                        <a href="order_detail.html">订单详情</a>
+                                    </li>
+                                    <li class="buy">
+                                        <p><a href="good_pay.html">去支付</a></p>
+                                        <a href="">取消</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="one_good">
+                                <p class="p1">
+                                    <span>订单号：YWS170822104512003</span> &nbsp; &nbsp; &nbsp;
+                                    <b>店铺：云温商官方</b>
+                                </p>
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                        <b>x1</b>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>2016-11-29  16:36:45</span></li>
+                                    <li class="status">
+                                        <p>代付款</p>
+                                        <a href="order_detail.html">订单详情</a>
+                                    </li>
+                                    <li class="buy">
+                                        <p><a href="good_pay.html">去支付</a></p>
+                                        <a href="">取消</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="page">
+                                <a href="" class="all-pro">共 638 件商品</a>
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#aria-label="Previous">
+                                            <span aria-hidden="true">&lt; 上一页</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li class="more-page">
+                                            <a href="" aria-label="">
+                                                ...
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" aria-label="Next">
+                                                <span aria-hidden="true">下一页 &gt;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="page-info">
+                                    <span class="all-page">共121页</span>
+            <span>到第&nbsp;&nbsp;
+                <input type="text"/> &nbsp;&nbsp;页
+            </span>
+                                    <span class="skip">确定</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main" id="page4">
+                        <div class="dd">
+                            <select name="" id="sel1">
+                                <option value="">近一个月订单</option>
+                                <option value="">近两个月订单</option>
+                                <option value="">近三个月订单</option>
+                                <option value="">近半个年订单</option>
+                                <option value="">近一年的订单</option>
+
+                            </select>
+                            <span class="order_info">订单信息</span>
+                            <span class="order_price">金额</span>
+                            <span class="order_time">下单时间</span>
+                            <select name="" id="sel2">
+                                <option value="">全部状态</option>
+                                <option value="">代付款</option>
+                                <option value="">待收货</option>
+                                <option value="">待评价</option>
+                                <option value="">已完成</option>
+                                <option value="">已取消</option>
+                            </select>
+                            <span class="order_operate">操作</span>
+                        </div>
+                        <div class="order_main">
+                            <div class="one_good">
+                                <p class="p1">
+                                    <span>订单号：YWS170822104512003</span> &nbsp; &nbsp; &nbsp;
+                                    <b>店铺：云温商官方</b>
+                                </p>
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                        <b>x1</b>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>2016-11-29  16:36:45</span></li>
+                                    <li class="status">
+                                        <p>代付款</p>
+                                        <a href="order_detail.html">订单详情</a>
+                                    </li>
+                                    <li class="buy">
+                                        <p><a href="good_pay.html">去支付</a></p>
+                                        <a href="">取消</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="page">
+                                <a href="" class="all-pro">共 638 件商品</a>
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#aria-label="Previous">
+                                            <span aria-hidden="true">&lt; 上一页</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li class="more-page">
+                                            <a href="" aria-label="">
+                                                ...
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" aria-label="Next">
+                                                <span aria-hidden="true">下一页 &gt;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="page-info">
+                                    <span class="all-page">共121页</span>
+            <span>到第&nbsp;&nbsp;
+                <input type="text"/> &nbsp;&nbsp;页
+            </span>
+                                    <span class="skip">确定</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main" id="page5">
+                        <div class="dd">
+                            <select name="" id="sel1">
+                                <option value="">近一个月订单</option>
+                                <option value="">近两个月订单</option>
+                                <option value="">近三个月订单</option>
+                                <option value="">近半个年订单</option>
+                                <option value="">近一年的订单</option>
+
+                            </select>
+                            <span class="order_info">订单信息</span>
+                            <span class="order_price">金额</span>
+                            <span class="order_time">下单时间</span>
+                            <select name="" id="sel2">
+                                <option value="">全部状态</option>
+                                <option value="">代付款</option>
+                                <option value="">待收货</option>
+                                <option value="">待评价</option>
+                                <option value="">已完成</option>
+                                <option value="">已取消</option>
+                            </select>
+                            <span class="order_operate">操作</span>
+                        </div>
+                        <div class="order_main">
+                            <div class="one_good">
+                                <p class="p1">
+                                    <span>订单号：YWS170822104512003</span> &nbsp; &nbsp; &nbsp;
+                                    <b>店铺：云温商官方</b>
+                                </p>
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                        <b>x1</b>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>2016-11-29  16:36:45</span></li>
+                                    <li class="status">
+                                        <p>代付款</p>
+                                        <a href="order_detail.html">订单详情</a>
+                                    </li>
+                                    <li class="buy">
+                                        <p><a href="good_pay.html">去支付</a></p>
+                                        <a href="">取消</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="page">
+                                <a href="" class="all-pro">共 638 件商品</a>
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#aria-label="Previous">
+                                            <span aria-hidden="true">&lt; 上一页</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li class="more-page">
+                                            <a href="" aria-label="">
+                                                ...
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" aria-label="Next">
+                                                <span aria-hidden="true">下一页 &gt;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="page-info">
+                                    <span class="all-page">共121页</span>
+            <span>到第&nbsp;&nbsp;
+                <input type="text"/> &nbsp;&nbsp;页
+            </span>
+                                    <span class="skip">确定</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main" id="page6">
+                        <div class="dd">
+                            <select name="" id="sel1">
+                                <option value="">近一个月订单</option>
+                                <option value="">近两个月订单</option>
+                                <option value="">近三个月订单</option>
+                                <option value="">近半个年订单</option>
+                                <option value="">近一年的订单</option>
+
+                            </select>
+                            <span class="order_info">订单信息</span>
+                            <span class="order_price">金额</span>
+                            <span class="order_time">下单时间</span>
+                            <select name="" id="sel2">
+                                <option value="">全部状态</option>
+                                <option value="">代付款</option>
+                                <option value="">待收货</option>
+                                <option value="">待评价</option>
+                                <option value="">已完成</option>
+                                <option value="">已取消</option>
+                            </select>
+                            <span class="order_operate">操作</span>
+                        </div>
+                        <div class="order_main">
+                            <div class="one_good">
+                                <p class="p1">
+                                    <span>订单号：YWS170822104512003</span> &nbsp; &nbsp; &nbsp;
+                                    <b>店铺：云温商官方</b>
+                                </p>
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                        <b>x1</b>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>2016-11-29  16:36:45</span></li>
+                                    <li class="status">
+                                        <p>代付款</p>
+                                        <a href="order_detail.html">订单详情</a>
+                                    </li>
+                                    <li class="buy">
+                                        <p><a href="good_pay.html">去支付</a></p>
+                                        <a href="">取消</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="page">
+                                <a href="" class="all-pro">共 638 件商品</a>
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#aria-label="Previous">
+                                            <span aria-hidden="true">&lt; 上一页</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li class="more-page">
+                                            <a href="" aria-label="">
+                                                ...
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" aria-label="Next">
+                                                <span aria-hidden="true">下一页 &gt;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="page-info">
+                                    <span class="all-page">共121页</span>
+            <span>到第&nbsp;&nbsp;
+                <input type="text"/> &nbsp;&nbsp;页
+            </span>
+                                    <span class="skip">确定</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="footer">
+    <div class="container">
+
+        <div class="div1 container">
+            <ul>
+                <li class="title">购物指南</li>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">提交订单</a></li>
+            </ul>
+            <ul>
+                <li class="title">会员中心</li>
+                <li><a href="">会员介绍</a></li>
+                <li><a href="">积分说明</a></li>
+                <li><a href="">发展中心</a></li>
+            </ul>
+            <ul>
+                <li class="title">配送服务</li>
+                <li><a href="">送货方式</a></li>
+                <li><a href="">服务意向</a></li>
+                <li><a href="">收费标准</a></li>
+            </ul>
+            <ul>
+                <li class="title">服务中心</li>
+                <li><a href="">取消订单</a></li>
+                <li><a href="">联系客服</a></li>
+                <li><a href="">汇款信息</a></li>
+            </ul>
+            <ul>
+                <li class="title">关于云温商</li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">服务地区</a> </li>
+            </ul>
+            <dl>
+                <dt>
+                    <img src="images/二维码.png" alt=""/>
+                </dt>
+                <dd>官方微信</dd>
+            </dl>
+        </div>
+        <div class="footer1">
+            <span class=""> Copyright © 2017  湖北云温商互联网商务有限公司  备案号：鄂ICP备15007060号</span>
+            <img src="images/1.png" alt=""/>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/welcome_person.js"></script>
+<script>
+    (function () {
+        var tabhosts = $(".tab-header a");
+        tabhosts.each(function() {
+            if ($(this).hasClass("hover1")) {
+                $($(this).attr("name")).show();
+            }
+            $(this).click(function(e) {
+                e.preventDefault();
+                $('.main').removeClass('show');
+                if (!$(this).hasClass("hover1")) {
+                    tabhosts.each(function() {
+                        $(this).removeClass("hover1");
+                        $($(this).attr("name")).hide();
+                    });
+                    $(this).addClass("hover1");
+                    $($(this).attr("name")).show();
+                }
+            });
+        });
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+@import "bootstrap.css";
+@import "base.css";
+.order {
+  width: 100%;
+  height: 40px;
+  margin-top: 42px;
+  background: #F4F3F3;
+  padding: 0rem;
+  padding-right: 25px;
+}
+.order ul li {
+  float: left;
+  cursor: pointer;
+}
+.order ul .zonghe {
+  width: 70px;
+  line-height: 40px;
+  text-align: center;
+}
+.order ul .zonghe:link {
+  background: #E4E4E4;
+}
+.order ul .zonghe:link a {
+  color: #000;
+}
+.order ul .zonghe:visited {
+  background: #FF3893;
+}
+.order ul .zonghe:visited a {
+  color: white;
+}
+.order ul .zonghe:hover {
+  background: #FF3893;
+}
+.order ul .zonghe:hover a {
+  color: white;
+}
+.order ul .zonghe:active {
+  background: #FF3893;
+}
+.order ul .zonghe:active a {
+  color: white;
+}
+.order ul .price {
+  width: 100px;
+  text-align: center;
+}
+.order ul .price .price-span {
+  height: 40px;
+  line-height: 40px;
+}
+.order ul .price .price-minus {
+  position: relative;
+  right: -14px;
+  top: -23px;
+}
+.order ul .price .price-add {
+  position: relative;
+  top: -5px;
+}
+.order ul .xiaoliang {
+  width: 100px;
+  text-align: center;
+}
+.order ul .xiaoliang .xiaoliang-span {
+  height: 40px;
+  line-height: 40px;
+}
+.order ul .xiaoliang .xiaoliang-minus {
+  position: relative;
+  right: 14px;
+  top: 6px;
+}
+.order ul .xiaoliang .xiaoliang-add {
+  position: relative;
+  top: -5px;
+}
+.order ul .duration {
+  width: 173px;
+  height: 100%;
+  line-height: 40px;
+}
+.order ul .duration .full {
+  border: 1px solid #999999;
+  width: 70px;
+  height: 27px;
+  display: inline-block;
+  line-height: 25px;
+  padding-left: 5px;
+}
+.order ul .duration .full input {
+  border: none;
+  width: 45px;
+  background: #F4F3F3;
+  height: 25px;
+  outline: none;
+  text-align: center;
+}
+.order ul .duration .zuida {
+  border: 1px solid #999999;
+  width: 70px;
+  height: 27px;
+  display: inline-block;
+  line-height: 25px;
+  padding-left: 5px;
+}
+.order ul .duration .zuida input {
+  border: none;
+  width: 45px;
+  height: 25px;
+  background: #F4F3F3;
+  outline: none;
+  text-align: center;
+}
+.order ul .all-pro {
+  width: 100px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  float: right;
+  margin-right: 20px;
+}
+.order ul .count-page {
+  float: right;
+  line-height: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.order ul .count-page .now-page {
+  color: #FF3893;
+}
+.order ul .page-chose {
+  float: right;
+  width: 86px;
+  height: 24px;
+  padding-top: 9px;
+}
+.order ul .page-chose .page-pre {
+  display: inline-block;
+  width: 25px;
+  border: 1px solid #DCDCDC;
+  text-align: center;
+  background: #E6E6E6;
+}
+.order ul .page-chose input {
+  outline: none;
+  width: 26px;
+  text-align: center;
+  border: 1px solid #dcdcdc;
+  border-left: none;
+  border-right: none;
+}
+.order ul .page-chose .page-next {
+  display: inline-block;
+  width: 25px;
+  border: 1px solid #DCDCDC;
+  text-align: center;
+  background: #E6E6E6;
+}
+.main {
+  height: 1674px;
+  padding: 0;
+}
+.main .pro {
+  width: 100%;
+  height: 322px;
+  margin-top: 37px;
+  margin-left: -10px;
+}
+.main .pro dl {
+  margin-left: 20px;
+  display: inline-block;
+  width: 210px;
+  height: 285px;
+}
+.main .pro dl dt {
+  border: 1px solid #D1D1D1;
+  width: 210px;
+  height: 200px;
+  position: relative;
+}
+.main .pro dl dt img {
+  width: 100%;
+  height: 100%;
+}
+.main .pro dl dt span {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 27px;
+  text-align: center;
+  line-height: 27px;
+  display: inline-block;
+  position: absolute;
+  z-index: 10;
+  bottom: 0px;
+  font-size: 12px;
+}
+.main .pro dl dd {
+  width: 100%;
+  height: 85px;
+  margin-top: 22px;
+}
+.main .pro dl dd .p1 {
+  width: 100%;
+  height: 20px;
+}
+.main .pro dl dd .p1 .hot-price {
+  float: left;
+  background: #FF3893;
+  color: white;
+  font-size: 14px;
+  min-width: 60px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+.main .pro dl dd .p1 span {
+  float: right;
+}
+.main .pro dl dd .p1 span img {
+  width: 12px;
+  margin-right: 7px;
+}
+.main .pro dl dd .p1 span span {
+  color: #797979;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+}
+.main .pro dl dd .p1 span span b {
+  color: #FF3893;
+  font-weight: normal;
+  font-size: 12px;
+}
+.main .pro dl dd .p2 {
+  margin-top: 16px;
+  font-size: 14px;
+  height: 50px;
+  line-height: 25px;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-text-overflow: ellipsis;
+  -webkit-white-space: nowrap;
+  -moz-line-clamp: 2;
+  -moz-text-overflow: ellipsis;
+  -moz-white-space: nowrap;
+  -ms-line-clamp: 2;
+  -ms-text-overflow: ellipsis;
+  -ms-white-space: nowrap;
+  -webkit-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -moz-box-orient: vertical;
+  overflow: hidden;
+}
+.main .page {
+  text-align: center;
+  margin-top: 84px;
+  /* padding-top: 84px;*/
+}
+.main .page .all-pro {
+  display: inline-block;
+  color: #FF3893;
+  font-size: 14px;
+  font-weight: bold;
+}
+.main .page nav {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  top: 12px;
+  margin-left: 20px;
+}
+.main .page nav ul {
+  margin: 0;
+}
+.main .page nav ul .more-page a {
+  border: none;
+  margin-left: 0px;
+}
+.main .page nav ul a {
+  margin-left: 10px;
+  color: #000;
+}
+.main .page nav ul a:hover {
+  background: #FF3893;
+  color: white;
+  border: 1px solid  transparent;
+}
+.main .page nav ul a:active {
+  background: #FF3893;
+  color: white;
+  border: 1px solid  transparent;
+}
+.main .page nav ul .more-page a:active {
+  border: none;
+  margin-left: 0px;
+  background: transparent;
+}
+.main .page .page-info {
+  display: inline-block;
+}
+.main .page .page-info .all-page {
+  margin-left: 20px;
+  font-size: 14px;
+}
+.main .page .page-info input {
+  border: none;
+  width: 40px;
+  height: 30px;
+  border: 1px solid #DDDDDD;
+  font-size: 14px;
+  outline: none;
+  text-align: center;
+}
+.main .page .page-info .skip {
+  margin-left: 10px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  width: 43px;
+  line-height: 34px;
+  height: 34px;
+  text-align: center;
+  cursor: pointer;
+}

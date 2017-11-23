@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>评价晒单</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/comm.css"/>
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <script>
+        window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;
+    </script>
+    <![endif]-->
+    <style>
+        body,div,ul,li,p{margin:0;padding:0;}
+        body{color:#666;font:12px/1.5 Arial;}
+        ul{list-style-type:none;}
+        #star{position:relative;width: 120px;height: 20px;float: right}
+        #star ul,#star span{float:left;display:inline;height:19px;line-height:19px;}
+
+        #star li{float:left;width:24px;cursor:pointer;text-indent:-9999px;background:url(images/star1.png) no-repeat;}
+        #star li.on{background-position:0 -28px;}
+
+        #star2{position:relative;width: 120px;height: 20px;float: right}
+        #star2 ul,#star span{float:left;display:inline;height:19px;line-height:19px;}
+
+        #star2 li{float:left;width:24px;cursor:pointer;text-indent:-9999px;background:url(images/star1.png) no-repeat;}
+        #star2 li.on{background-position:0 -28px;}
+
+        #star3{position:relative;width: 120px;height: 20px;float: right}
+        #star3 ul,#star span{float:left;display:inline;height:19px;line-height:19px;}
+
+        #star3 li{float:left;width:24px;cursor:pointer;text-indent:-9999px;background:url(images/star1.png) no-repeat;}
+        #star3 li.on{background-position:0 -28px;}
+
+        #star4{position:relative;width: 120px;height: 20px;float: right}
+        #star4 ul,#star span{float:left;display:inline;height:19px;line-height:19px;}
+
+        #star4 li{float:left;width:24px;cursor:pointer;text-indent:-9999px;background:url(images/star1.png) no-repeat;}
+        #star4 li.on{background-position:0 -28px;}
+
+
+
+        h1{
+            font-style: 28px;
+        }
+        h3{
+            font-weight: 700;
+            color: #666;
+            font-size: 21px;
+            border-bottom: 1px dashed #ccc;
+            line-height: 2;
+        }
+        .form_pic{
+            width: 52px;
+            height: 52px;
+            float: left;
+        }
+        .mbUploadify{
+            width: 52px;
+            height: 52px;
+            border: 1px solid #E2E2E2;
+            line-height: 44px;
+            display: inline-block;
+            text-align: center;
+        }
+        .photo{
+            width: 36px;
+            height: 26px;
+
+        }
+        .mbUploadify input[type=file]{
+            display: none;
+        }
+
+        pre{
+            background: #e5e5e5;
+            font: 13px/1.6em 'Lucida Console','monospace','Consolas';
+            word-break: break-all;
+            white-space: pre-wrap;
+            margin-bottom: 30px;
+        }
+
+        .preview{
+
+        }
+        .preview img{
+            height: 50px;
+            width: 50px;
+            margin-left: 10px;
+        }
+        .msg{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="top ">
+        <ul class="">
+            <li><a href="">登录</a></li>
+            <li><a href="">免费注册</a></li>
+            <li><a href="">购物车</a></li>
+            <li><a href="">联系客服</a></li>
+            <li><a href="">我的订单</a></li>
+            <li><a href="">收藏夹</a></li>
+            <li><a href="">手机客户端</a></li>
+            <li><a href="">帮助中心</a></li>
+        </ul>
+    </div>
+    <div class="top-banner container">
+        <div class="left">
+            <div>
+                <a href="#"  target="_self">
+                    <img src="images/register-logo.png" alt=""/>
+                </a>
+                <p>中国“新零售”领导品牌</p>
+            </div>
+        </div>
+        <div class="left1">
+            <span>账户中心</span>
+            <b>返回云温商首页</b>
+        </div>
+        <div class="left2">
+            <a class="now">个人中心</a>
+            <a>商家申请</a>
+            <a>消息中心</a>
+        </div>
+    </div>
+
+</div>
+<hr/>
+
+
+<div class="help container">
+    <div class="help_left">
+        <ul>
+            <li class="li_title" >
+                <a href="" name="" >我的订单</a>
+            </li>
+            <li>
+                <a href="">订单管理</a>
+            </li>
+            <li>
+                <a href="">收货地址</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >我的账户</a>
+            </li>
+            <li>
+                <a href="">基本资料</a>
+            </li>
+            <li>
+                <a href="">账户余额</a>
+            </li>
+            <li>
+                <a href="">账户充值</a>
+            </li>
+            <li>
+                <a href="">安全设置</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >我的收藏</a>
+            </li>
+            <li>
+                <a href="">我的收藏</a>
+            </li>
+            <li>
+                <a href="">我的足迹</a>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="help_right">
+        <div class="right_top">
+            <a href="">我的订单></a>
+            <a href="">评价晒单</a>
+        </div>
+        <div class="right_main">
+            <div class="tab">
+                <div class="tab-body container">
+                    <div class="main show" id="page1">
+                        <div class="dd">
+                            <span class="order_info">订单号：</span>
+                            <span class="order_price">YWS170822104512003</span>
+                            <span class="order_time">下单时间：
+:</span>
+                            <span class="time">2016-12-03 21:36:26 </span>
+
+                            <a>返回</a>
+                        </div>
+                        <div class="order_main">
+                            <div class="order_gai">
+                                <p class="p-title">订单概况</p>
+                                <div>
+                                    <p>订单金额：¥121.00（包含运费）   </p>
+                                    <p>收货信息：王启辉,158*****270,湖北省 武汉市 江岸区 二七街 汉口东部购</p>
+                                    <p>支付方式：微信支付</p>
+                                    <p> 送货方式：快递送货上门( 不限时间 送货)</p>
+                                </div>
+                            </div>
+                            <div class="one_good">
+                                <p class="p1">
+                                    商品清单
+                                </p>
+                                <p class="good_header">
+                                    <span class="span1">商品信息</span>
+                                    <span class="span2">单价</span>
+                                    <span class="span3">数量</span>
+                                    <span class="span4">小计</span>
+                                </p>
+                                <ul>
+                                    <li class="pic">
+                                       <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>x1</span></li>
+                                    <li class="status">
+                                        ￥65
+                                    </li>
+
+                                </ul>
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                    </li>
+                                    <li class="price">
+                                        ￥4055.00
+                                    </li>
+                                    <li class="time"><span>x1</span></li>
+                                    <li class="status">
+                                        ￥655
+                                    </li>
+
+                                </ul>
+
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                    </li>
+                                    <li class="price">
+                                        ￥405.00
+                                    </li>
+                                    <li class="time"><span>x1</span></li>
+                                    <li class="status">
+                                        ￥65
+                                    </li>
+
+                                </ul>
+                                <ul>
+                                    <li class="pic">
+                                        <i> <img src="images/cart-pic.png" alt=""/></i>
+                                        <span>中粮山萃食品特卖旗舰店 - 中粮山萃每日坚果原味果仁干果零食小礼盒25g*7袋</span>
+                                    </li>
+                                    <li class="price">
+                                        ￥4055.00
+                                    </li>
+                                    <li class="time"><span>x1</span></li>
+                                    <li class="status">
+                                        ￥655
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="pay">
+                                <p class="pay_info">
+                                    共 <span class="count">3</span> 件商品   &nbsp; &nbsp; &nbsp; &nbsp; 金额：
+                                    <b>￥111.00</b>
+                                </p>
+                                <p class="yunfei">
+                                    <span>运费：</span>
+                                    <b>￥10.00</b>
+                                </p>
+                                <p class="price">
+                                    <span>实付金额：</span>
+                                    <b class="total">￥1000.00</b>
+                                </p>
+                                <p>
+                                    <a class="confirm">确认收货</a>
+                                </p>
+                            </div>
+                            <div class="order_tracking">
+                                <p class="tracking_title">
+                                    <b>订单评价</b>
+                                    <span>订单已经完成，感谢您在云温商平台购物，欢迎您对本次交易及所购商品进行评价。</span>
+                                </p>
+                                <div class="comm-detail1">
+                                    <div class="left22">
+                                       <p>请填写配送服务评价</p>
+                                        <div class="good_fuhe">
+                                            <span class="span-title">商品符合度</span>
+                                            <b>0分</b>
+                                            <div id="star">
+                                                <ul>
+                                                    <li><a href="javascript:;">1</a></li>
+                                                    <li><a href="javascript:;">2</a></li>
+                                                    <li><a href="javascript:;">3</a></li>
+                                                    <li><a href="javascript:;">4</a></li>
+                                                    <li><a href="javascript:;">5</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <br/>
+                                       <div class="good_wuliu">
+                                            <span class="span-title">物流发货速度</span>
+                                           <b>0分</b>
+                                            <div id="star2">
+                                                <ul>
+                                                    <li><a href="javascript:;">1</a></li>
+                                                    <li><a href="javascript:;">2</a></li>
+                                                    <li><a href="javascript:;">3</a></li>
+                                                    <li><a href="javascript:;">4</a></li>
+                                                    <li><a href="javascript:;">5</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <br/>
+                                        <div class="good_peisong">
+                                            <span class="span-title">配送员服务态度</span>
+                                            <b>0分</b>
+                                            <div id="star3">
+                                                <ul>
+                                                    <li><a href="javascript:;">1</a></li>
+                                                    <li><a href="javascript:;">2</a></li>
+                                                    <li><a href="javascript:;">3</a></li>
+                                                    <li><a href="javascript:;">4</a></li>
+                                                    <li><a href="javascript:;">5</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   <div class="right22">
+                                        <div class="right22_title">
+                                            <span class="span">请至少填写一项商品的评价</span>
+                                            <div class="manyi">
+                                                <span class="span-title">商品符合度</span>
+                                                <b>0分</b>
+                                                <div id="star4">
+                                                    <ul>
+                                                        <li><a href="javascript:;">1</a></li>
+                                                        <li><a href="javascript:;">2</a></li>
+                                                        <li><a href="javascript:;">3</a></li>
+                                                        <li><a href="javascript:;">4</a></li>
+                                                        <li><a href="javascript:;">5</a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <h2>评价晒单：</h2>
+                                       <textarea name="" id="" cols="30" rows="10" placeholder="快把你的使用感受告诉大家吧"></textarea>
+                                       <p class="pic">
+                                       <form action="mbUploadify.php" method="post" class="form_pic">
+                                           <label for="j-file2" class="mbUploadify" id="j-dropArea">
+                                               <img src="images/photo.png" alt="" class="photo"/>
+                                               <input type="file" name="files" id="j-file2"  multiple>
+                                           </label>
+                                       </form>
+                                       <div id="preview2" class="preview"></div>
+                                       <br/>
+                                           <span class="pic-count">
+                                               &nbsp;&nbsp;&nbsp;&nbsp;共 <b>0</b> 张，还能上传 <b>8</b> 张
+                                           </span>
+                                       </p>
+
+                                       
+                                       <p class="p_btn">
+                                           <a href="">立即提交</a>
+                                           <span >
+                                               <b></b>
+                                           <span class="niming">匿名评价</span>
+                                           </span>
+                                       </p>
+                                   </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+
+        <div class="div1 container">
+            <ul>
+                <li class="title">购物指南</li>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">提交订单</a></li>
+            </ul>
+            <ul>
+                <li class="title">会员中心</li>
+                <li><a href="">会员介绍</a></li>
+                <li><a href="">积分说明</a></li>
+                <li><a href="">发展中心</a></li>
+            </ul>
+            <ul>
+                <li class="title">配送服务</li>
+                <li><a href="">送货方式</a></li>
+                <li><a href="">服务意向</a></li>
+                <li><a href="">收费标准</a></li>
+            </ul>
+            <ul>
+                <li class="title">服务中心</li>
+                <li><a href="">取消订单</a></li>
+                <li><a href="">联系客服</a></li>
+                <li><a href="">汇款信息</a></li>
+            </ul>
+            <ul>
+                <li class="title">关于云温商</li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">服务地区</a> </li>
+            </ul>
+            <dl>
+                <dt>
+                    <img src="images/二维码.png" alt=""/>
+                </dt>
+                <dd>官方微信</dd>
+            </dl>
+        </div>
+        <div class="footer1">
+            <span class=""> Copyright © 2017  湖北云温商互联网商务有限公司  备案号：鄂ICP备15007060号</span>
+            <img src="images/1.png" alt=""/>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mbUploadify.min.js"></script>
+<script src="js/comm.js"></script>
+<script>
+    var upload2 = new mbUploadify(document.querySelector('form'), {
+        /*文件拖拽上传区域对象 null表示不支持*/
+        dropElement: document.getElementById('j-dropArea'),
+        /*上传成功*/
+        load: function(e){
+            document.getElementById('preview2').innerHTML += '<img src="'+ e.target.result +'">';
+        },
+        /*ajax上传成功*/
+        uploadSuccess: function(res){
+            console.log(res);
+        },
+        /*ajax上传失败*/
+        uploadFailed: function(){
+            console.log('upload failed!');
+        },
+        /*上传失败*/
+        error: function(file, msg){
+            document.getElementById('msg2').innerHTML = msg;
+            console.log(file, msg)
+        },
+        /*ajax上传完成*/
+        uploadComplete: function(){
+            console.log('upload completed!');
+        }
+    });
+
+
+
+</script>
+</body>
+</html>

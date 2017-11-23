@@ -1,0 +1,336 @@
+@import "bootstrap.css";
+@import "base.css";
+body {
+  background: #F7F7F7;
+}
+.top {
+  height: 40px;
+  background: #F4F3F3;
+  border-bottom: 2px solid #DFDFDF;
+}
+.top ul {
+  width: 1190px;
+  float: right;
+  margin-right: 127px;
+}
+.top ul li {
+  float: left;
+  width: 119px;
+  text-align: center;
+  line-height: 38px;
+  border-right: 1px solid #D0CFCF;
+}
+.top ul li:hover {
+  background: #FF3893;
+  cursor: pointer;
+}
+.top ul li:hover a:hover {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid #FF3893;
+}
+.top ul li:hover a {
+  color: white;
+  text-decoration: none;
+}
+.top-banner {
+  width: 1190px;
+  height: 158px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.top-banner .left {
+  float: left;
+  display: flex;
+}
+.top-banner .left div {
+  display: inline-block;
+}
+.top-banner .left div img {
+  width: 198px;
+  padding-right: 22px;
+}
+.top-banner .left div p {
+  font-size: 14px;
+  padding-top: 12px;
+  font-weight: bold;
+  color: #FF3893;
+  text-align: center;
+}
+.top-banner .left .welcome {
+  /*  height: 50px;
+        line-height: 50px;*/
+  margin-bottom: 25px;
+  padding-left: 22px;
+  font-size: 20px;
+  border-left: 2px solid #D3D3D3;
+  color: #525050;
+  font-weight: bold;
+  vertical-align: top;
+  position: relative;
+  top: 9px;
+  /* position: relative\9;
+       top:-40px\9;*/
+  /*  _position: relative;
+        _top:0px;*/
+}
+.top-banner .left1 {
+  float: left;
+  position: relative;
+  top: 10px;
+  width: 120px;
+}
+.top-banner .left1 span {
+  font-size: 18px;
+  width: 120px;
+  display: inline-block;
+  text-align: center;
+}
+.top-banner .left1 b {
+  display: inline-block;
+  width: 120px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
+  border-radius: 30px;
+  border: 1px solid #999999;
+  margin-top: 5px;
+}
+.top-banner .left1 b:hover {
+  background: #FF3893;
+  color: white;
+  border: 1px solid #FF3893;
+}
+.top-banner .left2 {
+  float: left;
+  width: 507px;
+  text-align: center;
+}
+.top-banner .left2 a {
+  display: inline-block;
+  width: 153px ;
+  height: 70px;
+  line-height: 70px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.top-banner .left2 .now {
+  color: #FF3893;
+}
+hr {
+  border: 4px solid #FF3893;
+}
+.help {
+  min-height: 600px;
+  padding-top: 40px;
+}
+.help .help_left {
+  width: 192px;
+  background: white;
+  min-height: 600px;
+  float: left;
+  padding-top: 24px;
+}
+.help .help_left ul {
+  min-height: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.help .help_left ul li {
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+}
+.help .help_left ul li a {
+  color: #888888;
+}
+.help .help_left ul .li_title {
+  margin-bottom: 30px;
+}
+.help .help_left ul .li_title a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.help .help_right {
+  width: 81%;
+  height: 100%;
+  float: right;
+}
+.help .help_right .right_top {
+  height: 52px;
+  background: white;
+  line-height: 52px;
+  font-size: 12px;
+  color: #ADADAD;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.help .help_right .right_top a {
+  font-size: 14px;
+}
+.help .help_right .main {
+  margin-top: 20px;
+  background: white;
+  padding-left: 20px;
+  height: 100%;
+  padding-bottom: 80px;
+}
+.help .help_right .main .basic_title {
+  height: 46px;
+  line-height: 46px;
+  padding-right: 20px;
+}
+.help .help_right .main .basic_title a {
+  color: #FF3893;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  border-bottom: 2px solid #FF3893;
+}
+.help .help_right .main .basic_title span {
+  float: right;
+  background: #FE8297;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  height: 30px;
+  width: 65px;
+  line-height: 30px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+.help .help_right .main .add_num {
+  margin-top: 25px;
+}
+.help .help_right .main .add_num .num1 {
+  margin-top: 20px;
+}
+.help .help_right .main .add_num .num1 input {
+  border: 1px solid #B8B8B8;
+  outline: none;
+  text-align: center;
+  width: 150px;
+}
+.help .help_right .main .add_num .bank_chose {
+  margin-top: 24px;
+}
+.help .help_right .main .add_num .chose {
+  margin-top: 30px;
+}
+.help .help_right .main .add_num .chose .chose-way {
+  display: inline-block;
+  width: 120px;
+}
+.help .help_right .main .add_num .chose .way {
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+}
+.help .help_right .main .add_num .chose img {
+  width: 128px;
+  height: 39px;
+}
+.help .help_right .main .under_line {
+  padding-right: 60px;
+  margin-left: 126px;
+  margin-top: 30px;
+}
+.help .help_right .main .under_line .under_header {
+  margin-bottom: 24px;
+  height: 20px;
+  line-height: 20px;
+}
+.help .help_right .main .under_line .under_header span {
+  display: inline-block;
+  width: 15px;
+  position: relative;
+  top: 2px;
+  height: 15px;
+  border-radius: 50%;
+  background: #DEDEDE;
+  cursor: pointer;
+}
+.help .help_right .main .under_line .info1 {
+  font-size: 14px;
+  line-height: 25px;
+}
+.help .help_right .main .under_line table {
+  margin-top: 30px;
+}
+.help .help_right .main .under_line table td {
+  text-align: center;
+  height: 73px;
+  vertical-align: middle;
+}
+.help .help_right .main .under_line .warm {
+  background: #EBEBEB;
+  height: 33px;
+  line-height: 33px;
+  padding-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.help .help_right .main .under_line .confirm {
+  background: #FF3893;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+  line-height: 40px;
+  height: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.footer {
+  width: 100%;
+  height: 406px;
+  background: #F4F3F3;
+  border-top: 1px solid #DDDDDD;
+}
+.footer .div1 {
+  width: 1190px ;
+  height: 184px;
+  padding-top: 20px;
+}
+.footer .div1 ul {
+  float: left;
+  width: 144px ;
+  margin: 0 auto;
+}
+.footer .div1 ul li {
+  line-height: 30px;
+}
+.footer .div1 ul .title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 27px;
+}
+.footer .div1 dl {
+  width: 314px;
+  margin-top: 10px;
+  float: left;
+  text-align: center;
+}
+.footer .div1 dl dd {
+  margin-top: 5px;
+}
+.footer .footer1 {
+  width: 100%;
+  border-top: 1px solid #ECEBEB;
+  padding-bottom: 33px;
+  padding-top: 33px;
+}
+.footer .footer1 span {
+  margin-left: 50px;
+  font-size: 16px;
+}
+.footer .footer1 img {
+  margin-left: 99px;
+}

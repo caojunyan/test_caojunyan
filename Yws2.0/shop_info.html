@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>店铺信息</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/shop_info.css"/>
+    <link rel="stylesheet" href="css/jquery.cxcalendar.css">
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <script>
+        window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;
+    </script>
+    <![endif]-->
+</head>
+<body>
+<div class="header">
+    <div class="top ">
+        <ul class="">
+            <li><a href="">登录</a></li>
+            <li><a href="">免费注册</a></li>
+            <li><a href="">购物车</a></li>
+            <li><a href="">联系客服</a></li>
+            <li><a href="">我的订单</a></li>
+            <li><a href="">收藏夹</a></li>
+            <li><a href="">手机客户端</a></li>
+            <li><a href="">帮助中心</a></li>
+        </ul>
+    </div>
+    <div class="top-banner container">
+        <div class="left">
+            <div>
+                <a href="#"  target="_self">
+                    <img src="images/register-logo.png" alt=""/>
+                </a>
+                <p>中国“新零售”领导品牌</p>
+            </div>
+        </div>
+        <div class="left1">
+            <span>账户中心</span>
+            <b>返回云温商首页</b>
+        </div>
+        <div class="left2">
+            <a >个人中心</a>
+            <a class="now">商家申请</a>
+            <a>消息中心</a>
+        </div>
+    </div>
+
+</div>
+<hr/>
+
+
+<div class="help container">
+    <div class="help_left">
+        <ul>
+            <li class="li_title" >
+                <a href="" name="" >商家订单</a>
+            </li>
+            <li>
+                <a href="order_shangjia.html" >商家订单列表</a>
+            </li>
+            <li>
+                <a href="sale_qushi.html" >销售趋势统计</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >商品管理</a>
+            </li>
+            <li>
+                <a href="good_list.html" >商品列表</a>
+            </li>
+            <li>
+                <a href="good_ruku.html" >商品入库审核</a>
+            </li>
+            <li>
+                <a href="good_zixun.html">商品咨询回复</a>
+            </li>
+            <li>
+                <a href="pic_upload.html">批量上传图片</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >评价管理</a>
+            </li>
+            <li>
+                <a href="good_comm.html">商品评价</a>
+            </li>
+            <li>
+                <a href="shop_comm.html">店铺评价</a>
+            </li>
+
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >交易管理</a>
+            </li>
+            <li>
+                <a href="my_income.html">我的收入</a>
+            </li>
+            <li>
+                <a href="tixian_shangjia.html" >提现记录</a>
+            </li>
+            <li>
+                <a href="shouzhi.html">收支明细</a>
+            </li>
+
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >商家信息</a>
+            </li>
+            <li>
+                <a href="shop_info.html" style="color:#FF3893">店铺信息</a>
+            </li>
+            <li>
+                <a href="mendian.html">门店管理</a>
+            </li>
+            <li>
+                <a href="touch_us.html">联系我们</a>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="help_right">
+        <div class="right_top">
+            <a href="">商家信息></a>
+            <a href="">店铺信息</a>
+        </div>
+        <div class="right_main">
+            <!--标签页-->
+            <div class="tab">
+                <div class="tab-header">
+                   <div class="orerate_time">
+                       <span class="oper_span">店铺信息</span>
+                   </div>
+                </div>
+                <div class="tab-body container">
+                    <form action="">
+                        <div class="div1">
+                            <label for="">所属公司：</label>
+                            <input type="text" value="湖北云温商互联网科技有限公司"/>
+                        </div>
+                        <div class="div1">
+                            <label for="">店铺名称：</label>
+                            <input type="text" value="云温商商城"/>
+                        </div>
+                        <div class="div1">
+                            <label for="">创建日期：</label>
+                            <input type="text" value="2016-08-01 13:52:48" disabled style="background: white"/>
+                        </div>
+                        <div class="div4">
+                            <label for="">店铺logo：</label>
+                            <a href="" class="img">
+                                <img src="" alt="" class="info" />
+                            </a>
+                            <a href=""><input type="file" id="imagefile"
+                                              name="img[]" class="file" />
+                                <span>修改</span>
+                            </a>
+                        </div>
+                        <div class="div5">
+                            <label for="">店铺简介：</label>
+                            <textarea name="" id="textarea2" cols="" rows="" placeholder="请输入店铺简介"  ></textarea>
+                        </div>
+                        <div class="div6">
+                            <label for="">联系人：</label>
+                            <input type="text" placeholder="请输入联系人姓名"/>
+                        </div>
+                        <div class="div6">
+                            <label for="">手机号码：</label>
+                            <input type="text" placeholder="请输入联系人手机号码"/>
+                        </div>
+                        <div class="div6">
+                            <label for="">常用邮箱：</label>
+                            <input type="text" placeholder="请输入联系人常用邮箱"/>
+                        </div>
+                        <div class="div9">
+                            <label for=""></label>
+                           <span>保存</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="footer">
+    <div class="container">
+
+        <div class="div1 container">
+            <ul>
+                <li class="title">购物指南</li>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">提交订单</a></li>
+            </ul>
+            <ul>
+                <li class="title">会员中心</li>
+                <li><a href="">会员介绍</a></li>
+                <li><a href="">积分说明</a></li>
+                <li><a href="">发展中心</a></li>
+            </ul>
+            <ul>
+                <li class="title">配送服务</li>
+                <li><a href="">送货方式</a></li>
+                <li><a href="">服务意向</a></li>
+                <li><a href="">收费标准</a></li>
+            </ul>
+            <ul>
+                <li class="title">服务中心</li>
+                <li><a href="">取消订单</a></li>
+                <li><a href="">联系客服</a></li>
+                <li><a href="">汇款信息</a></li>
+            </ul>
+            <ul>
+                <li class="title">关于云温商</li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">服务地区</a> </li>
+            </ul>
+            <dl>
+                <dt>
+                    <img src="images/二维码.png" alt=""/>
+                </dt>
+                <dd>官方微信</dd>
+            </dl>
+        </div>
+        <div class="footer1">
+            <span class=""> Copyright © 2017  湖北云温商互联网商务有限公司  备案号：鄂ICP备15007060号</span>
+            <img src="images/1.png" alt=""/>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+    $('#imagefile').change(function(){
+        readAsDataURL(this);
+    });
+    var reader=new FileReader();
+    function readAsDataURL(obj)
+    {
+        var file=document.getElementById("imagefile").files[0];
+        var reader=new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload=function(e)
+        {
+            $('.info').css({
+                'background':'url('+reader.result+') no-repeat ',
+                "display": "inline-block",
+                "width": "140",
+                "height": "140",
+                "background-size":"100% 100%"
+            });
+        }
+        var html = "<a> <input type='file' name='img[]' class='file' id='imagefile'/> </a>";
+    }
+
+
+
+
+</script>
+</body>
+</html>

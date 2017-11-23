@@ -1,0 +1,486 @@
+@import "bootstrap.css";
+@import "base.css";
+@color:#FF3893;
+@border_color:#F4F3F3;
+@border_left:7px solid #ff3893;
+//头部
+body{
+  background: #F7F7F7;
+}
+.top{
+  height: 40px;
+  background: #F4F3F3;
+  border-bottom: 2px solid #DFDFDF;
+  ul{
+    width: 1190px;
+    float: right;
+    margin-right: 127px;
+    li{
+      float: left;
+      width: 119px;
+      text-align: center;
+      line-height: 38px;
+      border-right: 1px solid #D0CFCF;
+    }
+    li:hover{
+      background: @color;
+      cursor: pointer;
+      a:hover{
+        color:white;
+        text-decoration: none;
+        border-bottom:2px solid @color ;
+      }
+    }
+    li:hover a{
+      color:white;
+      text-decoration: none;
+    }
+
+  }
+}
+.top-banner{
+  width: 1190px;
+  height: 158px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .left{
+    float: left;
+    display: flex;
+    div{
+      display: inline-block;
+      img{
+        width: 198px;
+        padding-right: 22px;
+      }
+      p{
+        font-size: 14px;
+        padding-top: 12px;
+        font-weight: bold;
+        color:@color;
+        text-align: center;
+      }
+    }
+    .welcome{
+      /*  height: 50px;
+        line-height: 50px;*/
+      margin-bottom: 25px;
+      padding-left: 22px;
+      font-size: 20px;
+      border-left: 2px solid #D3D3D3;
+      color:#525050;
+      font-weight: bold;
+      vertical-align: top;
+      position: relative;
+      top:9px;
+      /* position: relative\9;
+       top:-40px\9;*/
+      /*  _position: relative;
+        _top:0px;*/
+    }
+  }
+  .left1{
+    float: left;
+    position: relative;
+    top: 10px;
+    width: 120px;
+    span{
+      font-size: 18px;
+      width: 120px;
+      display: inline-block;
+      text-align: center;
+    }
+    b{
+      display: inline-block;
+      width: 120px;
+      height: 29px;
+      line-height: 29px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: normal;
+      border-radius: 30px;
+      border: 1px solid #999999;
+      margin-top: 5px;
+    }
+    b:hover{
+      background: @color;
+      color:white;
+      border: 1px solid @color;
+
+    }
+  }
+  .left2{
+    float: left;
+    width: 507px;
+    text-align: center;
+    a{
+      display: inline-block;
+      width:153px ;
+      height: 70px;
+      line-height: 70px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .now{
+      color:@color;
+    }
+  }
+
+
+
+}
+hr{
+  border: 2px solid @color;
+}
+
+
+//主体内容
+.help{
+  min-height: 700px;
+  padding-top: 40px;
+  .help_left{
+    width: 192px;
+    background: white;
+    min-height: 600px;
+    float: left;
+    padding-top: 24px;
+
+    ul{
+      min-height: 100px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      li{
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+        a{
+          color:#888888;
+        }
+      }
+      .li_title{
+
+        margin-bottom: 30px;
+        a{
+          font-size: 16px;
+          font-weight: bold;
+          color:#000;
+        }
+      }
+    }
+  }
+  .help_right{
+    width: 81%;
+    height: 100%;
+    float: right;
+    .right_top{
+      height: 52px;
+      background: white;
+      line-height: 52px;
+      font-size: 12px;
+      color:#ADADAD;
+      padding-left: 20px;
+      padding-right: 20px;
+      a{
+        font-size: 14px;
+      }
+    }
+    .main{
+      min-height: 600px;
+      background: white;
+      margin-top: 20px;
+      padding: 20px;
+      .basic_title{
+        position: relative;
+        .a_info{
+          display: inline-block;
+          width: 60px;
+          color:@color;
+          text-align: center;
+          height: 30px;
+          line-height:30px;
+          border-bottom: 4px solid @color;
+        }
+        .can_use{
+          text-indent: 20px;
+          display: inline-block;
+          b{
+            color:@color;
+          }
+        }
+        .tixian{
+          width: 86px;
+          height: 30px;
+          cursor: pointer;
+          text-align: center;
+          line-height: 30px;
+          background: @color;
+          color:white;
+          display: inline-block;
+        }
+        .tixian_info{
+          display: none;
+          width: 86px;
+          height: 60px;
+          position: absolute;
+          top:28px;
+          left:204px;
+          a{
+            text-align: center;
+            width: 100%;
+            background: white;
+            display: inline-block;
+            height: 30px;
+            margin-top: 2px;
+            line-height: 30px;
+            color:@color;
+            border: 1px solid @color;
+          }
+        }
+        .jilu{
+          display: inline-block;
+          width: 80px;
+          text-align: center;
+          height: 30px;
+          line-height: 30px;
+          background: @color;
+          color:white;
+          float: right;
+        }
+      }
+      .yue{
+        width: 100%;
+        height: 93px;
+        margin-top: 20px;
+      }
+      .question{
+        .q_title{
+          font-weight: bold;
+          margin-top: 30px;
+          margin-bottom: 10px;
+        }
+        .q{
+          width: 95%;
+          text-align: left;
+          line-height: 25px;
+          margin-top: 10px;
+          .q_img{
+            width: 16px;
+            height: 16px;
+          }
+        }
+        .a{
+          width: 95%;
+          text-align: left;
+          line-height: 25px;
+          .a_img{
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+
+      .love{
+        .love-title{
+          border-bottom: 1px solid #E4E4E4;
+          height: 56px;
+          width: 100%;
+        }
+        .guess{
+          font-weight: bold;
+          font-size: 18px;
+          padding-left: 5px;
+          padding-bottom:6px;
+          float: left;
+          position: relative;
+          top:23px;
+          border-bottom: 3px solid @color;
+          height: 32px;
+        }
+        .guess-huan{
+          width: 107px;
+          height: 45px;
+          float: right;
+          line-height: 45px;
+          text-align: center;
+          background: #ACACAC;
+          position: relative;
+          bottom:-10px;
+          cursor: pointer;
+          img{
+            width: 20px;
+          }
+          span{
+            color:white;
+            font-size: 16px;
+            vertical-align: bottom;
+          }
+        }
+        .linera {
+          width:1175px;
+        }
+        .product{
+
+          dl{
+            width: 150px;
+            height: 210px;
+            display: inline-block;
+            margin-top: 50px;
+            margin-left: 60px;
+            dt{
+              width: 150px;
+              height: 150px;
+              border: 1px solid #D1D1D1;
+              img{
+                width: 150px;
+                height: 150px;
+              }
+              p{
+                width: 100%;
+                height: 25px;
+                background: rgba(0,0,0,0.7);
+                color:white;
+                font-size: 14px;
+                text-align: center;
+                position: relative;
+                top:-27px;
+                line-height: 25px;
+                span{
+                  color:white;
+                  font-size: 14px;
+                }
+              }
+            }
+            dd>p{
+              width: 100%;
+              height: 15px;
+              line-height: 15px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              -webkit-text-overflow: ellipsis;
+              -webkit-white-space: nowrap;
+              -moz-text-overflow: ellipsis;
+              -moz-white-space: nowrap;
+              -ms-text-overflow: ellipsis;
+              -ms-white-space: nowrap;
+              margin-top: 35px;
+              font-weight: bold;
+            }
+          }
+        }
+
+      }
+
+    }
+
+
+    .new_addr{
+      width: 450px;
+      height: 220px;
+      position: absolute;
+      background: white;
+      padding: 10px;
+      border: 1px solid #AEAEAE;
+      z-index: 10000;
+      .close{
+        display:inline-block ;
+        width:58px;
+        height: 30px;
+        line-height: 30px;
+        background: @color;
+        color:white;
+        text-align: center;
+        opacity: 1;
+        font-size: 12px;
+      }
+      .addr_title{
+        height: 50px;
+        line-height: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+        text-align: center;
+        color:@color;
+        padding-top: 40px;
+      }
+      .alert_info{
+        padding-top: 40px;
+        text-align: center;
+        font-size: 12px;
+        color:#999999;
+        margin-top: 25px;
+        b{
+          color:@color;
+          font-size: 16px;
+        }
+      }
+      .p_a{
+        text-align: center;
+        margin-top: 25px;
+      }
+      a{
+        display: inline-block;
+        width: 60px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        background: @color;
+        color: white;
+      }
+
+    }
+  }
+}
+
+
+
+//脚部
+.footer{
+  width: 100%;
+  height: 406px;
+  background: #F4F3F3;
+  border-top: 1px solid #DDDDDD;
+
+  .div1{
+    width:1190px ;
+    height: 184px;
+    padding-top: 20px;
+    ul{
+      float: left;
+      width:144px ;
+      margin:  0 auto;
+      li{
+        line-height: 30px;
+
+      }
+      .title{
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 27px;
+      }
+    }
+    dl{
+      width: 314px;
+      margin-top: 10px;
+      float:left;
+      text-align: center;
+      dd{
+        margin-top: 5px;
+      }
+    }
+  }
+  .footer1{
+    width: 100%;
+    border-top: 1px solid #ECEBEB;
+    padding-bottom: 33px;
+    padding-top: 33px;
+    span{
+      margin-left: 50px;
+      font-size: 16px;
+    }
+    img{
+      margin-left: 99px;
+    }
+  }
+}

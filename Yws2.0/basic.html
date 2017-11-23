@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>基本资料</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/basic.css"/>
+
+
+    <link href="cropper/cropper.min.css" rel="stylesheet">
+    <link href="sitelogo/sitelogo.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <script>
+        window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;
+    </script>
+    <![endif]-->
+
+</head>
+<body>
+<div class="header">
+    <div class="top ">
+        <ul class="">
+            <li><a href="">登录</a></li>
+            <li><a href="">免费注册</a></li>
+            <li><a href="">购物车</a></li>
+            <li><a href="">联系客服</a></li>
+            <li><a href="">我的订单</a></li>
+            <li><a href="">收藏夹</a></li>
+            <li><a href="">手机客户端</a></li>
+            <li><a href="">帮助中心</a></li>
+        </ul>
+    </div>
+    <div class="top-banner container">
+        <div class="left">
+            <div>
+                <a href="#"  target="_self">
+                    <img src="images/register-logo.png" alt=""/>
+                </a>
+                <p>中国“新零售”领导品牌</p>
+            </div>
+        </div>
+        <div class="left1">
+            <span>账户中心</span>
+            <b>返回云温商首页</b>
+        </div>
+        <div class="left2">
+            <a class="now">个人中心</a>
+            <a>商家申请</a>
+            <a>消息中心</a>
+        </div>
+    </div>
+
+</div>
+<hr/>
+
+
+<div class="help container">
+    <div class="help_left">
+        <ul>
+            <li class="li_title" >
+                <a href="order.html" name="" >我的订单</a>
+            </li>
+            <li >
+                <a href="order.html" >订单管理</a>
+            </li>
+            <li>
+                <a href="receive_addr.html">收货地址</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >我的账户</a>
+            </li>
+            <li style="background:#FFF4FA">
+                <a href="basic.html" style="color:#FF3793">基本资料</a>
+            </li>
+            <li>
+                <a href="account.html">账户余额</a>
+            </li>
+            <li>
+                <a href="Accounts_prepaid.html">账户充值</a>
+            </li>
+            <li>
+                <a href="safe.html">安全设置</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >我的收藏</a>
+            </li>
+            <li>
+                <a href="collection.html">我的收藏</a>
+            </li>
+            <li>
+                <a href="feet.html">我的足迹</a>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="help_right">
+        <div class="right_top">
+            <a href="">我的账户></a>
+            <a href="">基本资料</a>
+        </div>
+        <div class="main">
+            <p class="basic_title">
+                <a href="">基本资料</a>
+            </p>
+            <div class="basic_main">
+                <div class="basic_left">
+                  <!--  <form action="" class="all_form">-->
+                        <div class="pic_img" style="width: 100%;height: 94px">
+                            <span class="p-title">头像：</span>
+                            <div class="pic" style="width: 94px;height: 94px;">
+                                <div class="ibox-content" style="border: none;">
+                                    <div class="" style="border: none;">
+                                        <div id="crop-avatar" class="" style="border: none;">
+                                            <div class="avatar-view" title="Change Logo Picture" style="width: 94px;height: 94px;border: none">
+                                                <img src="images/touxiang.png" alt="Logo" style="width: 94px;height: 94px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <form class="avatar-form" action="{{url('admin/upload-logo')}}" enctype="multipart/form-data" method="post">
+                                                <div class="modal-header">
+                                                    <button class="close" data-dismiss="modal" type="button">&times;</button>
+                                                    <h4 class="modal-title" id="avatar-modal-label">Change Logo Picture</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="avatar-body">
+                                                        <div class="avatar-upload">
+                                                            <input class="avatar-src" name="avatar_src" type="hidden">
+                                                            <input class="avatar-data" name="avatar_data" type="hidden">
+                                                            <label for="avatarInput">图片上传</label>
+                                                            <input class="avatar-input" id="avatarInput" name="avatar_file" type="file"></div>
+                                                        <div class="row">
+                                                            <div class="col-md-9">
+                                                                <div class="avatar-wrapper"></div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="avatar-preview preview-lg"></div>
+                                                                <div class="avatar-preview preview-md"></div>
+                                                                <div class="avatar-preview preview-sm"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row avatar-btns">
+                                                            <div class="col-md-9">
+                                                                <div class="btn-group">
+                                                                    <button class="btn" data-method="rotate" data-option="-90" type="button" title="Rotate -90 degrees"><i class="fa fa-undo"></i> 向左旋转</button>
+                                                                </div>
+                                                                <div class="btn-group">
+                                                                    <button class="btn" data-method="rotate" data-option="90" type="button" title="Rotate 90 degrees"><i class="fa fa-repeat"></i> 向右旋转</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <button class="btn btn-success btn-block avatar-save" type="submit"><i class="fa fa-save"></i> 保存修改</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>
+                            </div>
+                        </div>
+                    <br/>
+                        <p class="user_name">
+                            <span>用户名：</span>
+                            <input type="text" placeholder="15802701270"/>
+                        </p>
+                    <p class="nicheng">
+                        <span>昵称：</span>
+                        <input type="text" placeholder="yws_jiohn5678"/>
+                    </p>
+                    <p class="sex">
+                        <span>性别：</span>
+                        <label><input name="sex" type="radio" value="" checked/>&nbsp;&nbsp;男 </label>
+                        <label><input name="sex" type="radio" value="" />&nbsp;&nbsp;女 </label>
+                        <label><input name="sex" type="radio" value="" />&nbsp;&nbsp;保密 </label>
+                    </p>
+                    <div class="birth">
+                        <span>生日：</span>
+                        <form name="reg_testdate">
+                        <select name="YYYY" onChange="YYYYDD(this.value)">
+                            <option value="">请选择 年</option>
+                        </select>
+                        <select name="MM" onChange="MMDD(this.value)">
+                            <option value="">请选择 月</option>
+                        </select>
+                        <select name="DD">
+                            <option value="">请选择 日</option>
+                        </select>
+                    </form>
+                    </div>
+                    <p class="email">
+                        <span>邮箱：</span>
+                        <a href="" data-toggle="modal" data-target=".bs-example-modal-lg">立即验证</a>
+                    </p>
+                    <a href="" class="save">保存</a>
+                   <!-- </form>-->
+                </div>
+                <div class="basic_right">
+                    <div class="right1">
+                        <div class="touxiang_xiao">
+                            <img src="images/xiao_touxiang.png" alt=""/>
+                        </div>
+                        <div class="info_right">
+                            <p>
+                                <span>用户名： </span>
+                                <b>15802701270</b>
+                            </p>
+                            <p>
+                                <span>会员类型： </span>
+                                <b>个人账户</b>
+                            </p>
+                            <p>
+                                <span>注册时间： </span>
+                                <b>2016-11-09 16:32:47</b>
+                            </p>
+                        </div>
+                        <div class="right1_bottom">
+                            <p>注：修改手机和邮箱请到 <a href="safe.html">安全设置</a></p>
+                        </div>
+                    </div>
+                    <div class="right2">
+                        <p class="right2-p1">
+                            <b>默认收货地址：</b>
+                            <a href="receive_addr.html">修改</a>
+                        </p>
+                        <p class="right2-p2">
+                            <b>王启辉</b>
+                            <br/>
+                            <span>15802701270</span>
+                        </p>
+
+                        <p class="right2-p3">
+                            湖北省武湖北省武汉市江岸区二七路东部购物公园C1栋4楼湖北省武汉市江岸区二七路东部购物公园C1栋4楼汉市江岸区二七路东部购物公园C1栋4楼
+                        </p>
+                    </div>
+                    <div class="right3">
+                        <p class="right2-p1">
+                            <b>默认收货地址：</b>
+                            <a href="">增值税普票</a>
+                        </p>
+                        <p class="right2-p2">
+                            <b>王启辉</b>
+                            <br/>
+                            <span>15802701270</span>
+                        </p>
+
+                        <p class="right2-p3">
+                            湖北省武湖北省武汉市江岸区二七路东部购物公园C1栋4楼湖北省武汉市江岸区二七路东部购物公园C1栋4楼汉市江岸区二七路东部购物公园C1栋4楼
+                        </p>
+                    </div>
+                </div>
+                <div class="model bs-example-modal-lg fade "  >
+                    <div class="">
+                        <div class="new_addr modal-content" id="popupName">
+                            <p class="addr_title">
+                                <span>验证身份</span>
+                                <a class="close" data-dismiss="modal" aria-label="Close">关闭</a>
+                            </p>
+                            <form class="form-horizontal container form_next1">
+                                <div class="already_phone">
+                                    <label for="">已验手机号：</label>
+                                    <input type="text" value="12345678901"/>
+                                </div>
+                                <div class="phone_msg">
+                                    <label for="">短信校验码：</label>
+                                    <input type="text" value="" placeholder="请输入校验码"/>
+                                    <input type="text" class="btn-get" id="btn" value="免取验证码"  onclick="settime(this)" />
+                                </div>
+                                <div class="shape_msg">
+                                    <label for="">图形校验码：</label>
+                                    <span id="vericode" ></span>
+                                </div>
+                                <div class="address_btn">
+                                    <div class="">
+                                        <span class="next1">下一步</span>
+                                    </div>
+                                </div>
+                            </form>
+                            <form class="form-horizontal container form_next2">
+                                <div class="already_phone">
+                                    <label for="">我的邮箱：</label>
+                                    <input type="email" value="12345678901"/>
+                                </div>
+                               <div class="shape_msg">
+                                    <label for="">校验码：</label>
+                                    <span id="vericode1" ></span>
+                                </div>
+                             <div class="address_btn">
+                                    <div class="">
+                                        <span class="next2">发送验证邮件</span>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="form_next3">
+                                <p class="alert">
+                                    <b>已发送验证邮件至：</b>2*****5@qq.com
+                                </p>
+                                <p class="alert alert-danger">
+                                    （请立即完成验证，邮箱验证不通过则修改邮箱失败）
+                                </p>
+                                <p class="alert" style="color:#999999">验证邮件24小时内有效，请尽快登录您的邮箱点击验证链接完成验证。</p>
+                                <div class="address_btn alert">
+                                    <div class="">
+                                        <span class="next3">查看验证邮件</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+
+        <div class="div1 container">
+            <ul>
+                <li class="title">购物指南</li>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">提交订单</a></li>
+            </ul>
+            <ul>
+                <li class="title">会员中心</li>
+                <li><a href="">会员介绍</a></li>
+                <li><a href="">积分说明</a></li>
+                <li><a href="">发展中心</a></li>
+            </ul>
+            <ul>
+                <li class="title">配送服务</li>
+                <li><a href="">送货方式</a></li>
+                <li><a href="">服务意向</a></li>
+                <li><a href="">收费标准</a></li>
+            </ul>
+            <ul>
+                <li class="title">服务中心</li>
+                <li><a href="">取消订单</a></li>
+                <li><a href="">联系客服</a></li>
+                <li><a href="">汇款信息</a></li>
+            </ul>
+            <ul>
+                <li class="title">关于云温商</li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">服务地区</a> </li>
+            </ul>
+            <dl>
+                <dt>
+                    <img src="images/二维码.png" alt=""/>
+                </dt>
+                <dd>官方微信</dd>
+            </dl>
+        </div>
+        <div class="footer1">
+            <span class=""> Copyright © 2017  湖北云温商互联网商务有限公司  备案号：鄂ICP备15007060号</span>
+            <img src="images/1.png" alt=""/>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="cropper/cropper.min.js"></script>
+<script src="sitelogo/sitelogo.js"></script>
+<script src="js/jquery.vericode1.js"></script>
+<script language="JavaScript">
+        function YYYYMMDDstart(){
+            MonHead = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+            //先给年下拉框赋内容
+            var y  = new Date().getFullYear();
+            for (var i = (y-30); i < (y+30); i++) //以今年为准，前30年，后30年
+                document.reg_testdate.YYYY.options.add(new Option(" "+ i +" 年", i));
+
+            //赋月份的下拉框
+            for (var i = 1; i < 13; i++)
+                document.reg_testdate.MM.options.add(new Option(" " + i + " 月", i));
+
+            document.reg_testdate.YYYY.value = y;
+            document.reg_testdate.MM.value = new Date().getMonth() + 1;
+            var n = MonHead[new Date().getMonth()];
+            if (new Date().getMonth() ==1 && IsPinYear(YYYYvalue)) n++;
+            writeDay(n); //赋日期下拉框Author:meizz
+            document.reg_testdate.DD.value = new Date().getDate();
+        }
+        if(document.attachEvent)
+            window.attachEvent("onload", YYYYMMDDstart);
+        else
+            window.addEventListener('load', YYYYMMDDstart, false);
+        function YYYYDD(str) //年发生变化时日期发生变化(主要是判断闰平年)
+        {
+            var MMvalue = document.reg_testdate.MM.options[document.reg_testdate.MM.selectedIndex].value;
+            if (MMvalue == ""){ var e = document.reg_testdate.DD; optionsClear(e); return;}
+            var n = MonHead[MMvalue - 1];
+            if (MMvalue ==2 && IsPinYear(str)) n++;
+            writeDay(n)
+        }
+        function MMDD(str)   //月发生变化时日期联动
+        {
+            var YYYYvalue = document.reg_testdate.YYYY.options[document.reg_testdate.YYYY.selectedIndex].value;
+            if (YYYYvalue == ""){ var e = document.reg_testdate.DD; optionsClear(e); return;}
+            var n = MonHead[str - 1];
+            if (str ==2 && IsPinYear(YYYYvalue)) n++;
+            writeDay(n)
+        }
+        function writeDay(n)   //据条件写日期的下拉框
+        {
+            var e = document.reg_testdate.DD; optionsClear(e);
+            for (var i=1; i<(n+1); i++)
+                e.options.add(new Option(" "+ i + " 日", i));
+        }
+        function IsPinYear(year)//判断是否闰平年
+        {
+            return(0 == year%4 && (year%100 !=0 || year%400 == 0));
+        }
+        function optionsClear(e)
+        {
+            e.options.length = 1;
+        }
+
+
+//        获取验证码
+        var countdown=60;
+        function settime(obj) {
+            console.log(obj);
+            if (countdown == 0) {
+                obj.removeAttribute("disabled");
+                obj.value="获取验证码";
+                obj.style.background='#FF3893';
+                countdown = 60;
+                return;
+            } else {
+                obj.style.background='#ddd';
+              /*  obj.style.color='#ddd';*/
+                obj.setAttribute("disabled", true);
+                obj.value="重新发送(" + countdown + ")";
+                countdown--;
+            }
+            setTimeout(function() {
+                        settime(obj) }
+                    ,1000)
+        }
+
+        $('#vericode').vericode({
+            size: 16, //字体，默认为16
+            length: 4, //长度，默认长度为 4
+            focus: false
+        });
+
+        var result = $('#vericode').vericode('test');//true or false
+
+
+
+        $('#vericode1').vericode({
+            size: 16, //字体，默认为16
+            length: 4, //长度，默认长度为 4
+            focus: false
+        });
+
+        var result = $('#vericode1').vericode('test');//true or false
+
+
+
+        $('.next1').click(function () {
+            $('.addr_title span').html('验证邮箱');
+            $('.form_next1').css('display','none');
+            $('.form_next2').css('display','block');
+        })
+        $('.next2').click(function () {
+            $('.addr_title span').html('完成提示');
+            $('.form_next2').css('display','none');
+            $('.form_next3').css('display','block');
+        })
+
+
+
+        window.onload= function () {
+            var new_width=$('.new_addr').width();
+            var new_height=$('.new_addr').height();
+            console.log(new_width);
+            var right_width=$('.main').width();
+            console.log(right_width);
+            var win_height= $(document).height();
+            var top;
+            $(window).bind("scroll",function(){
+                top=$(this).scrollTop();//当前窗口的滚动距离
+            });
+            console.log((right_width-new_width)/2)
+            $('.new_addr').css({
+                'top':150,
+                'position':'fixed',
+                'left':(right_width-new_width)
+            })
+        }
+    </script>
+
+</body>
+</html>

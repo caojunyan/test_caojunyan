@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=100"> <!-- IE8 mode -->
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>登录</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="font/font/iconfont.js"></script>
+    <!--[if lte IE 7]>
+    <script>
+        window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;
+    </script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/login.css"/>
+</head>
+<body>
+<div style="background: white">
+    <div class="header container">
+        <div class="left">
+            <div>
+                <a href="#"  target="_self">
+                    <img src="images/register-logo.png" alt=""/>
+                </a>
+                <p>中国“新零售”领导品牌</p>
+            </div>
+            <span class="welcome">欢迎登录</span>
+        </div>
+      <div class="right">
+            <span>没有账号,</span>
+            <a href="registration.html" target="_self">请注册</a>
+        </div>
+    </div>
+</div>
+<div class="main container">
+    <img src="images/register-adv.png" alt=""/>
+    <div class="register-form">
+        <form action="">
+            <h3>会员登录</h3>
+            <p class="p-way">
+                <span class="way">请输入账户名和密码 / 请输入正确的帐号和密码</span>
+            </p>
+            <div class="phone-div">
+                <label for="" class="tel-way">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-yonghu"></use>
+                    </svg>
+                </label>
+                <input type="text" class="phone"  autofocus  placeholder="手机号/邮箱" id="txt"/>
+                <img src="images/right.png" alt=""/>
+            </div>
+            <div class="pwd-div">
+                <label for="">
+                    <label for="" class="tel-way">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-xiugaimima"></use>
+                        </svg>
+                    </label>
+                </label>
+                <input type="text" placeholder="请输入登录密码" class="pwd" maxlength="20"  />
+                <img src="images/right.png" alt=""/>
+            </div>
+            <div class="pwd-div">
+                <label for="">
+                    <label for="" class="tel-way">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-yanzhengma"></use>
+                        </svg>
+                    </label>
+                </label>
+               <!-- <input type="text" placeholder="请输入验证码" class="pwd" maxlength="20" />-->
+                <span id="vericode"></span>
+            </div>
+            <div class="checkbox" style="border: none; padding: 0">
+                <label style="width: 100%;padding: 0;line-height: 21px;">
+                    <i class="agree-bg"></i>
+                 <span>自动登录</span>
+                    <a href="">忘记密码</a>
+                </label>
+            </div>
+            <span class="sub-btn">立即登录</span>
+            <ul class="other-way">
+                <li><a href="">微信</a></li>
+                <li class="QQ"><a href="">QQ</a></li>
+                <li><a href="">微博</a></li>
+                <li class="to-registration"><a href="registration.html">立即注册</a></li>
+            </ul>
+        </form>
+    </div>
+</div>
+
+<div style="background: white">
+    <div class="footer container">
+        <p>Copyright © 2017  湖北云温商互联网商务有限公司  备案号：鄂ICP备15007060号</p>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    (function($) {
+        $.fn.placeholder = function(options) {
+            var opts = $.extend({}, $.fn.placeholder.defaults, options);
+            var isIE = document.all ? true : false;
+            return this.each(function() {
+                var _this = this,
+                        placeholderValue = _this.getAttribute("placeholder"); //缓存默认的placeholder值
+                if (isIE) {
+                    _this.setAttribute("value", placeholderValue);
+                    _this.onfocus = function() {
+                        $.trim(_this.value) == placeholderValue ? _this.value = "" : '';
+                    };
+                    _this.onblur = function() {
+                        $.trim(_this.value) == "" ? _this.value = placeholderValue : '';
+                    };
+                }
+            });
+        };
+    })(jQuery);
+
+</script>
+<script>$("input").placeholder();</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.vericode.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

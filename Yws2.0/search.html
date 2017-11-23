@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>商品搜索页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/search.css"/>
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <script>
+        window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;
+    </script>
+    <![endif]-->
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <div class="top ">
+        <ul class="">
+            <li><a href="">登录</a></li>
+            <li><a href="">免费注册</a></li>
+            <li><a href="">购物车</a></li>
+            <li><a href="">联系客服</a></li>
+            <li><a href="">我的订单</a></li>
+            <li><a href="">收藏夹</a></li>
+            <li><a href="">手机客户端</a></li>
+            <li><a href="">帮助中心</a></li>
+        </ul>
+    </div>
+    <div class="top-banner container">
+        <div class="left">
+            <div>
+                <a href="#"  target="_self">
+                    <img src="images/register-logo.png" alt=""/>
+                </a>
+                <p>中国“新零售”领导品牌</p>
+            </div>
+        </div>
+        <div class="left1">
+            <div>
+                <div class="city-hover1">
+                    <span>武汉</span>
+                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <div class="city">
+                        <p>猜你想进：<a href="">武汉站</a></p>
+                        <span>热门城市</span>
+                        <ul>
+                            <li>武汉站</li>
+                            <li>温州站</li>
+                            <li>北京站</li>
+                            <li>上海站</li>
+                            <li>深圳站</li>
+                            <li>广州站</li>
+                            <li>南京站</li>
+                            <li>成都站</li>
+                            <li>杭州站</li>
+                        </ul>
+                        <a class="more">更多城市即将上线</a>
+                    </div>
+                </div>
+                <p>切换城市更精准</p>
+
+            </div>
+        </div>
+        <div class="left2">
+            <div>
+                <div  class="search">
+                    <input class="search-box" placeholder="请输入关键字进行搜索"><a>搜 索</a>
+                </div>
+                <ul>
+                    <li><a href="">辣条</a></li>
+                    <li><a href="">娃娃鱼</a></li>
+                    <li><a href="">智能雨伞</a></li>
+                    <li><a href="">小家电</a></li>
+                    <li><a href="">精品旅游</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+           <div class="cart">
+               <i class="glyphicon glyphicon-shopping-cart"></i>
+               <a  class="">我的购物车</a>
+               <span>8</span>
+           </div>
+            <div class="cart-box">
+                <img src="images/u664.jpg" alt=""/>
+                <b>
+                    购物车中还没有商品，赶紧选购吧！</b>
+            </div>
+        </div>
+    </div>
+    <div class="banner1">
+        <ul class="">
+            <li><a href="">全部分类</a></li>
+            <li><a href="">首页</a></li>
+            <li><a href="">爆款特价</a></li>
+            <li><a href="">限时特卖</a></li>
+            <li><a href="">个性定制</a></li>
+            <li><a href="">厂家直供</a></li>
+
+        </ul>
+    </div>
+</div>
+<!--banner-->
+<div class="lunbo">
+    <p class="container" style="height: 50px;font-size: 16px;line-height: 50px;">
+        <a href="">厂家直供&gt;</a>
+        <a href="">小吃</a>
+    </p>
+    <img src="images/search_banner.png" alt=""/>
+</div>
+<!--主体商品-->
+<div class="logo container">
+    <!--品牌-->
+    <div class="brand">
+        <span>品牌</span>
+        <ul>
+            <li>
+                <a href="">
+                    <img src="images/logo_banner.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/logo_banner.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/logo_banner.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/logo_banner.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/logo_banner.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/logo_banner.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/logo_banner.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/logo_banner.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/logo_banner.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/logo_banner.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/logo_banner.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/logo_banner.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/logo_banner.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/logo_banner.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/logo_banner.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/logo_banner.png" alt=""/>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--规格-->
+    <div class="specification" >
+        <span>规格</span>
+        <ul>
+            <li>
+                <a href="">
+                    5g
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    5g
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    5g
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    5g
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    5g
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    5g
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    5g
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    5g
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--产地-->
+    <div class="city" >
+        <span>产地</span>
+        <ul>
+            <li>
+                <a href="">
+                    武汉
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    长沙
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    温州
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    广州
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    武汉
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    长沙
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    温州
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    广州
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="main container">
+    <div class="order container">
+            <ul>
+                <li class="zonghe"><a >综合</a></li>
+                <li class="price">
+                    <a href="">
+                        <span class="price-span">价格</span>
+                        <span class="price-control">
+                            <img src="images/top_arrow.png" alt="" class="price-add"/>
+                            <br/>
+                            <img src="images/bottom_arrow.png" alt="" class="price-minus"/>
+                        </span>
+                    </a>
+                </li>
+                <li class="xiaoliang">
+                    <a href="">
+                        <span class="xiaoliang-span">销量</span>
+                        <span class="xiaoliang-control">
+                            <img src="images/top_arrow.png" alt="" class="xiaoliang-add"/>
+                            <img src="images/bottom_arrow.png" alt=""class="xiaoliang-minus"/>
+                        </span>
+                    </a>
+                </li>
+                <li class="duration">
+                    <span class="full">￥<input type="text"/></span>&nbsp;&nbsp;
+                    <span>-</span>
+                    &nbsp; &nbsp;<span class="zuida">￥<input type="text"/></span>
+                </li>
+                <li class="page-chose">
+                    <span class="page-pre">&lt;</span><input type="text"/><span class="page-next">&gt;</span>
+                </li>
+
+                <li class="count-page">
+                    <span class="now-page">1</span>/
+                    <span>121</span>
+                </li>
+                <li class="all-pro">共 <span>638</span> 件商品</li>
+            </ul>
+    </div>
+    <div class="pro">
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="pro">
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="pro">
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="pro">
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="images/hot-product.png" alt=""/>
+                <span> 跨品牌满498减108，上不封顶</span>
+            </dt>
+            <dd>
+                <p class="p1">
+                    <b class="hot-price">￥39.00</b>
+                    <span>
+                        <img src="images/fanxian.png" alt=""/>
+                        <span>立返 <b>3</b>元</span>
+                    </span>
+                </p>
+                <p class="p2">洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g洽洽皇葵山核桃味瓜子110g 炒货 零食小吃……</p>
+            </dd>
+        </dl>
+    </div>
+    <!--pager-->
+    <div class="page">
+        <a href="" class="all-pro">共 638 件商品</a>
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li>
+                    <a href="# aria-label="Previous">
+                        <span aria-hidden="true">&lt; 上一页</span>
+                    </a>
+                </li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li class="more-page">
+                    <a href="" aria-label="">
+                       ...
+                    </a>
+                </li>
+                <li>
+                    <a href="" aria-label="Next">
+                        <span aria-hidden="true">下一页 &gt;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="page-info">
+            <span class="all-page">共121页</span>
+            <span>到第&nbsp;&nbsp;
+                <input type="text"/> &nbsp;&nbsp;页
+            </span>
+            <span class="skip">确定</span>
+        </div>
+    </div>
+</div>
+<!--脚部-->
+<div class="footer">
+    <div class="container">
+        <ul class="ul1">
+            <li>
+                <img src="images/超.png" alt=" "/>
+                <div>
+                    <p>品牌特卖</p>
+                    <p>超级返利</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/省.png" alt=" "/>
+                <div>
+                    <p>超高金额返</p>
+                    <p>最高可达30%</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/新.png" alt=" "/>
+                <div>
+                    <p>准时上新</p>
+                    <p>每日10点开始</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/信.png" alt=" "/>
+                <div>
+                    <p>信誉保证</p>
+                    <p>返利准时到账</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/质.png" alt=" "/>
+                <div>
+                    <p>品质精选</p>
+                    <p>大牌优质商品</p>
+                </div>
+            </li>
+        </ul>
+        <div class="div1 container">
+            <ul>
+                <li class="title">购物指南</li>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">提交订单</a></li>
+            </ul>
+            <ul>
+                <li class="title">会员中心</li>
+                <li><a href="">会员介绍</a></li>
+                <li><a href="">积分说明</a></li>
+                <li><a href="">发展中心</a></li>
+            </ul>
+            <ul>
+                <li class="title">配送服务</li>
+                <li><a href="">送货方式</a></li>
+                <li><a href="">服务意向</a></li>
+                <li><a href="">收费标准</a></li>
+            </ul>
+            <ul>
+                <li class="title">服务中心</li>
+                <li><a href="">取消订单</a></li>
+                <li><a href="">联系客服</a></li>
+                <li><a href="">汇款信息</a></li>
+            </ul>
+            <ul>
+                <li class="title">关于云温商</li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">服务地区</a> </li>
+            </ul>
+           <dl>
+               <dt>
+                   <img src="images/二维码.png" alt=""/>
+               </dt>
+               <dd>官方微信</dd>
+           </dl>
+        </div>
+        <div class="footer1">
+            <span class=""> Copyright © 2017  湖北云温商互联网商务有限公司  备案号：鄂ICP备15007060号</span>
+            <img src="images/1.png" alt=""/>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/header.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=100"> <!-- IE8 mode -->
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>注册</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <script>
+        window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;
+    </script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/registration.css"/>
+</head>
+<body>
+<div style="background: white">
+    <div class="header container">
+        <div class="left">
+            <div>
+                <a href="#"  target="_self">
+                    <img src="images/register-logo.png" alt=""/>
+                </a>
+                <p>中国“新零售”领导品牌</p>
+            </div>
+            <span class="welcome">欢迎注册</span>
+        </div>
+      <div class="right">
+            <span>已有账号,</span>
+            <a href="login.html" target="_self">请登录</a>
+        </div>
+    </div>
+</div>
+<div class="main container">
+    <img src="images/register-adv.png" alt=""/>
+    <div class="register-form">
+        <form action="">
+            <h3>会员注册</h3>
+            <span class="way">使用邮箱</span>
+            <div class="phone-div">
+                <label for="" class="tel-way">手机号码</label>
+                <input type="text" class="phone" maxlength="11" autofocus  placeholder="建议使用常用手机或邮箱"/>
+                <img src="images/right.png" alt=""/>
+                <span class="alert-msg">请输入正确手机号</span>
+            </div>
+            <div class="pwd-div">
+                <label for="">设置密码</label>
+                <input type="text" placeholder="建议使用至少两种字符组合" class="pwd" maxlength="20" />
+                <img src="images/right.png" alt=""/>
+                <span class="alert-msg1">请输入正确手机号</span>
+            </div>
+            <div>
+                <label for="">验证码</label>
+                <input type="text" placeholder="请输入验证码"/>
+                <input type="button" class="btn-get" id="btn" value="免取验证码"  />
+            </div>
+            <div class="checkbox" style="border: none; padding: 0">
+                <label style="width: 100%;padding: 0;line-height: 21px;">
+                    <i class="agree-bg"></i>
+                 <span>我已阅读并同意
+                     <a href="agreement.html">《云温商用户注册协议》</a>
+                 </span>
+                </label>
+            </div>
+            <span class="sub-btn">立即注册</span>
+        </form>
+    </div>
+</div>
+<div style="background: white">
+    <div class="footer container">
+        <p>Copyright © 2017  湖北云温商互联网商务有限公司  备案号：鄂ICP备15007060号</p>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/registration.js"></script>
+</body>
+</html>

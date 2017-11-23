@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>批量上传图片</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/pic_upload.css"/>
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <script>
+        window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;
+    </script>
+    <![endif]-->
+    <style>
+        h1{
+            font-style: 28px;
+        }
+        h3{
+            font-weight: 700;
+            color: #666;
+            font-size: 21px;
+            border-bottom: 1px dashed #ccc;
+            line-height: 2;
+        }
+        .form_pic{
+            width: 52px;
+            height: 52px;
+            float: left;
+        }
+        .mbUploadify{
+            width: 52px;
+            height: 52px;
+            border: 1px solid #E2E2E2;
+            line-height: 44px;
+            display: inline-block;
+            text-align: center;
+        }
+        .photo{
+            width: 36px;
+            height: 26px;
+
+        }
+        .mbUploadify input[type=file]{
+            display: none;
+        }
+
+        pre{
+            background: #e5e5e5;
+            font: 13px/1.6em 'Lucida Console','monospace','Consolas';
+            word-break: break-all;
+            white-space: pre-wrap;
+            margin-bottom: 30px;
+        }
+
+        .preview{
+
+        }
+        .preview img{
+            height: 200px;
+            width: 200px;
+            margin-left: 10px;
+        }
+        .msg{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="top ">
+        <ul class="">
+            <li><a href="">登录</a></li>
+            <li><a href="">免费注册</a></li>
+            <li><a href="">购物车</a></li>
+            <li><a href="">联系客服</a></li>
+            <li><a href="">我的订单</a></li>
+            <li><a href="">收藏夹</a></li>
+            <li><a href="">手机客户端</a></li>
+            <li><a href="">帮助中心</a></li>
+        </ul>
+    </div>
+    <div class="top-banner container">
+        <div class="left">
+            <div>
+                <a href="#"  target="_self">
+                    <img src="images/register-logo.png" alt=""/>
+                </a>
+                <p>中国“新零售”领导品牌</p>
+            </div>
+        </div>
+        <div class="left1">
+            <span>账户中心</span>
+            <b>返回云温商首页</b>
+        </div>
+        <div class="left2">
+            <a >个人中心</a>
+            <a class="now">商家申请</a>
+            <a>消息中心</a>
+        </div>
+    </div>
+
+</div>
+<hr/>
+
+
+<div class="help container">
+    <div class="help_left">
+        <ul>
+            <li class="li_title" >
+                <a href="" name="" >商家订单</a>
+            </li>
+            <li>
+                <a href="order_shangjia.html" >商家订单列表</a>
+            </li>
+            <li>
+                <a href="sale_qushi.html" >销售趋势统计</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >商品管理</a>
+            </li>
+            <li>
+                <a href="good_list.html" >商品列表</a>
+            </li>
+            <li>
+                <a href="good_ruku.html" >商品入库审核</a>
+            </li>
+            <li>
+                <a href="good_zixun.html" >商品咨询回复</a>
+            </li>
+            <li>
+                <a href="pic_upload.html" style="color:#FF3893">批量上传图片</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >评价管理</a>
+            </li>
+            <li>
+                <a href="good_comm.html">商品评价</a>
+            </li>
+            <li>
+                <a href="shop_comm.html">店铺评价</a>
+            </li>
+
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >交易管理</a>
+            </li>
+            <li>
+                <a href="my_income.html">我的收入</a>
+            </li>
+            <li>
+                <a href="tixian_shangjia.html">提现记录</a>
+            </li>
+            <li>
+                <a href="shouzhi.html">收支明细</a>
+            </li>
+
+        </ul>
+        <ul>
+            <li class="li_title" >
+                <a href="" >商家信息</a>
+            </li>
+            <li>
+                <a href="shop_info.html">店铺信息</a>
+            </li>
+            <li>
+                <a href="mendian.html">门店管理</a>
+            </li>
+            <li>
+                <a href="touch_us.html">联系我们</a>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="help_right">
+        <div class="right_top">
+            <a href="">商品管理></a>
+            <a href="">批量上传图片</a>
+        </div>
+        <div class="right_main">
+            <div class="tab">
+                <div class="tab_header">
+                    <b >批量上传图片</b>
+                </div>
+                <h1>批量上传图片商品</h1>
+                <div class="form_div">
+                    <form action="">
+                        <div class="div1">
+                            <label for="">商品类别：</label>
+                            <select name="" id="sel1">
+                                <option value="">选择大类</option>
+                            </select>
+                            <select name="" id="sel2">
+                                <option value="">选择小类</option>
+                            </select>
+                        </div>
+                        <div class="div2">
+                            <label for="">商品品牌：</label>
+                            <select name="" id="sel3">
+                                <option value="">选择品牌</option>
+                            </select>
+                        </div>
+                        <div class="div3">
+                            <label for="">选择上传：</label>
+                            <input type="checkbox"/>全选
+                            <input type="checkbox"/>全不选
+                        </div>
+                        <div class="div0">
+                            <label for=""></label>
+                            <input type="checkbox"/>
+                            <span>商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称</span>
+                        </div>
+                        <div class="div0">
+                            <label for=""></label>
+                            <input type="checkbox"/>
+                            <span>商品名称商品名称商商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称品名称商品名称商品名称商品名称商品名称商品名称商品名称</span>
+                        </div>
+                        <div class="div0">
+                            <label for=""></label>
+                            <input type="checkbox"/>
+                            <span>商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称</span>
+                        </div>
+                        <div class="div7">
+                            <label for="" class="up">上传图片：</label>
+                            <form action="mbUploadify.php" method="post" class="form_pic">
+                                <label for="j-file2" class="mbUploadify" id="j-dropArea">
+                                    <img src="images/photo.png" alt="" class="photo"/>
+                                    <input type="file" name="files" id="j-file2"  multiple>
+                                </label>
+                                <span class="alert1">
+                                    <p>1.支持PNG、JPG、GIF等格式，请优先上传PNG格式文件
+                                      </p>
+                                    <p>  2.上传的单张图片不能超过2M，最多上传8张图片</p>
+                                </span>
+                            </form>
+                            <br/>
+                            <div id="preview2" class="preview"></div>
+                        </div>
+                    </form>
+                    <div class="btn1">
+                        <span>确认上传</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<div class="footer">
+    <div class="container">
+
+        <div class="div1 container">
+            <ul>
+                <li class="title">购物指南</li>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">提交订单</a></li>
+            </ul>
+            <ul>
+                <li class="title">会员中心</li>
+                <li><a href="">会员介绍</a></li>
+                <li><a href="">积分说明</a></li>
+                <li><a href="">发展中心</a></li>
+            </ul>
+            <ul>
+                <li class="title">配送服务</li>
+                <li><a href="">送货方式</a></li>
+                <li><a href="">服务意向</a></li>
+                <li><a href="">收费标准</a></li>
+            </ul>
+            <ul>
+                <li class="title">服务中心</li>
+                <li><a href="">取消订单</a></li>
+                <li><a href="">联系客服</a></li>
+                <li><a href="">汇款信息</a></li>
+            </ul>
+            <ul>
+                <li class="title">关于云温商</li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">服务地区</a> </li>
+            </ul>
+            <dl>
+                <dt>
+                    <img src="images/二维码.png" alt=""/>
+                </dt>
+                <dd>官方微信</dd>
+            </dl>
+        </div>
+        <div class="footer1">
+            <span class=""> Copyright © 2017  湖北云温商互联网商务有限公司  备案号：鄂ICP备15007060号</span>
+            <img src="images/1.png" alt=""/>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mbUploadify.min.js"></script>
+<script src=""></script>
+<script>
+    var upload2 = new mbUploadify(document.querySelector('form'), {
+        /*文件拖拽上传区域对象 null表示不支持*/
+        dropElement: document.getElementById('j-dropArea'),
+        /*上传成功*/
+        load: function(e){
+            document.getElementById('preview2').innerHTML += '<img src="'+ e.target.result +'">';
+        },
+        /*ajax上传成功*/
+        uploadSuccess: function(res){
+            console.log(res);
+        },
+        /*ajax上传失败*/
+        uploadFailed: function(){
+            console.log('upload failed!');
+        },
+        /*上传失败*/
+        error: function(file, msg){
+            document.getElementById('msg2').innerHTML = msg;
+            console.log(file, msg)
+        },
+        /*ajax上传完成*/
+        uploadComplete: function(){
+            console.log('upload completed!');
+        }
+    });
+
+
+</script>
+</body>
+</html>

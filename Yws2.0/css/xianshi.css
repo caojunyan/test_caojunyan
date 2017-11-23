@@ -1,0 +1,136 @@
+@import "bootstrap.css";
+@import "base.css";
+.time ul {
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  padding-left: 200px;
+  padding-top: 54px;
+}
+.time ul li {
+  float: left;
+  width: 180px;
+  height: 90px;
+  margin-left: 50px;
+  text-align: center;
+}
+.time ul li b {
+  color: #FB3A98;
+  font-size: 20px;
+}
+.time ul .now {
+  background: url("../images/time-bg.png") no-repeat;
+  height: 120px;
+  padding-top: 19px;
+  position: relative;
+  top: -30px;
+}
+.time ul .now b {
+  color: white;
+}
+.time ul .now span {
+  color: white;
+}
+.hot-product {
+  width: 1190px;
+  min-height: 406px;
+  padding-bottom: 33px;
+}
+.hot-product .title-p {
+  border-bottom: 1px solid #F6F6F6;
+  height: 31px;
+}
+.hot-product .title-p b {
+  display: inline-block;
+  padding-left: 10px;
+  border-left: 4px solid #FB3A98;
+  width: 90px;
+  color: #FB3A98;
+  font-size: 18px;
+}
+.hot-product .title-p .time1 {
+  float: right;
+  min-width: 274px;
+  display: inline-block;
+}
+.hot-product .title-p .time1 span > u {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  text-underline: none;
+  text-decoration: none;
+}
+.hot-product .div2 {
+  padding-bottom: 32px;
+  width: 100%;
+}
+.hot-product .div2 dl {
+  width: 50%;
+  float: left;
+  margin-top: 32px;
+  border-bottom: 1px solid #EBEBEB;
+}
+.hot-product .div2 dl dt {
+  float: left;
+  border: 1px solid #ECECEC;
+}
+.hot-product .div2 dl dt > img {
+  width: 130px;
+  height: 130px;
+}
+.hot-product .div2 dl dd {
+  width: 210px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+.hot-product .div2 dl dd .name {
+  width: 390px;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-height: 28px;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.hot-product .div2 dl dd .price {
+  height: 48px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #E42F47;
+}
+.hot-product .div2 dl dd .price b {
+  color: #E42F47;
+  font-size: 16px;
+}
+.hot-product .div2 dl dd .price del {
+  color: #999999;
+  display: inline-block;
+  float: right;
+  width: 60px;
+}
+.hot-product .div2 dl dd .lifan {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.hot-product .div2 dl dd .lifan span {
+  color: #FB3A98;
+}
+.hot-product .div2 dl dd .qiang-btn {
+  float: right;
+  width: 120px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 20px;
+  color: white;
+  background: #FB3A98;
+  text-align: center;
+  position: absolute;
+  bottom: 12px;
+  right: -161px;
+}

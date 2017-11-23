@@ -1,0 +1,270 @@
+@import "bootstrap.css";
+@import "base.css";
+.logo1 {
+  height: 367px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.logo1 .left {
+  float: left;
+  height: 343px;
+  width: 600px;
+}
+.logo1 .left .l1 {
+  width: 600px;
+  height: 226px;
+}
+.logo1 .left .l2 {
+  width: 600px;
+  height: 117px;
+}
+.logo1 .right {
+  float: left;
+  height: 343px;
+  width: 570px;
+}
+.logo1 .right .l3 {
+  height: 117px;
+  width: 100%;
+}
+.logo1 .right .l4 {
+  height: 113px;
+  width: 110px ;
+}
+.logo1 .right .l5 {
+  width: 350px ;
+  height: 113px;
+}
+.logo1 .right .l6 {
+  height: 113px;
+  width: 110px ;
+}
+.logo1 .right .l7 {
+  height: 113px;
+  width: 100% ;
+}
+.title-p {
+  border-bottom: 1px solid #F6F6F6;
+  height: 40px;
+  padding-bottom: 10px;
+  margin-top: 55px;
+}
+.title-p b {
+  display: inline-block;
+  padding-left: 10px;
+  border-left: 4px solid #FB3A98;
+  width: 90px;
+  color: #FB3A98;
+  font-size: 18px;
+}
+.title-p span {
+  float: right;
+}
+.title-p span a {
+  color: #FB3A98;
+  font-size: 14px;
+}
+.logo2 {
+  height: 234px;
+  width: 1170px;
+  box-shadow: 0px 6px 19px #E6E6E6;
+}
+.logo2 div {
+  float: left;
+  width: 20%;
+}
+.logo2 div .span1 {
+  border-right: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  width: 100%;
+  height: 117px;
+  display: inline-block;
+  text-align: center;
+  line-height: 117px;
+}
+.logo2 div .span2 {
+  border-right: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  width: 100%;
+  height: 78px;
+  line-height: 78px;
+  text-align: center;
+  display: inline-block;
+}
+.logo2 div .img11 {
+  width: 100%;
+  height: 234px;
+  border-right: 1px solid #E6E6E6;
+}
+.logo2 div .da {
+  width: 104px;
+  height: 59px;
+}
+.logo2 div .xiao {
+  width: 104px;
+  height: 59px;
+}
+.logo2 .more {
+  display: inline-block;
+  width: 56px;
+  height: 30px;
+  background: #D9D9D9;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  top: 0px;
+  left: 560px;
+  cursor: pointer;
+}
+.logo3 {
+  height: 234px;
+  width: 1170px;
+  box-shadow: 0px 6px 19px #E6E6E6;
+  border-right: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+}
+.logo3 div {
+  float: left;
+}
+.logo3 div span {
+  border-top: 1px solid #E6E6E6;
+  border-left: 1px solid #E6E6E6;
+}
+.logo3 .div1 {
+  float: left;
+  width: 468px;
+}
+.logo3 .div1 .span1 {
+  width: 100%;
+  height: 117px;
+  display: inline-block;
+  text-align: center;
+  line-height: 117px;
+}
+.logo3 .div1 .span11 {
+  width: 233px;
+  height: 117px;
+  display: inline-block;
+  line-height: 117px;
+  text-align: center;
+}
+.logo3 .div1 .span11 img {
+  width: 104px;
+  height: 59px;
+}
+.logo3 .div1 .span2 {
+  border-right: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  width: 100%;
+  height: 78px;
+  line-height: 78px;
+  text-align: center;
+  display: inline-block;
+}
+.logo3 .div1 .img11 {
+  width: 100%;
+  height: 234px;
+  border-right: 1px solid #E6E6E6;
+}
+.logo3 .div1 .da {
+  width: 50%;
+  height: 45px;
+}
+.logo3 .div1 .xiao {
+  width: 42%;
+  height: 35px;
+}
+.logo3 .div2 {
+  width: 228px;
+  height: 234px;
+}
+.logo3 .div2 span {
+  display: inline-block;
+  width: 228px;
+  height: 117px;
+  text-align: center;
+  line-height: 117px;
+}
+.logo3 .div2 span img {
+  width: 104px;
+  height: 59px;
+}
+.logo3 .more {
+  display: inline-block;
+  width: 56px;
+  height: 30px;
+  background: #D9D9D9;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  top: 0px;
+  left: 560px;
+  cursor: pointer;
+}
+.logo4 {
+  height: 234px;
+  width: 1170px;
+  box-shadow: 0px 6px 19px #E6E6E6;
+}
+.logo4 div {
+  float: left;
+  width: 20%;
+}
+.logo4 div .span1 {
+  border-right: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  width: 100%;
+  height: 117px;
+  display: inline-block;
+  text-align: center;
+  line-height: 117px;
+}
+.logo4 div .span2 {
+  border-right: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  width: 100%;
+  height: 78px;
+  line-height: 78px;
+  text-align: center;
+  display: inline-block;
+}
+.logo4 div .span4 {
+  display: inline-block;
+  width: 234px;
+  height: 234px;
+  text-align: center;
+  line-height: 234px;
+  border-right: 1px solid #e6e6e6;
+}
+.logo4 div .span4 img {
+  width: 104px;
+  height: 59px;
+}
+.logo4 div .img11 {
+  width: 100%;
+  height: 234px;
+  border-right: 1px solid #E6E6E6;
+}
+.logo4 div .da {
+  width: 104px;
+  height: 59px;
+}
+.logo4 div .xiao {
+  width: 104px;
+  height: 59px;
+}
+.logo4 .more {
+  display: inline-block;
+  width: 56px;
+  height: 30px;
+  background: #D9D9D9;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  top: 0px;
+  left: 560px;
+  cursor: pointer;
+}

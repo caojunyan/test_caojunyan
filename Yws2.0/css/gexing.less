@@ -1,0 +1,150 @@
+@import "bootstrap.css";
+@import "base.css";
+@color:#FB3A98;
+
+
+//��������
+//��ʱ����
+.hot-product{
+  width: 1190px;
+  min-height: 406px;
+  .title-p{
+    margin-top: 30px;
+    padding-bottom: 15px;
+    b{
+      display: inline-block;
+      padding-left: 10px;
+      border-left: 4px solid @color;
+      width: 90px;
+      color:@color;
+      font-size: 18px;
+    }
+
+  }
+  hr{
+    border:1px solid #F6F6F6
+  }
+  .main{
+    min-height: 1329px;
+    width: 100%;
+    .left{
+      float: left;
+      width: 45%;
+      height: 100%;
+      .pro1{
+        position: relative;
+        height: 260px;
+        width: 100%;
+        margin-top: 40px;
+        img{
+          position: absolute;
+
+        }
+        .img1{
+          width: 100%;
+          z-index: 0;
+          height: 260px;
+        }
+        .img2{
+          z-index: 1;
+        }
+        b{
+          position: absolute;
+          z-index: 10;
+          text-align: center;
+          color: white;
+          line-height: 30px;
+          display: inline-block;
+          width: 170px;
+        }
+        p{
+          position: absolute;
+          z-index: 10;
+          left:91px;
+          top:117px;
+          color:white;
+        }
+      }
+    }
+    .right{
+      float: left;
+      width: 55%;
+      height: 100%;
+    /*  padding-left: 3%;*/
+      .pro2{
+        width: 100%;
+        height: 260px;
+        margin-top: 40px;
+        .title{
+          font-size: 14px;
+          height: 40px;
+          padding-left: 8%;
+          line-height: 40px;
+          span{
+            color:@color;
+          }
+          img{
+            width: 20px;
+            height: 20px;
+
+          }
+          b{
+            float: right;
+            width: 147px;
+            height: 40px;
+            line-height: 40px;
+            background: @color;
+            color:white;
+            text-align: center;
+            border-radius: 30px;
+
+          }
+        }
+        dl{
+          margin-left: 8%;
+          margin-top: 20px;
+          dt{
+            position: relative;
+              img{
+                width: 161px;
+                height: 161px;
+              }
+            p{
+              position: absolute;
+              bottom:0px;
+              background: rgba(0,0,0,0.4);
+              color: white;
+              font-size: 14px;
+              width: 161px;
+              height: 30px;
+              line-height: 30px;
+              padding-left: 10px;
+              padding-right: 10px;
+              span{
+                float: left;
+              }
+              b{
+                float: right;
+              }
+            }
+          }
+          dd{
+            word-break: break-all;
+            display: -webkit-box;
+            -webkit-line-clamp:2;
+            line-height: 22px;
+            width: 161px;
+            margin-top: 8px;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+        }
+        dl,dt,dd{
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+//�Ų�
